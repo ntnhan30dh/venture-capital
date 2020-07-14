@@ -30,15 +30,20 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: `100%`,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <div  id="wrapper" class="wrapper" >{children}</div>
+        <footer id="footer" class="footer container">
+        <a href="contact.html"><div class="cta-button">
+			FIND OUT MORE
+				</div></a>
+			<div class="footer-footer">
+			Copyright© 2020 Delivery Hero SE<br/>
+			<br/>
+			Here impressum and disclaimers as by law.
+		</div>
         </footer>
       </div>
     </>
