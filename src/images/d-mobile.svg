@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="190px" height="200px" viewBox="0 0 190 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>d-mobile</title>
+    <g id="d-mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M46.0195992,7 L82.9395048,7 C102.324394,7 119.538175,10.9816861 134.580849,18.9450584 C149.158707,26.4814618 161.321341,37.9284595 169.689652,51.988097 C178.177151,66.5266444 182.514497,83.0922956 182.234444,99.9005028 C182.51534,116.70881 178.177936,133.274682 169.689652,147.812909 C161.326253,161.876443 149.162351,173.324634 134.580849,180.855947 C119.538175,188.808305 102.324394,192.784484 82.9395048,192.784484 L9,192.784484 L46.0195992,7 Z" id="Mask" stroke="#343B46" stroke-width="3" opacity="0.5" stroke-linejoin="round" fill-rule="nonzero"></path>
+        <text id="ON-DEMAND" font-family="SofiaPro-Bold, Sofia Pro" font-size="24" font-weight="bold" fill="#862F5D">
+            <tspan x="44" y="95">ON</tspan>
+            <tspan x="44" y="117">DEMAND</tspan>
+        </text>
+    </g>
+</svg>

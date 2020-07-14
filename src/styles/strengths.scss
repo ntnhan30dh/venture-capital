@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/****************/
+/**** STRENGTHS PAGE ****/
+/****************/
+
+*{
+	_border: 1px solid blue;
+}
+.strengths-page.container{
+	margin: 212px 0;
+}
+
+.strengths-page h2{
+	text-align: center;
+	margin-bottom: 76px;
+}
+
+.strength{
+	position: relative;
+}
+
+.strength-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 316px;
+	border-radius: 8px;
+	transform: translateY(-40px);
+	background: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+	opacity:0;
+	z-index:10;
+}
+
+.strength-overlay:hover{
+	opacity:1;
+}
+
+.strength-icon-overlay{
+	padding: 40px;
+	border-radius: 8px 8px 0 0;
+}
+
+.overlay-text{
+	padding: 34px;
+	text-align: left;
+	color: white;
+	background-color: #862F5D;
+	border-radius: 0 0 8px 8px;
+}
+
+.left{
+	transform: translate(-40px, -40px);
+}
+
+@media only screen and (max-width: 767px) {
+
+	.strength-overlay{
+		display: none;
+	}
+	
+	.strengths-page.container{
+	margin: 80px 0;
+}
+	
+.strengths-page h2{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+}

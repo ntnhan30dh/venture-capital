@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="188px" height="195px" viewBox="0 0 188 195" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <defs>
+        <polygon id="path-1" points="182.397992 0 91.1989959 188.601129 0 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="front-page" transform="translate(-753.000000, -2620.000000)">
+            <g id="Group-7" transform="translate(4.000000, 2405.000000)">
+                <g id="Group" transform="translate(257.000000, 217.000000)">
+                    <g id="ivan-bandura-Oei00n8F5JQ-unsplash" transform="translate(495.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" stroke="#343B46" stroke-width="3" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

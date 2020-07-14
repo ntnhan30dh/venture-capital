@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="190px" height="200px" viewBox="0 0 190 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>v-mobile</title>
+    <g id="v-mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Mask" stroke="#343B46" stroke-width="3" opacity="0.497419085" stroke-linejoin="round" fill-rule="nonzero" points="185.397992 6 94.1989959 194.601129 3 6"></polygon>
+        <text id="AI-ENABLED-TECHNOLOG" font-family="SofiaPro-Bold, Sofia Pro" font-size="24" font-weight="bold" fill="#862F5D">
+            <tspan x="24.748" y="89">AI-ENABLED </tspan>
+            <tspan x="14.44" y="111">TECHNOLOGY</tspan>
+        </text>
+    </g>
+</svg>

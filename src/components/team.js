@@ -12,6 +12,7 @@ const Team = () => {
           node {
             title
             featured_media {
+              source_url
               localFile {
                 childImageSharp {
                   fluid(maxWidth: 300, maxHeight: 300) {
@@ -37,39 +38,43 @@ const Team = () => {
           </div>
           <div class="team-grid">
             <div class="member-cont">
-              <Img
+              {/* <Img
                 alt="avatar"
                 fluid={
                   data.allWordpressWpTeamHome.edges[0].node.featured_media
                     .localFile.childImageSharp.fluid
                 }
-              />
+              /> */}
+              <img  class="avatar" src={data.allWordpressWpTeamHome.edges[2].node.featured_media.source_url} alt="logo"></img>
               <div class="name-cont">
                 <div class="name">Niklas Östberg</div>
                 <div class="role">Co-Founder delivery hero</div>
               </div>
             </div>{" "}
             <div class="member-cont">
-              <Img
+              {/* <Img
                 alt="avatar"
                 fluid={
                   data.allWordpressWpTeamHome.edges[2].node.featured_media
                     .localFile.childImageSharp.fluid
                 }
-              />
+              /> */}
+              <img  class="avatar" src={data.allWordpressWpTeamHome.edges[1].node.featured_media.source_url} alt="logo"></img>
+
               <div class="name-cont">
                 <div class="name">Mark Venema</div>
                 <div class="role">SVP Strategy</div>
               </div>
             </div>
             <div class="member-cont">
-              <Img
+              {/* <Img
                 alt="avatar"
                 fluid={
                   data.allWordpressWpTeamHome.edges[1].node.featured_media
                     .localFile.childImageSharp.fluid
                 }
-              />
+              /> */}
+              <img  class="avatar" src={data.allWordpressWpTeamHome.edges[0].node.featured_media.source_url} alt="logo"></img>
               <div class="name-cont">
                 <div class="name">Duncan McIntyre</div>
                 <div class="role">VP Strategy</div>

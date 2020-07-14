@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="201px" height="196px" viewBox="0 0 201 196" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <defs>
+        <polyline id="path-1" points="200.338778 0 100.169389 195.586356 0 0"></polyline>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="philosophy" transform="translate(-761.000000, -595.000000)">
+            <g id="Group-2" transform="translate(736.000000, 527.000000)">
+                <g id="Group-3" transform="translate(25.000000, 68.000000)">
+                    <g id="ivan-bandura-Oei00n8F5JQ-unsplash" transform="translate(0.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#862F5D" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

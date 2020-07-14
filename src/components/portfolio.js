@@ -15,8 +15,8 @@ const Portfolio = () => {
               source_url
               localFile {
                 childImageSharp {
-                  fluid(maxWidth: 200, maxHeight: 100) {
-                    ...GatsbyImageSharpFluid
+                  fluid(maxWidth: 500) {
+                    ...GatsbyImageSharpFluid_withWebp
                     srcSet
                   }
                 }

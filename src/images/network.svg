@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="155px" height="155px" viewBox="0 0 155 155" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>world</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.839216 0 0 0 0 0.121569 0 0 0 0 0.149020 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <filter id="filter-2">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.839216 0 0 0 0 0.121569 0 0 0 0 0.149020 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="front-page" transform="translate(-644.000000, -3291.000000)">
+            <g id="world" transform="translate(646.000000, 3293.000000)" filter="url(#filter-1)">
+                <g filter="url(#filter-2)" id="Group">
+                    <g>
+                        <path d="M19.2288433,25.1666667 C33.00256,43.5131667 50.7953933,50.3333333 75.4989933,50.3333333 C100.200077,50.3333333 117.997943,43.5056167 131.77166,25.1666667" id="Stroke-155" stroke="#444444" stroke-width="3.78"></path>
+                        <path d="M19.2288433,125.833333 C33.00256,107.486833 50.7953933,100.666667 75.4989933,100.666667 C100.200077,100.666667 117.997943,107.494383 131.77166,125.833333" id="Stroke-156" stroke="#444444" stroke-width="3.78"></path>
+                        <path d="M75.5,151 C102.154017,138.283283 115.766667,109.266117 115.766667,75.5 C115.766667,41.7338833 102.154017,12.7167167 75.5,0" id="Stroke-157" stroke="#444444" stroke-width="3.78"></path>
+                        <path d="M75.5,151 C48.8459833,138.283283 35.2333333,109.266117 35.2333333,75.5 C35.2333333,41.7338833 48.8459833,12.7167167 75.5,0" id="Stroke-158" stroke="#444444" stroke-width="3.78"></path>
+                        <polyline id="Stroke-159" stroke="#444444" stroke-width="3.78" points="75.5 151 75.5 144.134533 75.5 6.86295 75.5 0"></polyline>
+                        <line x1="0" y1="75.5" x2="151" y2="75.5" id="Stroke-160" stroke="#444444" stroke-width="3.78"></line>
+                        <path d="M151,75.5 C151,33.8038667 117.196133,0 75.5,0 C33.8038667,0 0,33.8038667 0,75.5 C0,117.196133 33.8038667,151 75.5,151 C117.196133,151 151,117.196133 151,75.5 L151,75.5 Z" id="Stroke-255" stroke="#444444" stroke-width="3.78"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

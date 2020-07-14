@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="183px" height="192px" viewBox="0 0 183 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 8</title>
+    <defs>
+        <path d="M172.280259,0 L108.127701,90.7462655 L176.996627,187.916012 C120.317185,187.916012 55.9985574,187.916012 0,187.916012 L68.0884002,92.0810147 L3.67013084,0 L172.280259,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="front-page" transform="translate(-510.000000, -2620.000000)">
+            <g id="Group-7" transform="translate(4.000000, 2405.000000)">
+                <g id="Group" transform="translate(257.000000, 217.000000)">
+                    <g id="Untitled-design-31.png" transform="translate(252.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" stroke="#343B46" stroke-width="3" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+//import { graphql, useStaticQuery } from "gatsby"
 //import Img from "gatsby-image"
 
 
@@ -8,9 +8,8 @@ import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 //import Image from "../components/image"
 //import SEO from "../components/seo"
-import indexStyles from "./index.module.scss"
 import Slideshow from "../components/slideshow"
-import Portfolio from "../components/portfolio"
+import Portfolio from "../components/Portfolio"
 import Team from "../components/team"
 import Philosophy from "../components/philosophy"
 import Strengths from "../components/strengths"
@@ -18,32 +17,6 @@ import Strengths from "../components/strengths"
 
 
 const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-  {
-    allWordpressWpTeamHome{
-      edges{
-        node{title
-          featured_media{
-         localFile{
-          childImageSharp {
-            fluid(maxWidth: 300, maxHeight: 300) {
-              ...GatsbyImageSharpFluid
-              srcSet
-            }
-          }
-        }
-            source_url
-            
-          }
-          acf {
-            job_title
-            biography
-          }
-        }
-      }
-    }
-  }
-  `)
   return (
     <Layout>
    

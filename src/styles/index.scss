@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@import "bootstrap";
+@import "bootstrap_theme";
+@import "portfolio";
+@import "strengths";
+@import "vision";
+@import "team";
+@import "contact";
+
 /* CSS Document */
 
 
@@ -26,7 +34,7 @@ body{
 	font-weight: 400;
 	font-size: 14px;
 	color: #343B46;
-	background-color: white;
+	// background-color: white;
 }
 
 .slick-slide {
@@ -148,7 +156,7 @@ h2{
 	width: 50%;
 	top:0;
 	right: 0;
-	// background-image: url("../images/portfolio-bg.png");
+	 background-image: url("../images/portfolio-bg.png");
 	background-repeat: no-repeat;
 	background-position: left;
 	background-size: cover;
@@ -214,7 +222,7 @@ h2{
 	width: 50%;
 	top:0;
 	left: 0;
-	// background-image: url("../images/team-bg.png");
+	background-image: url("../images/team-bg.png");
 	background-repeat: no-repeat;
 	background-position: right;
 	background-size: cover;
@@ -321,7 +329,7 @@ h2{
 
 .strength-grid{
 	background-color: white;
-	// background-image: url("../images/hexagon.svg");
+	background-image: url("../images/hexagon.svg");
 	background-position: center;
 	background-size: auto;
 	background-repeat: no-repeat;
@@ -603,7 +611,7 @@ h2{
 
 	.strength-grid{
 		background-color: white;
-		// background-image: url("../images/hexagon.svg");
+		 background-image: url("../images/hexagon.svg");
 		background-position: center;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -671,7 +679,6 @@ h2{
 		display: none;
 		width: 220px;
 	}
-
 
 }
 
