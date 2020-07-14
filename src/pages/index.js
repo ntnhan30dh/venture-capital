@@ -12,7 +12,7 @@ import Slideshow from "../components/slideshow"
 import Portfolio from "../components/portfolio"
 import Team from "../components/team"
 import Philosophy from "../components/philosophy"
-import Strengths from "../components/strengths"
+import Strengths from "../components/strengthsComponent"
 
 
 
