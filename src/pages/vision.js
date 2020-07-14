@@ -3,16 +3,32 @@ import React from "react"
 
 import Layout from "../components/layout"
 //import SEO from "../components/seo"
+import { graphql, useStaticQuery } from "gatsby"
 
 import dpurple from "../images/dpurple.svg"
 import xpurple from "../images/xpurple.svg"
 import cpurple from "../images/cpurple.svg"
 import vpurple from "../images/vpurple.svg"
 
-const VisionPage = () => (
+const VisionPage = () => {
+	const data = useStaticQuery(graphql`
+	{
+		allWordpressAcfPages{
+		  edges {
+			node{
+			  wordpress_id
+			  acf {
+				text
+			  }
+			}
+		  }
+		}
+		  }
+	`)
+	return(
   <Layout>
   <div class="vision section-title"><h2>Investment Philosophy</h2>
-						<p>DX Ventures aims to make investments predominantly in the food delivery ecosystem and adjacent verticals, where it can add significant value through leveraging Delivery Hero’s global reach, assets, capabilities, expertise &amp; network </p>
+						<p>{data.allWordpressAcfPages.edges.filter(i=>i.node.wordpress_id===97)[0].node.acf.text} </p>
 	  </div>
 		<div id="vision" class="vision-page container">
 			<div class=" inner-container">
@@ -91,6 +107,6 @@ const VisionPage = () => (
 			</div>				
 		</div>
   </Layout>
-)
+)}
 
 export default VisionPage
