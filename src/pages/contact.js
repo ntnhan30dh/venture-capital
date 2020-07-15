@@ -11,46 +11,46 @@ const ContactPage = () => (
 				<h1>LET'S GET IN TOUCH</h1>
 			</div>
 			<div class="inner-container">
-				<form class="form">
+				<form class="form" name="contact" method="POST" data-netlify="true">
 					<div class="form-group">
 						<label for="name">MY NAME</label>
-						<input type="text" class="form-control" id="name" placeholder="Name Surname"/>
+						<input name="name" type="text" class="form-control" id="name" placeholder="Name Surname"/>
 					</div>
 					<div class="form-group">
 						<label for="name">MY EMAIL</label>
-						<input type="text" class="form-control" id="name" placeholder="my@email.com"/>
+						<input name="name" type="text" class="form-control" id="name" placeholder="my@email.com"/>
 					</div>
 					<div class="form-group">
 						<label for="name">NAME OF MY COMPANY</label>
-						<input type="text" class="form-control" id="name" placeholder="Company Name"/>
+						<input name="company" type="text" class="form-control" id="name" placeholder="Company Name"/>
 					</div>
 					<div class="form-group">
 						<label for="name">DESCRIPTION OF MY COMPANY</label>
-						<input type="text" class="form-control" id="name" placeholder="Max 140 characters"/>
+						<input name="company_description" type="text" class="form-control" id="name" placeholder="Max 140 characters"/>
 					</div>
 					<div class="form-group">
 						<label for="name">THE VERTICAL OR INDUSTRY I AM TARGETING</label>
-						<input type="text" class="form-control" id="name" placeholder="Delivery, Foodtech, Fintech..."/>
+						<input name="vertical_industry" type="text" class="form-control" id="name" placeholder="Delivery, Foodtech, Fintech..."/>
 					</div>
 					<div class="form-group">
 						<label for="name">MY WEBSITE</label>
-						<input type="text" class="form-control" id="name" placeholder="www.mywebsite.com"/>
+						<input name="website" type="text" class="form-control" id="name" placeholder="www.mywebsite.com"/>
 					</div>
 					<div class="form-group">
 						<label for="name">MY COMPANY IS IN STAGE</label>
-						<input type="text" class="form-control" id="name" placeholder="Stage of the company"/>
+						<input name="company_stage" type="text" class="form-control" id="name" placeholder="Stage of the company"/>
 					</div>
 					<div class="form-group">
 						<label for="name">I AM RAISING (€) </label>
-						<input type="text" class="form-control" id="name" placeholder="my@email.com"/>
+						<input name="raising" type="text" class="form-control" id="name" placeholder="my@email.com"/>
 					</div>
 					<div class="form-group">
 						<label for="name">MY COMPANY IS LOCATED IN</label>
-						<input type="text" class="form-control" id="name" placeholder="Country"/>
+						<input name="location" type="text" class="form-control" id="name" placeholder="Country"/>
 					</div>
 					<div class="form-group">
 						<label for="name">MY MESSAGE</label>
-						<input type="text" class="form-control" id="name" placeholder="Max 140 Characters"/>
+						<input name="message" type="text" class="form-control" id="name" placeholder="Max 140 Characters"/>
 					</div>	
 			<div class="submit-button">
 			SUBMIT
