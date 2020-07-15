@@ -17,8 +17,9 @@ const TeamPage = () => {
             source_url
             localFile {
               childImageSharp {
-                fluid(maxWidth: 300, maxHeight: 200) {
-                  srcSet
+                fluid {
+					...GatsbyImageSharpFluid
+					src
                 }
               }
             }
@@ -45,7 +46,7 @@ allWordpressAcfTeam{
 			<div class="inner-container">
 				<div class="member-container">
 					<div class="member-photo">
-					<img src={data.allWordpressWpTeam.edges[2].node.featured_media.source_url}/></div>
+					<img alt="member" src={data.allWordpressWpTeam.edges[2].node.featured_media.localFile.childImageSharp.fluid.src}/></div>
 					<div class="member-text">
 						<span class="member-name">{data.allWordpressWpTeam.edges[2].node.title}</span>
 						<span class="member-role">{data.allWordpressAcfTeam.edges[2].node.acf.job_title}</span>
@@ -62,11 +63,11 @@ allWordpressAcfTeam{
 						</span>
 					</div>
 					<div class="member-photo">
-					<img src={data.allWordpressWpTeam.edges[1].node.featured_media.source_url}/></div>
+					<img alt="member" src={data.allWordpressWpTeam.edges[1].node.featured_media.localFile.childImageSharp.fluid.src}/></div>
 				</div>
 				<div class="member-container">
 					<div class="member-photo">
-					<img src={data.allWordpressWpTeam.edges[0].node.featured_media.source_url}/></div>
+					<img alt="member" src={data.allWordpressWpTeam.edges[0].node.featured_media.localFile.childImageSharp.fluid.src}/></div>
 					<div class="member-text">
 						<span class="member-name">{data.allWordpressWpTeam.edges[0].node.title}</span>
 						<span class="member-role">{data.allWordpressAcfTeam.edges[0].node.acf.job_title}</span>

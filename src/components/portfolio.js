@@ -1,8 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 //import Link from "gatsby-link"
-import Img from "gatsby-image"
-//import galleryStyles from "./gallery.module.scss"
+//import Img from "gatsby-image"
 
 const Portfolio = () => {
   const data = useStaticQuery(graphql`
@@ -15,9 +14,9 @@ const Portfolio = () => {
               source_url
               localFile {
                 childImageSharp {
-                  fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid_withWebp
-                    srcSet
+                  fluid {
+                    ...GatsbyImageSharpFluid
+					         src
                   }
                 }
               }
@@ -44,7 +43,7 @@ const Portfolio = () => {
                     .localFile.childImageSharp.fluid
                 }
               /> */}
-              <img src={data.allWordpressWpPortfolioHome.edges[5].node.featured_media.source_url} alt="logo"></img>
+              <img src={data.allWordpressWpPortfolioHome.edges[5].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
             </div>
             <div class="brand-box">
               {/* <Img
@@ -54,7 +53,7 @@ const Portfolio = () => {
                     .localFile.childImageSharp.fluid
                 }
               /> */}
-              <img src={data.allWordpressWpPortfolioHome.edges[4].node.featured_media.source_url} alt="logo"></img>
+              <img src={data.allWordpressWpPortfolioHome.edges[4].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
             </div>
 			<div class="brand-box">
               {/* <Img
@@ -64,7 +63,7 @@ const Portfolio = () => {
                     .localFile.childImageSharp.fluid
                 }
               /> */}
-              <img src={data.allWordpressWpPortfolioHome.edges[3].node.featured_media.source_url} alt="logo"></img>
+              <img src={data.allWordpressWpPortfolioHome.edges[3].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
             </div>
 			<div class="brand-box">
               {/* <Img
@@ -74,7 +73,7 @@ const Portfolio = () => {
                     .localFile.childImageSharp.fluid
                 }
               /> */}
-              <img src={data.allWordpressWpPortfolioHome.edges[2].node.featured_media.source_url} alt="logo"></img>
+              <img src={data.allWordpressWpPortfolioHome.edges[2].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
             </div>
 			<div class="brand-box">
               {/* <Img
@@ -84,7 +83,7 @@ const Portfolio = () => {
                     .localFile.childImageSharp.fluid
                 }
               /> */}
-              <img src={data.allWordpressWpPortfolioHome.edges[1].node.featured_media.source_url} alt="logo"></img>
+              <img src={data.allWordpressWpPortfolioHome.edges[1].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
             </div>
 			<div class="brand-box">
               {/* <Img
@@ -94,7 +93,7 @@ const Portfolio = () => {
                     .localFile.childImageSharp.fluid
                 }
               /> */}
-              <img src={data.allWordpressWpPortfolioHome.edges[0].node.featured_media.source_url} alt="logo"></img>
+              <img src={data.allWordpressWpPortfolioHome.edges[0].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
             </div>
           </div>
           <a href="portfolio.html">

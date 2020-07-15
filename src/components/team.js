@@ -17,7 +17,7 @@ const Team = () => {
                 childImageSharp {
                   fluid(maxWidth: 300, maxHeight: 300) {
                     ...GatsbyImageSharpFluid
-                    srcSet
+					src
                   }
                 }
               }
@@ -45,7 +45,7 @@ const Team = () => {
                     .localFile.childImageSharp.fluid
                 }
               /> */}
-              <img  class="avatar" src={data.allWordpressWpTeamHome.edges[2].node.featured_media.source_url} alt="logo"></img>
+              <img  class="avatar" src={data.allWordpressWpTeamHome.edges[2].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
               <div class="name-cont">
                 <div class="name">Niklas Östberg</div>
                 <div class="role">Co-Founder delivery hero</div>
@@ -59,7 +59,7 @@ const Team = () => {
                     .localFile.childImageSharp.fluid
                 }
               /> */}
-              <img  class="avatar" src={data.allWordpressWpTeamHome.edges[1].node.featured_media.source_url} alt="logo"></img>
+              <img  class="avatar" src={data.allWordpressWpTeamHome.edges[1].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
 
               <div class="name-cont">
                 <div class="name">Mark Venema</div>
@@ -74,7 +74,7 @@ const Team = () => {
                     .localFile.childImageSharp.fluid
                 }
               /> */}
-              <img  class="avatar" src={data.allWordpressWpTeamHome.edges[0].node.featured_media.source_url} alt="logo"></img>
+              <img  class="avatar" src={data.allWordpressWpTeamHome.edges[0].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
               <div class="name-cont">
                 <div class="name">Duncan McIntyre</div>
                 <div class="role">VP Strategy</div>

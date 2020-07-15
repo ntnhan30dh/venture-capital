@@ -29,10 +29,10 @@ const Slideshow = () => {
               source_url
               localFile {
                 childImageSharp {
-                  fluid(maxWidth: 1500, maxHeight: 800) {
+                  fluid (maxWidth: 1500, maxHeight: 800){
                     ...GatsbyImageSharpFluid
-                    srcSet
-                  }
+                    src
+                          }
                 }
               }
             }
@@ -52,7 +52,7 @@ const Slideshow = () => {
               .childImageSharp.fluid
           }
         /> */}
-        <img src={data.allWordpressWpSlideshow.edges[2].node.featured_media.source_url} alt="logo"></img>
+        <img src={data.allWordpressWpSlideshow.edges[2].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
         </div>
         <div class="slide">
         {/* <Img
@@ -62,7 +62,7 @@ const Slideshow = () => {
               .childImageSharp.fluid
           }
         /> */}
-        <img src={data.allWordpressWpSlideshow.edges[1].node.featured_media.source_url} alt="logo"></img>
+        <img src={data.allWordpressWpSlideshow.edges[1].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
 
         </div>
         <div class="slide">
@@ -73,7 +73,7 @@ const Slideshow = () => {
               .childImageSharp.fluid
           }
         /> */}
-        <img src={data.allWordpressWpSlideshow.edges[0].node.featured_media.source_url} alt="logo"></img>
+        <img src={data.allWordpressWpSlideshow.edges[0].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
         </div>
       </Slider>
       </div>
