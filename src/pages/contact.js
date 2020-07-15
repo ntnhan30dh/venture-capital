@@ -6,32 +6,12 @@ import Layout from "../components/layout"
 
 const ContactPage = () => (
   <Layout>
-  <form name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
-  {/* <div id="contact" class="contact-page container">
+  <div id="contact" class="contact-page container">
 			<div class="contact-header">
 				<h1>LET'S GET IN TOUCH</h1>
 			</div>
 			<div class="inner-container">
-				<form class="form" name="contact" method="POST" data-netlify="true">
+				<form class="form" name="contact" method="POST" data-netlify="true" onSubmit="submit">
 					<div class="form-group">
 						<label for="name">MY NAME</label>
 						<input name="name" type="text" class="form-control" id="name" placeholder="Name Surname"/>
@@ -76,8 +56,9 @@ const ContactPage = () => (
 			SUBMIT
 			</button>
 				</form>
+			<input type="hidden" name="form-name" value="contact"/>
 			</div>
-		</div> */}
+		</div>
   </Layout>
 )
 
