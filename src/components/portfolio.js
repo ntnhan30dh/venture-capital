@@ -10,6 +10,7 @@ const Portfolio = () => {
         edges {
           node {
             title
+            wordpress_id
             featured_media {
               source_url
               localFile {
@@ -36,63 +37,21 @@ const Portfolio = () => {
           </div>
           <div class="portfolio-grid">
             <div class="brand-box">
-              {/* <Img
-                alt="logo"
-                fluid={
-                  data.allWordpressWpPortfolioHome.edges[5].node.featured_media
-                    .localFile.childImageSharp.fluid
-                }
-              /> */}
-              <img src={data.allWordpressWpPortfolioHome.edges[5].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
+              <img src={data.allWordpressWpPortfolioHome.edges.sort((a,b) => (a.node.wordpress_id > b.node.wordpress_id) ? 1 : ((b.node.wordpress_id > a.node.wordpress_id) ? -1 : 0))[5].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
             </div>
             <div class="brand-box">
-              {/* <Img
-                alt="logo"
-                fluid={
-                  data.allWordpressWpPortfolioHome.edges[4].node.featured_media
-                    .localFile.childImageSharp.fluid
-                }
-              /> */}
               <img src={data.allWordpressWpPortfolioHome.edges[4].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
             </div>
 			<div class="brand-box">
-              {/* <Img
-                alt="logo"
-                fluid={
-                  data.allWordpressWpPortfolioHome.edges[3].node.featured_media
-                    .localFile.childImageSharp.fluid
-                }
-              /> */}
               <img src={data.allWordpressWpPortfolioHome.edges[3].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
             </div>
 			<div class="brand-box">
-              {/* <Img
-                alt="logo"
-                fluid={
-                  data.allWordpressWpPortfolioHome.edges[2].node.featured_media
-                    .localFile.childImageSharp.fluid
-                }
-              /> */}
               <img src={data.allWordpressWpPortfolioHome.edges[2].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
             </div>
 			<div class="brand-box">
-              {/* <Img
-                alt="logo"
-                fluid={
-                  data.allWordpressWpPortfolioHome.edges[1].node.featured_media
-                    .localFile.childImageSharp.fluid
-                }
-              /> */}
               <img src={data.allWordpressWpPortfolioHome.edges[1].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
             </div>
 			<div class="brand-box">
-              {/* <Img
-                alt="logo"
-                fluid={
-                  data.allWordpressWpPortfolioHome.edges[0].node.featured_media
-                    .localFile.childImageSharp.fluid
-                }
-              /> */}
               <img src={data.allWordpressWpPortfolioHome.edges[0].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
             </div>
           </div>

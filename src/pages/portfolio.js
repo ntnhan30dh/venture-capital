@@ -38,7 +38,6 @@ const PortfolioPage = () => {
           }
         }
       }
-
       allWordpressAcfPages {
         edges {
           node {
@@ -67,7 +66,7 @@ const PortfolioPage = () => {
           </div>
           <div class="inner-container">
             <div class="portfolio-container">
-              {data.allWordpressWpPortfolio.edges.map(i => (
+              {data.allWordpressWpPortfolio.edges.sort((a,b) => (a.node.wordpress_id < b.node.wordpress_id) ? 1 : ((b.node.wordpress_id > a.node.wordpress_id) ? -1 : 0)).map(i => (
                 <div class="portfolio-brand">
                   <img alt="logo" src={i.node.featured_media.localFile.childImageSharp.fluid.src}/>
                   <div class="portfolio-overlay">
