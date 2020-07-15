@@ -11,7 +11,9 @@ const ContactPage = () => (
 				<h1>LET'S GET IN TOUCH</h1>
 			</div>
 			<div class="inner-container">
-				<form class="form" name="contact" method="POST" data-netlify="true" onSubmit="submit">
+			<form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+  <input type="hidden" name="bot-field" />
+  <input type="hidden" name="form-name" value="contact" />
 					<div class="form-group">
 						<label for="name">MY NAME</label>
 						<input name="name" type="text" class="form-control" id="name" placeholder="Name Surname"/>
