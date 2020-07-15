@@ -54,9 +54,9 @@ const ContactPage = () => (
 						<label for="message">MY MESSAGE</label>
 						<input name="message" type="text" class="form-control" id="name" placeholder="Max 140 Characters"/>
 					</div>	
-			<div class="submit-button" role="button" type="submit">
+			<button class="submit-button"  type="submit">
 			SUBMIT
-			</div>
+			</button>
 				</form>
 			</div>
 		</div>
