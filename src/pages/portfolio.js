@@ -1,9 +1,5 @@
 import React from "react"
-//import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-//import SEO from "../components/seo"
-import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 
 const PortfolioPage = () => {
@@ -52,10 +48,10 @@ const PortfolioPage = () => {
   `)
   return (
     <Layout>
-      <div id="portfolio-page" class="portfolio-page container">
-        <div class="inner-container">
+      <div id="portfolio-page" className="portfolio-page container">
+        <div className="inner-container">
           <h2>Our Portfolio</h2>
-          <div class="portfolio-text">
+          <div className="portfolio-text">
             <p>
               {
                 data.allWordpressAcfPages.edges.filter(
@@ -64,13 +60,13 @@ const PortfolioPage = () => {
               }
             </p>
           </div>
-          <div class="inner-container">
-            <div class="portfolio-container">
+          <div className="inner-container">
+            <div className="portfolio-container">
               {data.allWordpressWpPortfolio.edges.sort((a,b) => (a.node.wordpress_id < b.node.wordpress_id) ? 1 : ((b.node.wordpress_id > a.node.wordpress_id) ? -1 : 0)).map(i => (
-                <div class="portfolio-brand">
+                <div className="portfolio-brand">
                   <img alt="logo" src={i.node.featured_media.localFile.childImageSharp.fluid.src}/>
-                  <div class="portfolio-overlay">
-                    <div class="overlay-text">
+                  <div className="portfolio-overlay">
+                    <div className="overlay-text_portfolio">
                       {
                         data.allWordpressAcfPortfolio.edges.filter(
                           x => x.node.wordpress_id === i.node.wordpress_id

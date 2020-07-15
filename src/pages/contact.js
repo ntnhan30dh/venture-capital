@@ -1,61 +1,59 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 //import SEO from "../components/seo"
 
 const ContactPage = () => (
   <Layout>
-  <div id="contact" class="contact-page container">
-			<div class="contact-header">
+  <div id="contact" className="contact-page container">
+			<div className="contact-header">
 				<h1>LET'S GET IN TOUCH</h1>
 			</div>
-			<div class="inner-container">
-				<form class="form" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+			<div className="inner-container">
+				<form className="form" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
 				<input type="hidden" name="bot-field" />
   <input type="hidden" name="form-name" value="contact" />
-					<div class="form-group">
+					<div className="form-group">
 						<label for="name">MY NAME</label>
-						<input name="name" type="text" class="form-control" id="name" placeholder="Name Surname"/>
+						<input name="name" type="text" className="form-control" id="name" placeholder="Name Surname"/>
 					</div>
-					<div class="form-group">
+					<div className="form-group">
 						<label for="email">MY EMAIL</label>
-						<input name="email" type="text" class="form-control" id="email" placeholder="my@email.com"/>
+						<input name="email" type="text" className="form-control" id="email" placeholder="my@email.com"/>
 					</div>
-					<div class="form-group">
+					<div className="form-group">
 						<label for="company">NAME OF MY COMPANY</label>
-						<input name="company" type="text" class="form-control" id="company" placeholder="Company Name"/>
+						<input name="company" type="text" className="form-control" id="company" placeholder="Company Name"/>
 					</div>
-					<div class="form-group">
+					<div className="form-group">
 						<label for="company_description">DESCRIPTION OF MY COMPANY</label>
-						<input name="company_description" type="text" class="form-control" id="company_description" placeholder="Max 140 characters"/>
+						<input name="company_description" type="text" className="form-control" id="company_description" placeholder="Max 140 characters"/>
 					</div>
-					<div class="form-group">
+					<div className="form-group">
 						<label for="vertical_industry">THE VERTICAL OR INDUSTRY I AM TARGETING</label>
-						<input name="vertical_industry" type="text" class="form-control" id="vertical_industry" placeholder="Delivery, Foodtech, Fintech..."/>
+						<input name="vertical_industry" type="text" className="form-control" id="vertical_industry" placeholder="Delivery, Foodtech, Fintech..."/>
 					</div>
-					<div class="form-group">
+					<div className="form-group">
 						<label for="website">MY WEBSITE</label>
-						<input name="website" type="text" class="form-control" id="website" placeholder="www.mywebsite.com"/>
+						<input name="website" type="text" className="form-control" id="website" placeholder="www.mywebsite.com"/>
 					</div>
-					<div class="form-group">
+					<div className="form-group">
 						<label for="company_stage">MY COMPANY IS IN STAGE</label>
-						<input name="company_stage" type="text" class="form-control" id="company_stage" placeholder="Stage of the company"/>
+						<input name="company_stage" type="text" className="form-control" id="company_stage" placeholder="Stage of the company"/>
 					</div>
-					<div class="form-group">
+					<div className="form-group">
 						<label for="raising">I AM RAISING (€) </label>
-						<input name="raising" type="text" class="form-control" id="raising" placeholder="my@email.com"/>
+						<input name="raising" type="text" className="form-control" id="raising" placeholder="my@email.com"/>
 					</div>
-					<div class="form-group">
+					<div className="form-group">
 						<label for="location">MY COMPANY IS LOCATED IN</label>
-						<input name="location" type="text" class="form-control" id="location" placeholder="Country"/>
+						<input name="location" type="text" className="form-control" id="location" placeholder="Country"/>
 					</div>
-					<div class="form-group">
+					<div className="form-group">
 						<label for="message">MY MESSAGE</label>
-						<input name="message" type="text" class="form-control" id="message" placeholder="Max 140 Characters"/>
+						<input name="message" type="text" className="form-control" id="message" placeholder="Max 140 Characters"/>
 					</div>	
-			<div class="submit-button"  role="button" type="submit">
-			<button class="button"  type="submit">
+			<div className="submit-button"  role="button" type="submit">
+			<button className="button"  type="submit">
 			SUBMIT
 			</button>
 			</div>

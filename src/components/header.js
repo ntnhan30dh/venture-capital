@@ -1,5 +1,5 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import React from "react"
 
 import hamburger from "../images/hamburger.svg"
@@ -17,8 +17,8 @@ class Header extends React.Component{
 		const menuActive = this.state.showMenu ? 'is-inactive' : '';
 		return (
   <nav id="navbar" className="nav" >
-		<div id="logo-cont" class="logo-cont cont">
-			<picture id="logo" class="logo">
+		<div id="logo-cont" className="logo-cont cont">
+			<picture id="logo" className="logo">
 				<Link to="/"><img src={logo} height="45" alt="logo"/>
 				</Link></picture>
 			<div id="nav-menu" className={`nav-menu ${menuActive}`}>
@@ -27,9 +27,9 @@ class Header extends React.Component{
 				<Link to="/strengths"><div id="navstrengths" class="nav-element">OUR STRENGTHS</div></Link>
 				<Link to="/vision"><div id="navvision" class="nav-element">OUR VISION</div></Link>
 				<Link to="/contact">
-					<div id="navcontact" class="nav-element">CONTACT</div></Link>
+					<div id="navcontact" className="nav-element">CONTACT</div></Link>
 			</div>
-			<img id="hamburger" class="hamburger" src={hamburger} onClick={this.toggleMenu}/>
+			<img id="hamburger" className="hamburger" src={hamburger} onClick={this.toggleMenu} alt="logo"/>
 		</div>
 	</nav>
 		)

@@ -27,20 +27,20 @@ const VisionPage = () => {
 	`)
 	return(
   <Layout>
-  <div class="vision section-title"><h2>Investment Philosophy</h2>
+  <div className="vision section-title"><h2>Investment Philosophy</h2>
 						<p>{data.allWordpressAcfPages.edges.filter(i=>i.node.wordpress_id===97)[0].node.acf.text} </p>
 	  </div>
-		<div id="vision" class="vision-page container">
-			<div class=" inner-container">
+		<div id="vision" className="vision-page container">
+			<div className=" inner-container">
 
-					<div class="philosophy-grid">
-						<div class="philosophy-element">
-							<div class="philosophy-icon">
+					<div className="philosophy-grid">
+						<div className="philosophy-element">
+							<div className="philosophy-icon">
 								
-							<div class="philosophy-text">
-							ON DEMAND</div><img src={dpurple}/>
+							<div className="philosophy-text">
+							ON DEMAND</div><img alt="logo" src={dpurple}/>
 							</div>
-							<div class="philosophy-desc">
+							<div className="philosophy-desc">
 								<strong>Enabling the <br/>
 								On-Demand Economy
 								</strong><br/><br/>
@@ -52,13 +52,13 @@ const VisionPage = () => {
 • Catering<br/>
 							</div>
 						</div>
-						<div class="philosophy-element">
-							<div class="philosophy-text">
+						<div className="philosophy-element">
+							<div className="philosophy-text">
 								FOOD &amp; KITCHEN 2.0
 							</div>
-							<div class="philosophy-icon">
-								<img src={xpurple}/></div>
-							<div class="philosophy-desc">
+							<div className="philosophy-icon">
+								<img alt="logo" src={xpurple}/></div>
+							<div className="philosophy-desc">
 								<strong>Outstanding
 									Tech-Capabilities</strong><br/><br/>
 
@@ -67,13 +67,13 @@ const VisionPage = () => {
 									• Supply-Chain Optimization<br/>
 							</div>
 						</div>	
-						<div class="philosophy-element">
+						<div className="philosophy-element">
 							
-							<div class="philosophy-text">AI-ENABLED TECHNOLOGY</div>
-							<div class="philosophy-icon">
-							<img src={vpurple}/>
+							<div className="philosophy-text">AI-ENABLED TECHNOLOGY</div>
+							<div className="philosophy-icon">
+							<img alt="logo" src={vpurple}/>
 							</div>
-							<div class="philosophy-desc">
+							<div className="philosophy-desc">
 								<strong>Shaping How We Consume Food</strong><br/><br/>
 
 									• Food 2.0: Meat Substitutes<br/>
@@ -85,14 +85,14 @@ const VisionPage = () => {
 • Packaging<br/>
 							</div>
 						</div>
-						<div class="philosophy-element">
+						<div className="philosophy-element">
 							
-							<div class="philosophy-text">
+							<div className="philosophy-text">
 							FINTECH
 							</div>
-							<div class="philosophy-icon">
-    <img src={cpurple}/></div>
-							<div class="philosophy-desc">
+							<div className="philosophy-icon">
+    <img alt="logo" src={cpurple}/></div>
+							<div className="philosophy-desc">
 								<strong>At The Forefront of the Fintech Revolution
 </strong><br/><br/>
 

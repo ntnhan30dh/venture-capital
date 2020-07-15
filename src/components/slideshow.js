@@ -1,12 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-//import Link from "gatsby-link"
-import Img from "gatsby-image"
-//import styled from '@emotion/styled';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import slideshowStyles from "./slideshow.module.scss"
 
 const Slideshow = () => {
   const settings = {
@@ -42,37 +38,15 @@ const Slideshow = () => {
     }
   `)
   return (
-    <div id="slideshow" class="slideshow slider container"> 
+    <div id="slideshow" className="slideshow slider container"> 
     <Slider {...settings} >
-        <div class="slide">
-        {/* <Img
-          alt=""
-          fluid={
-            data.allWordpressWpSlideshow.edges[2].node.featured_media.localFile
-              .childImageSharp.fluid
-          }
-        /> */}
+        <div className="slide">       
         <img src={data.allWordpressWpSlideshow.edges[2].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
         </div>
-        <div class="slide">
-        {/* <Img
-          alt=""
-          fluid={
-            data.allWordpressWpSlideshow.edges[1].node.featured_media.localFile
-              .childImageSharp.fluid
-          }
-        /> */}
+        <div className="slide">       
         <img src={data.allWordpressWpSlideshow.edges[1].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
-
         </div>
-        <div class="slide">
-        {/* <Img
-          alt=""
-          fluid={
-            data.allWordpressWpSlideshow.edges[0].node.featured_media.localFile
-              .childImageSharp.fluid
-          }
-        /> */}
+        <div className="slide">
         <img src={data.allWordpressWpSlideshow.edges[0].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
         </div>
       </Slider>

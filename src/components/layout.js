@@ -36,12 +36,12 @@ const Layout = ({ children }) => {
           padding: 0,
         }}
       >
-        <div  id="wrapper" class="wrapper" >{children}</div>
-        <footer id="footer" class="footer container">
-        <Link to="/contact"><div class="cta-button">
+        <div  id="wrapper" className="wrapper" >{children}</div>
+        <footer id="footer" className="footer container">
+        <Link to="/contact"><div className="cta-button">
 			FIND OUT MORE
 				</div></Link>
-			<div class="footer-footer">
+			<div className="footer-footer">
 			Copyright© 2020 Delivery Hero SE<br/>
 			<br/>
 			Here impressum and disclaimers as by law.

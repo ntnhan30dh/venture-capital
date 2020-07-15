@@ -7,51 +7,46 @@ import d_mobile from "../images/d-mobile.svg"
 import x_mobile from "../images/x-mobile.svg"
 import c_mobile from "../images/c-mobile.svg"
 import v_mobile from "../images/v-mobile.svg"
-//import { graphql, useStaticQuery } from "gatsby"
-//import Link from "gatsby-link"
-//import Img from "gatsby-image"
-//import galleryStyles from "./gallery.module.scss"
+import Link from "gatsby-link"
+
 
 const Philosophy = () => {
-//   const data = useStaticQuery(graphql`
-    
-//   `)
   return (
     
-		<div id="philosophy" class="philosophy container">
-			<div class="philosophy inner-container">
-				<div class="section-title"><h2>Investment Philosophy</h2></div>
-					<div class="philosophy-grid">
-						<div class="philosophy-element">
-							<div class="philosophy-icon">
-								<img class="nomobile" src={icon_d}/>
-								<img class="mobile" src={d_mobile}/>
+		<div id="philosophy" className="philosophy container">
+			<div className="philosophy inner-container">
+				<div className="section-title"><h2>Investment Philosophy</h2></div>
+					<div className="philosophy-grid">
+						<div className="philosophy-element">
+							<div className="philosophy-icon">
+								<img alt="logo" className="nomobile" src={icon_d}/>
+								<img alt="logo" className="mobile" src={d_mobile}/>
 							</div>
-							<div class="philosophy-text">
+							<div className="philosophy-text">
 							ON DEMAND</div>
 						</div>
-						<div class="philosophy-element">
-							<div class="philosophy-icon">
-								<img class="nomobile" src={icon_x}/>
-								<img class="mobile" src={x_mobile}/></div>
-							<div class="philosophy-text">
+						<div className="philosophy-element">
+							<div className="philosophy-icon">
+								<img alt="logo" className="nomobile" src={icon_x}/>
+								<img alt="logo" className="mobile" src={x_mobile}/></div>
+							<div className="philosophy-text">
 								FOOD &amp; KITCHEN 2.0</div>
 						</div>	
-						<div class="philosophy-element">
-							<div class="philosophy-icon">
-								<img class="nomobile" src={icon_v}/>
-								<img class="mobile" src={v_mobile}/></div>
-							<div class="philosophy-text">AI ENABLED TECHNOLOGY</div>
+						<div className="philosophy-element">
+							<div className="philosophy-icon">
+								<img alt="logo" className="nomobile" src={icon_v}/>
+								<img alt="logo" className="mobile" src={v_mobile}/></div>
+							<div className="philosophy-text">AI ENABLED TECHNOLOGY</div>
 						</div>
-						<div class="philosophy-element">
-							<div class="philosophy-icon">
-								<img class="nomobile" src={icon_c}/>
-								<img class="mobile" src={c_mobile}/></div>
-							<div class="philosophy-text">
+						<div className="philosophy-element">
+							<div className="philosophy-icon">
+								<img alt="logo" className="nomobile" src={icon_c}/>
+								<img alt="logo" className="mobile" src={c_mobile}/></div>
+							<div className="philosophy-text">
 							FINTECH</div>
 						</div>
 					</div>
-				<a href="vision.html"><div class="link">EXPLORE OUR PHILOSOPHY &gt;</div></a>
+				<Link to="/vision" href="vision.html"><div className="link">EXPLORE OUR PHILOSOPHY &gt;</div></Link>
 			</div>				
 		</div>
   )
