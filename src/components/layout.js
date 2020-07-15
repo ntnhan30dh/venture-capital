@@ -12,6 +12,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import "../styles/index.scss"
+import { Link } from "gatsby"
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -36,9 +38,9 @@ const Layout = ({ children }) => {
       >
         <div  id="wrapper" class="wrapper" >{children}</div>
         <footer id="footer" class="footer container">
-        <a href="contact.html"><div class="cta-button">
+        <Link to="/contact"><div class="cta-button">
 			FIND OUT MORE
-				</div></a>
+				</div></Link>
 			<div class="footer-footer">
 			Copyright© 2020 Delivery Hero SE<br/>
 			<br/>

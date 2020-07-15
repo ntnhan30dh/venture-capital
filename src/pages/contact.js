@@ -52,7 +52,7 @@ const ContactPage = () => (
 						<label for="name">MY MESSAGE</label>
 						<input name="message" type="text" class="form-control" id="name" placeholder="Max 140 Characters"/>
 					</div>	
-			<div class="submit-button">
+			<div class="submit-button" role="button">
 			SUBMIT
 			</div>
 				</form>
