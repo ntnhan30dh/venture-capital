@@ -3,7 +3,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
 
-
 const Team = () => {
   const data = useStaticQuery(graphql`
     {
@@ -16,7 +15,7 @@ const Team = () => {
               source_url
               localFile {
                 childImageSharp {
-                  fluid(maxWidth: 300, maxHeight: 300) {
+                  fluid(maxWidth: 240, maxHeight: 236) {
                     ...GatsbyImageSharpFluid
 					src
                   }
@@ -58,6 +57,7 @@ const Team = () => {
             </div>{" "}
             <div className="member-cont">
               <img  className="avatar" src={data.allWordpressWpTeamHome.edges[1].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
+              {/* <img  className="avatar" src={mark} alt="logo"></img> */}
               <div className="name-cont">
               <div className="name">{data.allWordpressWpTeamHome.edges[1].node.title}</div>
                 <div className="role">{data.allWordpressAcfTeamHome.edges[1].node.acf.job_title}</div>
