@@ -8,10 +8,10 @@ import logo from "../images/logo.svg"
 class Header extends React.Component{
 	state = { showMenu: false }
 	  toggleMenu = () => {
-		  console.log(this.state.showMenu)
 		this.setState({
 		  showMenu: !this.state.showMenu
 		})
+		this.props.toggleNudgeHandle()
 	  }
 	render() {
 		const menuActive = this.state.showMenu ? 'is-inactive' : '';
@@ -29,7 +29,9 @@ class Header extends React.Component{
 				<Link to="/contact">
 					<div id="navcontact" className="nav-element">CONTACT</div></Link>
 			</div>
-			<img id="hamburger" className="hamburger" src={hamburger} onClick={this.toggleMenu} alt="logo"/>
+			<div onClick={this.toggleMenu}>
+			<img id="hamburger" className="hamburger" src={hamburger} alt="logo"/>
+			</div>
 		</div>
 	</nav>
 		)

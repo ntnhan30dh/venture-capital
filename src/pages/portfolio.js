@@ -1,6 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
+
 
 const PortfolioPage = () => {
   const data = useStaticQuery(graphql`
@@ -66,12 +68,9 @@ const PortfolioPage = () => {
                 <div className="portfolio-brand">
                   <img alt="logo" src={i.node.featured_media.localFile.childImageSharp.fluid.src}/>
                   <div className="portfolio-overlay">
-                    <div className="overlay-text_portfolio">
-                      {
-                        data.allWordpressAcfPortfolio.edges.filter(
+                    <div className="overlay-text_portfolio" dangerouslySetInnerHTML={{__html:data.allWordpressAcfPortfolio.edges.filter(
                           x => x.node.wordpress_id === i.node.wordpress_id
-                        )[0].node.acf.portfolio_text
-                      }
+                        )[0].node.acf.portfolio_text}}>
                     </div>
                   </div>
                 </div>
@@ -80,6 +79,16 @@ const PortfolioPage = () => {
           </div>
         </div>
       </div>
+      <footer id="footer" className="footer container">
+        <Link to="/contact"><div className="cta-button">
+			FIND OUT MORE
+				</div></Link>
+			<div className="footer-footer">
+			Copyright© 2020 Delivery Hero SE<br/>
+			<br/>
+			Here impressum and disclaimers as by law.
+		</div>
+        </footer> 
     </Layout>
   )
 }

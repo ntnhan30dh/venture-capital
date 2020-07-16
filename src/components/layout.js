@@ -5,14 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
 import "../styles/index.scss"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 
 
 const Layout = ({ children }) => {
@@ -26,9 +26,16 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const [nudge, setNudge] = useState(false);
+  const toggleNudge=()=>{
+    setNudge(!nudge)
+    console.log("nudge",nudge)
+  }
+  const wrapNudge = nudge? 'nudge' : '';
+
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.title} toggleNudgeHandle={toggleNudge}/>
       <div
         style={{
           margin: `0 auto`,
@@ -36,17 +43,7 @@ const Layout = ({ children }) => {
           padding: 0,
         }}
       >
-        <div  id="wrapper" className="wrapper" >{children}</div>
-        <footer id="footer" className="footer container">
-        <Link to="/contact"><div className="cta-button">
-			FIND OUT MORE
-				</div></Link>
-			<div className="footer-footer">
-			Copyright© 2020 Delivery Hero SE<br/>
-			<br/>
-			Here impressum and disclaimers as by law.
-		</div>
-        </footer>
+      <div  id="wrapper" className={`wrapper ${wrapNudge}`} >{children}</div>
       </div>
     </>
   )

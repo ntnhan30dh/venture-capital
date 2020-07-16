@@ -1,5 +1,5 @@
 import React from "react"
-//import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 //import SEO from "../components/seo"
@@ -114,6 +114,16 @@ const TeamPage = () => {
           </div>
         </div>
       </div>
+      <footer id="footer" className="footer container">
+        <Link to="/contact"><div className="cta-button">
+			FIND OUT MORE
+				</div></Link>
+			<div className="footer-footer">
+			Copyright© 2020 Delivery Hero SE<br/>
+			<br/>
+			Here impressum and disclaimers as by law.
+		</div>
+        </footer> 
     </Layout>
   )
 }

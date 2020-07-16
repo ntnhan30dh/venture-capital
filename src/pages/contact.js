@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 //import SEO from "../components/seo"
 
+
 const ContactPage = () => (
   <Layout>
   <div id="contact" className="contact-page container">
@@ -42,7 +43,7 @@ const ContactPage = () => (
 					</div>
 					<div className="form-group">
 						<label for="raising">I AM RAISING (€) </label>
-						<input name="raising" type="text" className="form-control" id="raising" placeholder="my@email.com"/>
+						<input name="raising" type="text" className="form-control" id="raising" placeholder="amount in €"/>
 					</div>
 					<div className="form-group">
 						<label for="location">MY COMPANY IS LOCATED IN</label>
@@ -60,6 +61,15 @@ const ContactPage = () => (
 				</form>
 			</div>
 		</div>
+			<footer id="footer" className="footer container">
+       
+			<div className="footer-footer">
+			Copyright© 2020 Delivery Hero SE<br/>
+			<br/>
+			Here impressum and disclaimers as by law.
+		</div>
+        </footer>
+		
   </Layout>
 )
 
