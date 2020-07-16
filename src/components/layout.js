@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const [nudge, setNudge] = useState(false);
+  const [nudge, setNudge] = useState(true);
   const toggleNudge=()=>{
     setNudge(!nudge)
     console.log("nudge",nudge)
