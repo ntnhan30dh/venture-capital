@@ -35,7 +35,7 @@ const Strengths = () => {
 							<div className="strength-icon">
 								<img alt="logo" src={technology}/>
 							</div>
-							<div className="strength-description">BEST-IN-className TECHNOLOGY</div>
+							<div className="strength-description">BEST-IN-CLASS TECHNOLOGY</div>
 						</div>						
 						<div className="strength industry">
 							<div className="strength-icon">

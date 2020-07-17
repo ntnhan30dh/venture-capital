@@ -57,11 +57,11 @@ const StrengthsPage = () => (
             <div className="strength-icon">
               <img alt="logo" src={technology} />
             </div>
-            <div className="strength-description">BEST-IN-class TECHNOLOGY</div>{" "}
+            <div className="strength-description">BEST-IN-CLASS TECHNOLOGY</div>{" "}
             <div className="strength-overlay left">
               <div className="strength-icon-overlay">
                 <img alt="logo" src={technology} />
-                <div className="strength-description">BEST-IN-class TECHNOLOGY</div>
+                <div className="strength-description">BEST-IN-CLASS TECHNOLOGY</div>
               </div>
               <div className="overlay-text">
                 Creating an amazing takeaway experience through embracing
@@ -120,7 +120,7 @@ const StrengthsPage = () => (
                 </div>
               </div>
               <div className="overlay-text">
-                Delivery Hero takes great pride in backing world-className
+                Delivery Hero takes great pride in backing world-class
                 entrepreneurs with hyperlocal insights into each and every
                 market.
               </div>
