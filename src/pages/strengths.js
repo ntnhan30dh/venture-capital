@@ -29,7 +29,7 @@ const StrengthsPage = () => (
               </div>
               <div className="overlay-text">
                 Instant access to the largest global network of restaurants with
-                more than 500,000 restaurants on our platforms as well as the
+                more than 600,000 restaurants on our platforms as well as the
                 largest global sales force within the sector
               </div>
             </div>
@@ -42,7 +42,7 @@ const StrengthsPage = () => (
             <div className="strength-overlay left">
               <div className="strength-icon-overlay">
                 <img alt="logo" src={industry} />
-                <div className="strength-description">INDUSTRY EXPERT</div>
+                <div className="strength-description">INDUSTRY EXPERTS</div>
               </div>
               <div className="overlay-text">
                 Startups will have access to Delivery Hero's global industry
@@ -57,11 +57,11 @@ const StrengthsPage = () => (
             <div className="strength-icon">
               <img alt="logo" src={technology} />
             </div>
-            <div className="strength-description">BEST-IN-className TECHNOLOGY</div>{" "}
+            <div className="strength-description">BEST-IN-class TECHNOLOGY</div>{" "}
             <div className="strength-overlay left">
               <div className="strength-icon-overlay">
                 <img alt="logo" src={technology} />
-                <div className="strength-description">BEST-IN-className TECHNOLOGY</div>
+                <div className="strength-description">BEST-IN-class TECHNOLOGY</div>
               </div>
               <div className="overlay-text">
                 Creating an amazing takeaway experience through embracing

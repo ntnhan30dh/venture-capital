@@ -1,0 +1,32 @@
+.slick-arrow{
+	z-index: 10 !important;
+}
+
+.slick-prev, .slick-next{
+	width: auto !important;
+	height: auto !important;
+	margin: auto !important;
+	top: 90% !important;
+}
+
+.slick-next{
+	right: 20px !important;
+}
+
+.slick-prev{
+	left: 20px !important;
+}
+
+.slick-next:before {
+    font-size: 30px!important;
+    line-height: 20!important;
+    opacity: .25!important;
+    color: #343B46!important;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 30px!important;
+    line-height: 20!important;
+    opacity: .25!important;
+    color: #343B46!important;
+}

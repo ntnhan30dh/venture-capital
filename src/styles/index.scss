@@ -7,6 +7,7 @@
 @import "vision";
 @import "team";
 @import "contact";
+@import "arrow";
 
 /* CSS Document */
 
@@ -14,7 +15,6 @@
 /****************/
 /**** SET-UP ****/
 /****************/
-
 html, body {
 	overflow-x: hidden;
   }
@@ -431,6 +431,12 @@ h2{
 	line-height: 55px;
 	margin: auto;
 	transform: translateY(-28px);
+}
+
+h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #862F5D;
 }
 
 

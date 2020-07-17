@@ -12,9 +12,9 @@ const Slideshow = () => {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		touchThreshold: 1000,
-		dots: false,
-		prevArrow: false,
-		nextArrow: false
+		//dots: false,
+		// prevArrow: false,
+		// nextArrow: false
   };
   const data = useStaticQuery(graphql`
     {

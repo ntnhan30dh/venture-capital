@@ -32,6 +32,7 @@ const PortfolioPage = () => {
             wordpress_id
             acf {
               portfolio_text
+              portfolio_url
             }
           }
         }
@@ -54,6 +55,7 @@ const PortfolioPage = () => {
         <div className="inner-container">
           <h2>Our Portfolio</h2>
           <div className="portfolio-text">
+          <h3>We proudly supported category leaders across the globe</h3>
             <p>
               {
                 data.allWordpressAcfPages.edges.filter(
@@ -65,6 +67,9 @@ const PortfolioPage = () => {
           <div className="inner-container">
             <div className="portfolio-container">
               {data.allWordpressWpPortfolio.edges.sort((a,b) => (a.node.wordpress_id < b.node.wordpress_id) ? 1 : ((b.node.wordpress_id > a.node.wordpress_id) ? -1 : 0)).map(i => (
+            <a href={data.allWordpressAcfPortfolio.edges.filter(
+                          x => x.node.wordpress_id === i.node.wordpress_id
+                        )[0].node.acf.portfolio_url} target="_blank" rel="noreferrer">
                 <div className="portfolio-brand">
                   <img alt="logo" src={i.node.featured_media.localFile.childImageSharp.fluid.src}/>
                   <div className="portfolio-overlay">
@@ -74,6 +79,7 @@ const PortfolioPage = () => {
                     </div>
                   </div>
                 </div>
+            </a>
               ))}
             </div>
           </div>
