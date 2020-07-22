@@ -3,10 +3,7 @@ import Link  from 'gatsby-link'
 
 
   
-const Thank = () => {
-	
-
-	return(
+const ThanksPage = () => (
   <div>
     <div id="contact" className="contact-page container">
     
@@ -20,6 +17,6 @@ const Thank = () => {
       </div>
     </div>
   </div>
-)}
+)
 
-export default Thank
+export default ThanksPage
