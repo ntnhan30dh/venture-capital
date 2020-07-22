@@ -3,44 +3,44 @@ import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from "../components/layout"
 
-function encode(data) {
-  const formData = new FormData()
+// function encode(data) {
+//   const formData = new FormData()
 
-  for (const key of Object.keys(data)) {
-    formData.append(key, data[key])
-  }
+//   for (const key of Object.keys(data)) {
+//     formData.append(key, data[key])
+//   }
 
-  return formData
-}
+//   return formData
+// }
 
-export default function Contact() {
-  const [state, setState] = React.useState({})
+export default function Contact2() {
+  // const [state, setState] = React.useState({})
 
-  const handleChange = (e) => {
-    setState({ ...state, [e.target.name]: e.target.value })
-  }
+  // const handleChange = (e) => {
+  //   setState({ ...state, [e.target.name]: e.target.value })
+  // }
 
-  const handleAttachment = (e) => {
-    setState({ ...state, [e.target.name]: e.target.files[0] })
-  }
+  // const handleAttachment = (e) => {
+  //   setState({ ...state, [e.target.name]: e.target.files[0] })
+  // }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const form = e.target
-    fetch('/', {
-      method: 'POST',
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...state,
-      }),
-    })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch((error) => alert(error))
-  }
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   const form = e.target
+  //   fetch('/', {
+  //     method: 'POST',
+  //     body: encode({
+  //       'form-name': form.getAttribute('name'),
+  //       ...state,
+  //     }),
+  //   })
+  //     .then(() => navigate(form.getAttribute('action')))
+  //     .catch((error) => alert(error))
+  // }
 
   return (
-    {/* <Layout>
-      <h1>File Upload</h1>
+    <Layout>
+      {/* <h1>File Upload</h1>
       <form
         name="contact"
         method="post"
@@ -74,7 +74,7 @@ export default function Contact() {
           <button type="submit">Send</button>
         </p>
         <p>Note: multiple file uploads are not supported by Netlify at this time.</p>
-      </form>
-    </Layout> */}
+      </form> */}
+    </Layout>
   )
 }
