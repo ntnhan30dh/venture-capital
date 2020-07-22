@@ -3,7 +3,7 @@ import Link  from 'gatsby-link'
 
 
   
-const Thanks = () => {
+const Thank = () => {
 	
 
 	return(
@@ -22,4 +22,4 @@ const Thanks = () => {
   </div>
 )}
 
-export default Thanks
+export default Thank

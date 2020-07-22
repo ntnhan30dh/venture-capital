@@ -49,7 +49,7 @@ const handleSubmit = (e) => {
 		className="form"
 		name="contact"
         method="post"
-        action="/thanks/"
+        action="/thank"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
