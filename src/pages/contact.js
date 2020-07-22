@@ -53,6 +53,10 @@ const ContactPage = () => (
 						<label for="message">MY MESSAGE</label>
 						<input name="message" type="text" className="form-control" id="message" placeholder="Max 140 Characters"/>
 					</div>	
+					<div className="form-group">
+						<label for="file">UPLOAD A DOCUMENT</label>
+						<input name="file" type="file" className="form-control" id="file" placeholder="Max 140 Characters"/>
+					</div>
 			<div className="submit-button"  role="button" type="submit">
 			<button className="button"  type="submit">
 			SUBMIT
