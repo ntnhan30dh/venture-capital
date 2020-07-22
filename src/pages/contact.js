@@ -1,23 +1,65 @@
 import React from "react"
 import Layout from "../components/layout"
-//import SEO from "../components/seo"
+import { navigate } from 'gatsby-link'
 
-const ContactPage = () => (
+//import SEO from "../components/seo"
+function encode(data) {
+	const formData = new FormData()
+  
+	for (const key of Object.keys(data)) {
+	  formData.append(key, data[key])
+	}
+  
+	return formData
+  }
+  
+const ContactPage = () => {
+	const [state, setState] = React.useState({})
+
+  const handleChange = (e) => {
+    setState({ ...state, [e.target.name]: e.target.value })
+  }
+
+const handleAttachment = (e) => {
+  setState({ ...state, [e.target.name]: e.target.files[0] })
+}
+
+const handleSubmit = (e) => {
+  e.preventDefault()
+  const form = e.target
+  fetch('/', {
+	method: 'POST',
+	body: encode({
+	  'form-name': form.getAttribute('name'),
+	  ...state,
+	}),
+  })
+	.then(() => navigate(form.getAttribute('action')))
+	.catch((error) => alert(error))
+}
+
+	return(
   <Layout>
     <div id="contact" className="contact-page container">
       <div className="contact-header">
         <h1>LET'S GET IN TOUCH</h1>
       </div>
       <div className="inner-container">
-        {/* <form
-          className="form"
-          name="contact"
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
+        <form
+		className="form"
+		name="contact"
+        method="post"
+        action="/thanks/"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onSubmit={handleSubmit}
         >
-          <input type="hidden" name="bot-field" />
-          <input type="hidden" name="form-name" value="contact" />
+		<input type="hidden" name="form-name" value="contact" />
+        <p hidden>
+          <label>
+            Don’t fill this out: <input name="bot-field" onChange={handleChange} />
+          </label>
+        </p>
           <div className="form-group">
             <label for="name">MY NAME</label>
             <input
@@ -26,6 +68,7 @@ const ContactPage = () => (
               className="form-control"
               id="name"
               placeholder="Name Surname"
+			  onChange={handleChange}
             />
           </div>
           <div className="form-group">
@@ -36,6 +79,7 @@ const ContactPage = () => (
               className="form-control"
               id="email"
               placeholder="my@email.com"
+			  onChange={handleChange}
             />
           </div>
           <div className="form-group">
@@ -46,6 +90,7 @@ const ContactPage = () => (
               className="form-control"
               id="company"
               placeholder="Company Name"
+			  onChange={handleChange}
             />
           </div>
           <div className="form-group">
@@ -56,6 +101,7 @@ const ContactPage = () => (
               className="form-control"
               id="company_description"
               placeholder="Max 140 characters"
+			  onChange={handleChange}
             />
           </div>
           <div className="form-group">
@@ -68,6 +114,7 @@ const ContactPage = () => (
               className="form-control"
               id="vertical_industry"
               placeholder="Delivery, Foodtech, Fintech..."
+			  onChange={handleChange}
             />
           </div>
           <div className="form-group">
@@ -78,6 +125,7 @@ const ContactPage = () => (
               className="form-control"
               id="website"
               placeholder="www.mywebsite.com"
+			  onChange={handleChange}
             />
           </div>
           <div className="form-group">
@@ -88,6 +136,7 @@ const ContactPage = () => (
               className="form-control"
               id="company_stage"
               placeholder="Stage of the company"
+			  onChange={handleChange}
             />
           </div>
           <div className="form-group">
@@ -98,6 +147,7 @@ const ContactPage = () => (
               className="form-control"
               id="raising"
               placeholder="amount in €"
+			  onChange={handleChange}
             />
           </div>
           <div className="form-group">
@@ -108,6 +158,7 @@ const ContactPage = () => (
               className="form-control"
               id="location"
               placeholder="Country"
+			  onChange={handleChange}
             />
           </div>
           <div className="form-group">
@@ -118,18 +169,19 @@ const ContactPage = () => (
               className="form-control"
               id="message"
               placeholder="Max 140 Characters"
+			  onChange={handleChange}
             />
           </div>
           <div className="form-group">
             <label for="file">UPLOAD A DOCUMENT</label>
-            <input name="file" type="file" className="form-control" id="file" />
+            <input name="file" type="file" className="form-control" id="file" onChange={handleAttachment}/>
           </div>
           <div className="submit-button" role="button" type="submit">
             <button className="button" type="submit">
               SUBMIT
             </button>
           </div>
-        </form> */}
+        </form>
       </div>
     </div>
     <footer id="footer" className="footer container">
@@ -141,6 +193,6 @@ const ContactPage = () => (
       </div>
     </footer>
   </Layout>
-)
+)}
 
 export default ContactPage

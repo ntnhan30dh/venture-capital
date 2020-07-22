@@ -39,17 +39,17 @@ export default function Contact() {
   }
 
   return (
-    <Layout>
+    {/* <Layout>
       <h1>File Upload</h1>
       <form
         name="contact"
         method="post"
-       // action="/thanks/"
+        action="/thanks/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
       >
-        {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+        The `form-name` hidden field is required to support form submissions without JavaScript
         <input type="hidden" name="form-name" value="file-upload" />
         <p hidden>
           <label>
@@ -75,6 +75,6 @@ export default function Contact() {
         </p>
         <p>Note: multiple file uploads are not supported by Netlify at this time.</p>
       </form>
-    </Layout>
+    </Layout> */}
   )
 }
