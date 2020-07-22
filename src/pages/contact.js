@@ -9,7 +9,7 @@ const ContactPage = () => (
         <h1>LET'S GET IN TOUCH</h1>
       </div>
       <div className="inner-container">
-        <form
+        {/* <form
           className="form"
           name="contact"
           method="post"
@@ -129,7 +129,7 @@ const ContactPage = () => (
               SUBMIT
             </button>
           </div>
-        </form>
+        </form> */}
       </div>
     </div>
     <footer id="footer" className="footer container">
