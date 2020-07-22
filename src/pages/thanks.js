@@ -1,44 +1,25 @@
+import React from "react"
+import Link  from 'gatsby-link'
 
-import React from 'react'
-import { navigate } from 'gatsby-link'
-import Layout from "../components/layout"
 
-function encode(data) {
-  const formData = new FormData()
+  
+const Thanks = () => {
+	
 
-  for (const key of Object.keys(data)) {
-    formData.append(key, data[key])
-  }
+	return(
+  <div>
+    <div id="contact" className="contact-page container">
+    
+      <div className="inner-container">
+        <h1>Thank you!</h1>
+        <p>
+        Your form submit has been received.
+        </p>
+        <Link to="/"> Back to our site </Link>
 
-  return formData
-}
+      </div>
+    </div>
+  </div>
+)}
 
-export default function Contact() {
-  const [state, setState] = React.useState({})
-
-  const handleChange = (e) => {
-    setState({ ...state, [e.target.name]: e.target.value })
-  }
-
-  const handleAttachment = (e) => {
-    setState({ ...state, [e.target.name]: e.target.files[0] })
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const form = e.target
-    fetch('/', {
-      method: 'POST',
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...state,
-      }),
-    })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch((error) => alert(error))
-  }
-
-  return (
-    <h1>Thanks</h1>
-  )
-}
+export default Thanks
