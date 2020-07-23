@@ -34,7 +34,7 @@ const handleSubmit = (e) => {
 	  ...state,
 	}),
   })
-	.then(() => navigate(form.getAttribute('action')))
+	//.then(() => navigate(form.getAttribute('action')))
 	.catch((error) => alert(error))
 }
 
@@ -174,7 +174,7 @@ const handleSubmit = (e) => {
           </div>
           <div className="form-group">
             <label for="file">UPLOAD A DOCUMENT</label>
-            <input name="file" type="file" className="form-control" id="file" onChange={handleAttachment}/>
+            <input name="file" type="file" className="" id="file" onChange={handleAttachment}/>
           </div>
           <div className="submit-button" role="button" type="submit">
             <button className="button" type="submit">
