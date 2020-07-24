@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
+
 
 import Layout from "../components/layout"
 
@@ -11,11 +13,35 @@ import global from "../images/global.svg"
 import knowhow from "../images/knowhow.svg"
 import logo from "../images/logo.svg"
 
-const StrengthsPage = () => (
+const StrengthsPage = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allWordpressAcfPages {
+        edges {
+          node {
+            wordpress_id
+            acf {
+              text
+            }
+          }
+        }
+      }
+    }
+  `)
+  return (
   <Layout>
     <div id="strengths" className="strengths-page container">
       <div className="inner-container">
+        <div className="section-title">
         <h2>Why work with us</h2>
+        <p>
+              {
+                data.allWordpressAcfPages.edges.filter(
+                  i => i.node.wordpress_id === 65
+                )[0].node.acf.text
+              }
+            </p>
+        </div>
         <div className="strength-grid">
           <div className="strength network">
             <div className="strength-icon">
@@ -143,6 +169,6 @@ const StrengthsPage = () => (
 		</div>
         </footer> 
   </Layout>
-)
+)}
 
 export default StrengthsPage

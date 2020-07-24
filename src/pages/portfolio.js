@@ -56,13 +56,13 @@ const PortfolioPage = () => {
           <h2>Our Portfolio</h2>
           <div className="portfolio-text">
           <h3>We proudly supported category leaders across the globe</h3>
-            <p>
+            {/* <p>
               {
                 data.allWordpressAcfPages.edges.filter(
                   i => i.node.wordpress_id === 65
                 )[0].node.acf.text
               }
-            </p>
+            </p> */}
           </div>
           <div className="inner-container">
             <div className="portfolio-container">
