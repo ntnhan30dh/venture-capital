@@ -54,9 +54,7 @@ const StrengthsPage = () => {
                 <div className="strength-description">NETWORK</div>
               </div>
               <div className="overlay-text">
-                Instant access to the largest global network of restaurants with
-                more than 600,000 restaurants on our platforms as well as the
-                largest global sales force within the sector
+              Access to a vast global consumer base with more than 100 million active customers across Delivery Hero’s platforms. As well as instant access to the largest global network of restaurants with more than 600,000 restaurants on our platforms as well as the largest global sales force within the sector
               </div>
             </div>
           </div>
