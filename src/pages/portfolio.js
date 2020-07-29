@@ -55,7 +55,7 @@ const PortfolioPage = () => {
         <div className="inner-container">
           <h2>Our Portfolio</h2>
           <div className="portfolio-text">
-          <h3>We proudly supported category leaders across the globe</h3>
+          <h3>We are proud supporters of category leaders across the globe</h3>
             {/* <p>
               {
                 data.allWordpressAcfPages.edges.filter(
