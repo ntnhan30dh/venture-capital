@@ -68,7 +68,7 @@ const VisionPage = () => {
                 <img alt="logo" src={xpurple} />
               </div>
               <div className="philosophy-desc">
-                <strong>Shaping How We Consume Food</strong>
+                <strong>Shaping How We Consume and Prepare Food</strong>
                 <br />
                 <br />
                 • Food 2.0: Meat Substitutes
