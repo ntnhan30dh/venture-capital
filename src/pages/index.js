@@ -1,11 +1,17 @@
 import React from "react"
 import Layout from "../components/layout"
-import Slideshow from "../components/slideshow"
+// import Slideshow from "../components/slideshow"
 import Portfolio from "../components/portfolio"
 import Team from "../components/team"
-import Philosophy from "../components/philosophy"
+// import Philosophy from "../components/philosophy"
 import Strengths from "../components/strengthsComponent"
-import { Link } from "gatsby"
+
+import Mission from "../components/mission"
+import Story from "../components/story"
+import Focus from "../components/focus"
+import ContactComponent from "../components/contactComponent"
+
+
 
 
 
@@ -13,15 +19,19 @@ import { Link } from "gatsby"
 const IndexPage = () => {
   return (
     <Layout>
-		<Slideshow/>	
-		<Portfolio/>
-		<Team/>
-		<Philosophy/>
+		{/* <Slideshow/>	 */}
+		<Mission/>	
+		<Story/>	
+		<Focus/>	
 		<Strengths/>
+		<Team/>
+		<Portfolio/>
+		<ContactComponent/>
+		{/* <Philosophy/> */}
 		<footer id="footer" className="footer container">
-        <Link to="/contact"><div className="cta-button">
+        {/* <Link to="/contact"><div className="cta-button">
 			FIND OUT MORE
-				</div></Link>
+				</div></Link> */}
 			<div className="footer-footer">
 			Copyright© 2020 Delivery Hero SE<br/>
 			<br/>

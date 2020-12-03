@@ -16,47 +16,54 @@ const Strengths = () => {
     
 //   `)
   return (
-    <div id="strengths" className="strengths container">
-			<div className="strengths inner-container">
-					<div className="strength-grid">
-						<div className="strength network">
-							<div className="strength-icon">
-								<img alt="logo" src={network}/>
+    <div id="strengths" class="strengths container">
+			<div class="strengths inner-container">
+				<div class="section-title"><h2>OUR STRENGTHS</h2></div>
+					<div class="strength-grid">
+						<div class="strength network">
+							<div class="strength-icon">
+								<img src={network}/>
 							</div>
-							<div className="strength-description">NETWORK</div>
+							<div class="strength-description">NETWORK</div>
 						</div>
-						<div className="strength industry">
-							<div className="strength-icon">
-								<img alt="logo" src={industry}/>
+						<div class="strength industry">
+							<div class="strength-icon">
+								<img src={industry}/>
 							</div>
-							<div className="strength-description">INDUSTRY EXPERT</div>
+							<div class="strength-description">INDUSTRY EXPERT</div>
 						</div>						
-						<div className="strength industry">
-							<div className="strength-icon">
-								<img alt="logo" src={technology}/>
+						<div class="strength industry">
+							<div class="strength-icon">
+								<img src={technology}/>
 							</div>
-							<div className="strength-description">BEST-IN-CLASS TECHNOLOGY</div>
+							<div class="strength-description">BEST-IN-CLASS TECHNOLOGY</div>
 						</div>						
-						<div className="strength industry">
-							<div className="strength-icon">
-								<img alt="logo" src={execution}/>
+						<div class="strength industry">
+							<div class="strength-icon">
+								<img src={execution}/>
 							</div>
-							<div className="strength-description">PROVEN EXECUTION CAPABILITIES</div>
+							<div class="strength-description">PROVEN EXECUTION CAPABILITIES</div>
 						</div>						
-						<div className="strength industry">
-							<div className="strength-icon">
-								<img alt="logo" src={global}/>
+						<div class="strength industry">
+							<div class="strength-icon">
+								<img src={global}/>
 							</div>
-							<div className="strength-description">GLOBAL REACH</div>
+							<div class="strength-description">GLOBAL REACH</div>
 						</div>
-						<div className="strength industry">
-							<div className="strength-icon">
-								<img alt="logo" src={knowhow}/>
+						<div class="strength industry">
+							<div class="strength-icon">
+								<img src={knowhow}/>
 							</div>
-							<div className="strength-description">LOCAL KNOW-HOW AND GLOBAL KNOWLEDGE</div>
+							<div class="strength-description">LOCAL KNOW-HOW AND GLOBAL KNOWLEDGE</div>
 						</div>
-						<div className="logo-strength">
-							<img alt="logo" src={logo}/>
+						{/* <div class="strength industry">
+							<div class="strength-icon">
+								<img src={knowhow}/>
+							</div>
+							<div class="strength-description">LOCAL KNOW-HOW AND GLOBAL KNOWLEDGE</div>
+						</div> */}
+						<div class="logo-strength">
+							<img src={logo}/>
 						</div>
 					</div>
 			</div>				
