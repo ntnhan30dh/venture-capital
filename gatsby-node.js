@@ -12,7 +12,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const BlogPostTemplate = path.resolve("./src/templates/BlogPost.js")
   const result = await graphql(`
     {
-      allWordpressPost {
+      allWordpressWpNews {
         edges {
           node {
             slug
@@ -26,7 +26,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-  const BlogPosts = result.data.allWordpressPost.edges
+  const BlogPosts = result.data.allWordpressWpNews.edges
   BlogPosts.forEach(post => {
     createPage({
       path: `/post/${post.node.slug}`,

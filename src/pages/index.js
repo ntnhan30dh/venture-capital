@@ -9,6 +9,7 @@ import Strengths from "../components/strengthsComponent"
 import Mission from "../components/mission"
 import Story from "../components/story"
 import Focus from "../components/focus"
+import News from "../components/news"
 import ContactComponent from "../components/contactComponent"
 
 
@@ -26,6 +27,7 @@ const IndexPage = () => {
 		<Strengths/>
 		<Team/>
 		<Portfolio/>
+		<News/>
 		<ContactComponent/>
 		{/* <Philosophy/> */}
 		<footer id="footer" className="footer container">

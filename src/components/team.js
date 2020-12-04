@@ -8,6 +8,7 @@ const Team = () => {
       allWordpressWpTeam {
         edges {
           node {
+            date
             wordpress_id
             title
             featured_media {
@@ -43,53 +44,21 @@ const Team = () => {
         <h2>OUR TEAM</h2>
       </div>
       <div class="team-cont">
-        {data.allWordpressWpTeam.edges.sort((a,b) => (a.node.wordpress_id < b.node.wordpress_id) ? 1 : ((b.node.wordpress_id > a.node.wordpress_id) ? -1 : 0))
+        {data.allWordpressWpTeam.edges.sort((a,b) => (a.node.date < b.node.date) ? 1 : ((b.node.wordpress_id > a.node.wordpress_id) ? -1 : 0))
           .map(i => ( <div class="team-card">
           <div class="team-picture">
             <img src={i.node.featured_media.localFile
                     .childImageSharp.fluid.src} />
           </div>
           <div class="team-text">
-            <p class="name">Duncan McIntyre</p>
-            <p class="role">Managing Partner</p>
+            <p class="name">{i.node.title}</p>
+            <p class="role">{
+                    data.allWordpressAcfTeam.edges.filter(
+                      x => x.node.wordpress_id === i.node.wordpress_id
+                    )[0].node.acf.job_title
+                  }</p>
           </div>
         </div>))}
-        {/* <div class="team-card">
-          <div class="team-picture">
-            <img src="images/duncan-new.png" />
-          </div>
-          <div class="team-text">
-            <p class="name">Duncan McIntyre</p>
-            <p class="role">Managing Partner</p>
-          </div>
-        </div>
-        <div class="team-card">
-          <div class="team-picture">
-            <img src="../images/brendon-new.png" />
-          </div>
-          <div class="team-text">
-            <p class="name">Brendon Blacker</p>
-            <p class="role">Partner</p>
-          </div>
-        </div>
-        <div class="team-card">
-          <div class="team-picture">
-            <img src="images/miguel-new.png" />
-          </div>
-          <div class="team-text">
-            <p class="name">Miguel Suarez Gallo</p>
-            <p class="role">Principal</p>
-          </div>
-        </div>
-        <div class="team-card">
-          <div class="team-picture">
-            <img src="images/johee-new.png" />
-          </div>
-          <div class="team-text">
-            <p class="name">Joohee Kim</p>
-            <p class="role">Principal</p>
-          </div>
-        </div> */}
       </div>
     </div>
   )

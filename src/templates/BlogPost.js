@@ -1,94 +1,41 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import { Link } from "gatsby"
+import { graphql } from "gatsby"
+// import { Link } from "gatsby"
+import Layout from "../components/layout"
 
 
-const BlogPostTemplate = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allWordpressWpTeamHome {
-        edges {
-          node {
-            wordpress_id
-            title
-            featured_media {
-              source_url
-              localFile {
-                childImageSharp {
-                  fluid(maxWidth: 240, maxHeight: 236) {
-                    ...GatsbyImageSharpFluid
-					src
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      allWordpressAcfTeamHome{
-        edges{
-          node{
-            wordpress_id
-            acf{
-              job_title
-            }
-          }
-        }
-      }
-      allWordpressPost {
-        edges {
-          node {
-            slug
-            wordpress_id
-            title
-          }
-        }
-      }
-    }
-    
-  `)
+const BlogPostTemplate = ({ data }) => {
   return (
-    <div id="team" className="team container">
-      <div className="team bg-container"></div>
-      <div className="team inner-container">
-        <div className="team-left"></div>
-        <div className="team-right">
-          <div className="section-title">
-            <h2>Our Team</h2>
-            <h2>{data.allWordpressPost.edges[0].node.title}</h2>
-          </div>
-          <div className="team-grid">
-            <div className="member-cont">
-              <img  className="avatar" src={data.allWordpressWpTeamHome.edges.sort((a,b) => (a.node.wordpress_id < b.node.wordpress_id) ? 1 : ((b.node.wordpress_id > a.node.wordpress_id) ? -1 : 0))[2].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
-              <div className="name-cont">
-                <div className="name">{data.allWordpressWpTeamHome.edges[2].node.title}</div>
-                <div className="role">{data.allWordpressAcfTeamHome.edges.sort((a,b) => (a.node.wordpress_id < b.node.wordpress_id) ? 1 : ((b.node.wordpress_id > a.node.wordpress_id) ? -1 : 0))[2].node.acf.job_title}</div>
-              </div>
-            </div>{" "}
-            <div className="member-cont">
-              <img  className="avatar" src={data.allWordpressWpTeamHome.edges[1].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
-              {/* <img  className="avatar" src={mark} alt="logo"></img> */}
-              <div className="name-cont">
-              <div className="name">{data.allWordpressWpTeamHome.edges[1].node.title}</div>
-                <div className="role">{data.allWordpressAcfTeamHome.edges[1].node.acf.job_title}</div>
-              </div>
-            </div>
-            <div className="member-cont">
-              <img  className="avatar" src={data.allWordpressWpTeamHome.edges[0].node.featured_media.localFile.childImageSharp.fluid.src} alt="logo"></img>
-              <div className="name-cont">
-              <div className="name">{data.allWordpressWpTeamHome.edges[0].node.title}</div>
-                <div className="role">{data.allWordpressAcfTeamHome.edges[0].node.acf.job_title}</div>
-              </div>
-            </div>
-          </div>
-          <Link  to="/team">
-            <div className="link">MEET OUR TEAM &gt;</div>
-          </Link>
-          <div className="portfolio-right"></div>
-        </div>
-      </div>
-    </div>
+     <Layout>
+   <div className="news-single">
+     <div className="main-pic"></div>
+     <div className="main">
+       <p className="date">
+       </p>
+       <h1 className="title"></h1>
+       <div className="content"></div>
+     </div>
+     hi{data.wordpressWpNews.title}
+     <div
+      dangerouslySetInnerHTML={{ __html: data.wordpressWpNews.acf.content }}
+    />
+   </div>
+   </Layout>
   )
 }
 
 export default BlogPostTemplate
+
+export const query = graphql`
+  query($id: Int!) {
+    wordpressWpNews(wordpress_id: { eq: $id }) {
+      title
+      content
+      date(formatString: "MMMM DD, YYYY")
+      acf {
+        excerpt
+        content
+      }
+    }
+  }
+`

@@ -1,0 +1,58 @@
+$css4: true;
+$compatibility: true;
+//it is nessesary to define the variables in sass map instead of :root, for compatibility reasons.
+.news {
+  .news-card {
+    width: 30%;
+    .news-picture {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .news-text {
+      .date {
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: rgba(66, 77, 94, 0.3);
+      }
+      .excerpt {
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: -0.23px;
+        color: #343b46;
+      }
+    }
+  }
+  .bottom{
+    width: 100%;
+    text-align: center;
+    padding: 5% 0;
+    .button{
+      padding: 20px 60px ;
+    }
+  }
+}
+.news-single{
+
+    img{
+      max-width: 100%;
+      height: auto;
+    };
+    img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+   
+    
+  
+
+}
