@@ -1,7 +1,4 @@
-$css4: true;
-$compatibility: true;
-//it is nessesary to define the variables in sass map instead of :root, for compatibility reasons.
-.news {
+.newsComponent {
   .news-card {
     width: 30%;
     .news-picture {
@@ -30,29 +27,84 @@ $compatibility: true;
       }
     }
   }
-  .bottom{
+  .bottom {
     width: 100%;
     text-align: center;
     padding: 5% 0;
-    .button{
-      padding: 20px 60px ;
+    .button {
+      padding: 20px 60px;
     }
   }
 }
-.news-single{
+.news-single {
+  width: 100%;
+  margin-top: 104px;
+  .main-pic {
+    width: 100%;
+    height: 30vh;
+  }
+  .main {
+    .date {
+      font-size: 16px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.38;
+      letter-spacing: -0.2px;
+      color:rgba(66, 77, 94, 0.3);
+      padding-left: 10%;
+    }
 
-    img{
-      max-width: 100%;
-      height: auto;
-    };
-    img.alignright {float:right; margin:0 0 1em 1em}
-img.alignleft {float:left; margin:0 1em 1em 0}
-img.aligncenter {display: block; margin-left: auto; margin-right: auto}
-a img.alignright {float:right; margin:0 0 1em 1em}
-a img.alignleft {float:left; margin:0 1em 1em 0}
-a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
-   
-    
-  
+    .title {
+      font-size: 42px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.12;
+      letter-spacing: -0.49px;
+      color: #343b46;
+      padding:0 30% 0 10%;
+    }
+    .content {
+      padding: 3% 20%;
+      font-size: 18px;
+      img {
+        max-width: 100%;
+        height: auto;
+        padding: 20px 0;
+      }
+    }
+  }
 
+  // styling from Wordpress
+  img.alignright {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+  img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+  img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  a img.alignright {
+    float: right;
+    margin: 0 0 1em 1em;
+  }
+  a img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+  a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.news {
+  width: 100%;
+  margin-top: 104px;
 }

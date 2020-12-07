@@ -9,7 +9,7 @@ import Strengths from "../components/strengthsComponent"
 import Mission from "../components/mission"
 import Story from "../components/story"
 import Focus from "../components/focus"
-import News from "../components/news"
+import News from "../components/newsComponent"
 import ContactComponent from "../components/contactComponent"
 
 

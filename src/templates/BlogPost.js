@@ -2,25 +2,48 @@ import React from "react"
 import { graphql } from "gatsby"
 // import { Link } from "gatsby"
 import Layout from "../components/layout"
-
+import BackgroundImage from "gatsby-background-image"
 
 const BlogPostTemplate = ({ data }) => {
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ]
+  const date = new Date(data.wordpressWpNews.date)
   return (
-     <Layout>
-   <div className="news-single">
-     <div className="main-pic"></div>
-     <div className="main">
-       <p className="date">
-       </p>
-       <h1 className="title"></h1>
-       <div className="content"></div>
-     </div>
-     hi{data.wordpressWpNews.title}
-     <div
-      dangerouslySetInnerHTML={{ __html: data.wordpressWpNews.acf.content }}
-    />
-   </div>
-   </Layout>
+    <Layout>
+      <div className="news-single">
+        <BackgroundImage
+          className="main-pic"
+          fluid={
+            data.wordpressWpNews.featured_media.localFile.childImageSharp.fluid
+          }
+        />
+        <div className="main">
+          <p className="date">
+          -{monthNames[date.getMonth()]} {date.getDate()},{" "}
+                    {date.getFullYear()}
+          </p>
+          <h1 className="title">
+        {data.wordpressWpNews.title}
+          </h1>
+          <div className="content" dangerouslySetInnerHTML={{ __html: data.wordpressWpNews.acf.content }}>
+
+          </div>
+        </div>
+       
+      </div>
+    </Layout>
   )
 }
 
@@ -31,10 +54,20 @@ export const query = graphql`
     wordpressWpNews(wordpress_id: { eq: $id }) {
       title
       content
-      date(formatString: "MMMM DD, YYYY")
+      date
       acf {
         excerpt
         content
+      }
+      featured_media {
+        localFile {
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 1500) {
+              ...GatsbyImageSharpFluid_withWebp
+              src
+            }
+          }
+        }
       }
     }
   }
