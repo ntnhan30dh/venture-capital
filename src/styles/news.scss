@@ -50,7 +50,7 @@
       font-style: normal;
       line-height: 1.38;
       letter-spacing: -0.2px;
-      color:rgba(66, 77, 94, 0.3);
+      color: rgba(66, 77, 94, 0.3);
       padding-left: 10%;
     }
 
@@ -62,7 +62,7 @@
       line-height: 1.12;
       letter-spacing: -0.49px;
       color: #343b46;
-      padding:0 30% 0 10%;
+      padding: 0 30% 0 10%;
     }
     .content {
       padding: 3% 20%;
@@ -105,6 +105,83 @@
 }
 
 .news {
-  width: 100%;
   margin-top: 104px;
+  padding: 0 10%;
+  .top {
+    h1 {
+      font-size: 30px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.17;
+      letter-spacing: -0.35px;
+      color: #343b46;
+    }
+
+    .searchBox {
+      float: right;
+      input {
+        background: url(../images/search_icon.png) no-repeat right;
+        background-size: contain;
+        border: none;
+      }
+    }
+  }
+
+  .new-cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &::after {
+      content: "";
+      width: 30%;
+    }
+
+    .news-card {
+      width: 30%;
+      margin-top: 3%;
+      .news-picture {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .news-text {
+        .date {
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: rgba(66, 77, 94, 0.3);
+        }
+        .excerpt {
+          font-size: 20px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.2;
+          letter-spacing: -0.23px;
+          color: #343b46;
+        }
+      }
+    }
+  }
+  .showMore {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: #c3242c;
+    background-color: transparent;
+    border: none;
+  }
 }
