@@ -39,7 +39,7 @@ const Team = () => {
     }
   `)
   return (
-    <div class="team container">
+    <div id="team" class="team container">
       <div class="section-title">
         <h2>OUR TEAM</h2>
       </div>

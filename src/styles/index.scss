@@ -1,4 +1,9 @@
+
 @charset "UTF-8";
+
+$tablet: 1000px;
+$mobile: 700px;
+
 @import url('https://use.typekit.net/qkw4qjp.css');
 @import "bootstrap";
 @import "bootstrap_theme";
@@ -19,6 +24,7 @@
 /****************/
 html, body {
 	overflow-x: hidden;
+	scroll-behavior: smooth;
   }
     
 *{

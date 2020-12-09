@@ -30,10 +30,17 @@ class Header extends React.Component{
 				<Link to="/"><img src={logo} height="45" alt="logo"/>
 				</Link></picture>
 			<div id="nav-menu" className={`nav-menu navMobile ${menuActive}`}>
-				<Link to="/team"><div id="navteam" class="nav-element">TEAM</div></Link>
+				{/* <Link to="/team"><div id="navteam" class="nav-element">TEAM</div></Link>
 				<Link to="/portfolio"><div id="navportfolio" class="nav-element">PORTFOLIO</div></Link>
 				<Link to="/strengths"><div id="navstrengths" class="nav-element">OUR STRENGTHS</div></Link>
-				<Link to="/vision"><div id="navvision" class="nav-element">OUR PHILOSOPHY</div></Link>
+				<Link to="/vision"><div id="navvision" class="nav-element">OUR PHILOSOPHY</div></Link> */}
+				<Link to="/"><div id="navvision" class="nav-element">MISSION</div></Link> 
+				<Link to="/#story"><div id="navvision" class="nav-element">STORY</div></Link> 
+				<Link to="/#focus"><div id="navvision" class="nav-element">FOCUS</div></Link> 
+				<Link to="/#strengths"><div id="navvision" class="nav-element">STRENGTHS</div></Link> 
+				<Link to="/#team"><div id="navvision" class="nav-element">TEAM</div></Link> 
+				<Link to="/#portfolio"><div id="navvision" class="nav-element">PORTFOLIO</div></Link> 
+				<Link to="/#news"><div id="navvision" class="nav-element">NEWS</div></Link> 
 				<Link to="/contact">
 					<div id="navcontact" className="nav-element">CONTACT</div></Link>
 			</div>

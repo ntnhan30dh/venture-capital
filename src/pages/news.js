@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 //import SEO from "../components/seo"
@@ -93,7 +93,7 @@ const NewsPage = () => {
       <div className="news">
         <div className="top">
           <h1>Recent articles</h1>
-          <h2>{state.numberOfPosts}</h2>
+          {/* <h2>{state.numberOfPosts}</h2> */}
           <div className="searchBox">
             <input
               className="searchInput"
@@ -123,6 +123,7 @@ const NewsPage = () => {
                         i.node.featured_media.localFile.childImageSharp.fluid
                           .src
                       }
+                      alt = "post"
                     />
                   </div>
                   <div class="news-text">

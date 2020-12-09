@@ -43,11 +43,11 @@ const News = () => {
     }
   `)
   return (
-    <div class="newsComponent container">
+    <div id ="news" class="newsComponent container">
       <div class="section-title">
         <h2>FROM THE NEWS</h2>
       </div>
-      <div class="team-cont">
+      <div class="news-cards">
         {data.allWordpressWpNews.edges
           .sort((a, b) =>
             a.node.date < b.node.date
