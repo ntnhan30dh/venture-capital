@@ -28,6 +28,7 @@ const NewsPage = () => {
             slug
             acf {
               excerpt
+              content
             }
             date
             title
@@ -50,14 +51,15 @@ const NewsPage = () => {
   const [state, setState] = useState({
     filteredData: [],
     query: emptyQuery,
-    numberOfPosts: 3
+    numberOfPosts: 4,
   })
-  const allPosts = data.allWordpressWpNews.edges.slice(0,state.numberOfPosts)
+  const allPosts = data.allWordpressWpNews.edges.slice(0, state.numberOfPosts)
+  const numnerOfAllPosts = data.allWordpressWpNews.edges.length
 
-  const increaseNumberOfPosts = ()=>{
-    const numberOfPosts = state.numberOfPosts+1
+  const increaseNumberOfPosts = () => {
+    const numberOfPosts = state.numberOfPosts + 1
     setState({
-      numberOfPosts
+      numberOfPosts,
     })
   }
   const handleInputChange = event => {
@@ -66,22 +68,24 @@ const NewsPage = () => {
     const query = event.target.value
     const posts = data.allWordpressWpNews.edges || []
     const filteredData = posts.filter(post => {
-      const { title } = post.node
+    
+      const { title, date } = post.node
+      const { excerpt, content } = post.node.acf
+      const dateTemp = new Date(date)
+      const month = monthNames[dateTemp.getMonth()]
+      
       return (
-        // description.toLowerCase().includes(query.toLowerCase()) ||
-        title.toLowerCase().includes(query.toLowerCase())
-        // ||
-        // (tags &&
-        //   tags
-        //     .join("")
-        //     .toLowerCase()
-        //     .includes(query.toLowerCase()))
+        excerpt.toLowerCase().includes(query.toLowerCase()) ||
+        title.toLowerCase().includes(query.toLowerCase()) ||
+        date.toLowerCase().includes(query.toLowerCase()) ||
+        month.toLowerCase().includes(query.toLowerCase()) ||
+        content.toLowerCase().includes(query.toLowerCase())
       )
     })
     setState({
       query,
       filteredData,
-      numberOfPosts
+      numberOfPosts,
     })
   }
   const { filteredData, query } = state
@@ -93,7 +97,7 @@ const NewsPage = () => {
       <div className="news">
         <div className="top">
           <h1>Recent articles</h1>
-          {/* <h2>{state.numberOfPosts}</h2> */}
+          {/* <h2>{numnerOfAllPosts}</h2> */}
           <div className="searchBox">
             <input
               className="searchInput"
@@ -123,7 +127,7 @@ const NewsPage = () => {
                         i.node.featured_media.localFile.childImageSharp.fluid
                           .src
                       }
-                      alt = "post"
+                      alt="post"
                     />
                   </div>
                   <div class="news-text">
@@ -137,9 +141,11 @@ const NewsPage = () => {
               )
             })}
         </div>
-       { !hasSearchResults&&<button className="showMore" onClick={increaseNumberOfPosts}>
-          Show more <br /> &#xfe40;
-        </button>}
+        {(numnerOfAllPosts>state.numberOfPosts)&&!hasSearchResults && (
+          <button className="showMore" onClick={increaseNumberOfPosts}>
+            Show more <br /> &#xfe40;
+          </button>
+        )}
       </div>
     </Layout>
   )
