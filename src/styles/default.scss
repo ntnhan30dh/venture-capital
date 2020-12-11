@@ -179,7 +179,7 @@ a:hover{
 /** focus **/
 
 .focus.container{
-	height: 1120px;
+	//height: 1120px;
 	text-align: center;
 }
 
@@ -190,11 +190,12 @@ a:hover{
 .focus-cont{
 	display: flex;
 	flex-wrap: wrap;
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin: auto;
-	max-width: 940px;
+	// position: absolute;
+	// left: 0;
+	// right: 0;
+	// margin: auto;
+	// max-width: 940px;
+	width: 100%;
 	height: auto;
 }
 
@@ -203,7 +204,7 @@ a:hover{
 	display: flex;
   	justify-content: center;
   	align-items: center;
-	width: 470px;
+	width: 50%;
 	height: 470px;
 }
 
@@ -279,7 +280,7 @@ a:hover{
 	background-color: white;
 	background-image: url("../images/circle.svg");
 	background-position: center;
-	background-size: auto;
+	background-size: contain;
 	background-repeat: no-repeat;
 	padding: 97px 10px;
 	width: 100%;
@@ -299,6 +300,7 @@ a:hover{
 .strength:nth-child(1){
 	grid-column-start: 2;
 	grid-column-end: 4;
+	//margin-bottom: -20px;
 }
 
 .strength:nth-child(2){
@@ -364,7 +366,7 @@ a:hover{
 
 .strengths-page h2{
 	text-align: center;
-	margin-bottom: 76px;
+	//margin-bottom: 76px;
 }
 
 .strength{
@@ -405,44 +407,51 @@ a:hover{
 
 
 
-/***TEAM***/
+// /***TEAM***/
 
-.team.container{
-	background-color: white;
-	height: auto;
-}
+// .team.container{
+// 	background-color: white;
+// 	height: auto;
+// }
 
-.team .section-title{
-	text-align: center;
-}
+// .team .section-title{
+// 	text-align: center;
+// }
 
-.team-cont{
-	display: flex;
-	justify-content: space-between;
-	position: relative;
-	left: 0;
-	right: 0;
-	margin: auto;
-	margin-top:80px;
-	width: 1190px;
-	max-width: 100%;
-}
+// .team-cont{
+// 	display: flex;
+// 	justify-content: space-between;
+// 	position: relative;
+// 	left: 0;
+// 	right: 0;
+// 	margin: auto;
+// 	margin-top:80px;
+// 	width: 1190px;
+// 	max-width: 100%;
+// }
 
-.team-card{
-	width: 235px;
-}
+// .team-card{
+// 	width: 100%;
+// 	display: flex;
+// 	.right {
+// 		p{
+// 			font-size: 20px;
+// 			padding: 0 10%;
+// 		}
+// 	}
+// }
 
-.team-picture img{
+// .team-picture img{
 	
-}
+// }
 
-.team-text .name{
-	font-family: SofiaPro-Bold;
-	font-size: 32px;
-	color: #343B46;
-	line-height: 35px;
-	height: 50px;
-}
+// .team-text .name{
+// 	font-family: SofiaPro-Bold;
+// 	font-size: 32px;
+// 	color: #343B46;
+// 	line-height: 35px;
+// 	height: 50px;
+// }
 
 
 /****************/

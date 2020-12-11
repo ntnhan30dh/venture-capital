@@ -42,9 +42,9 @@ module.exports = {
          * Example : 'demo.wp-api.org' or 'www.example-site.com'
          */
        // baseUrl: "http://dxventures.local",
-        baseUrl: "http://dxventures.wpengine.com/",
+        baseUrl: "https://dxventures.wpengine.com/",
         // The protocol. This can be http or https.
-        protocol: "http",
+        protocol: "https",
         // The rest api route prefix that your WordPress site is using.
         // Sometimes this is modified by WordPress plugins.
         // If not set, it uses the default of "wp-json"
@@ -187,7 +187,7 @@ module.exports = {
         // on every Gatsby route change.
         //
         // Defaults to gatsby-route-change
-      routeChangeEventName: "VirtualPageview",
+      routeChangeEventName: "virtualPageView",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
