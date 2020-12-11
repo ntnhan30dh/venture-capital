@@ -4,7 +4,9 @@
 $tablet: 1000px;
 $mobile: 700px;
 
-@import url('https://use.typekit.net/qkw4qjp.css');
+// @import url('https://use.typekit.net/qkw4qjp.css');
+@import url("https://use.typekit.net/ckx5yuk.css");
+
 @import "bootstrap";
 @import "bootstrap_theme";
 @import "portfolio";
@@ -225,7 +227,7 @@ h2{
 /***TEAM***/
 
 .team.container{
-	background-color: white;
+	//background-color: white;
 	// height: 762px;
 }
 
