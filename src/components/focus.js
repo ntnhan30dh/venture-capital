@@ -38,6 +38,12 @@ const Focus = () => {
               <span class="title">ON DEMAND</span>
               <br />
               <span class="text">Enabling the On-Demand Economy</span>
+              <br />
+              <span className="hoverText">
+                Quick commerce <br /> Online to offline <br />
+                Groceries <br />
+                Catering <br /> Mobility
+              </span>
             </div>
           </div>
           <div class="focus-card card2">
@@ -45,6 +51,16 @@ const Focus = () => {
               <span class="title">FOOD &amp; KITCHEN 2.0</span>
               <br />
               <span class="text">Shaping How We Consume Food</span>
+              <br />
+              <span className="hoverText">
+                Food technology <br />
+                Alternative protein <br />
+                Food service concepts
+                <br />
+                Procurement Agri-tech
+                <br />
+                Sustainability
+              </span>
             </div>
           </div>
           <div class="focus-card card3">
@@ -52,6 +68,12 @@ const Focus = () => {
               <span class="title">SUPPLY CHAIN</span>
               <br />
               <span class="text">Deep Technology Capabilities</span>
+              <br />
+              <span className="hoverText">
+                Artificial intelligence <br /> Blockchain <br />
+                Robotics Sensors & IoT <br />
+                Supply chain <br /> Logistics
+              </span>
             </div>
           </div>
           <div class="focus-card card4">
@@ -60,6 +82,18 @@ const Focus = () => {
               <br />
               <span class="text">
                 At the Forefront of the Fintech Revolution
+              </span>
+              <br />
+              <span className="hoverText">
+                Financial inclusion
+                <br /> Digital payments
+                <br />
+                Next generation banking <br />
+                Lending
+                <br />
+                Insurance
+                <br />
+                Loyalty
               </span>
             </div>
           </div>

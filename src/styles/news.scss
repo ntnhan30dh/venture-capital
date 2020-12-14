@@ -10,12 +10,12 @@
     width: 100%;
    // max-width: 100%;
    padding: 0 10%;
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $tablet) {
       flex-direction: column;
       }
     .news-card {
       width: 30%;
-      @media screen and (max-width: $mobile) {
+      @media screen and (max-width: $tablet) {
         width: 100%;
         padding: 5% 10%;
         }
