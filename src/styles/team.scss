@@ -21,18 +21,22 @@
       width: 22%;
       display: flex;
       justify-content: center;
+      @media screen and (max-width: $mobile) {
+        width: 100%;
+        margin: 20px 0;
+      }
       //  border: 1px solid red;
 
       &:hover {
-       
         .team-card_right {
           display: flex;
           //	width: 100vw;
         }
-
-        // .team-card_left {
-		// 	opacity:0 ;
-        // }
+        .team-card_left {
+          .team-text {
+            opacity: 0;
+          }
+        }
       }
 
       .team-card_left {
@@ -47,34 +51,71 @@
       .team-card_right {
         display: none;
         position: absolute;
-		left: 0;
-		//margin: 0 5%;
+        left: 0;
+        //margin: 0 5%;
         flex-direction: row;
-		background-color: #ffff;
-		border-left: 10vw solid #f5f5f6 ;
-		border-right: 10vw solid #f5f5f6 ;
-		padding: 2% 0;
-		justify-content: center;
+        background-color: #ffff;
+        border-left: 10vw solid #f5f5f6;
+        border-right: 10vw solid #f5f5f6;
+        padding: 3% 0;
+        justify-content: center;
+        @media screen and (max-width: 500px) {
+          flex-direction: column;
+          align-items: center;
+        }
+        @media screen and (max-width: $mobile) {
+          border: 0;
+  
+        }
 
-        .team-picture {
-          width: 100%;
-          //border: 1px solid red;
-          img {
-            width: 70%;
+        .pic-text {
+          width: 17%;
+          margin-right: 2%;
+          min-width: 150px;
+          @media screen and (max-width: $mobile) {
+            margin-right: 5%;
+          }
+
+          @media screen and (max-width: 500px) {
+            min-width: 100px;
+            display: flex;
+            width:100%;
+            margin: 20px;
+          }
+          .team-picture {
+            width: 100%;
+            @media screen and (max-width: 500px) {
+              margin: 0 20px;
+              width: 40%;
+            }
+            img {
+              width: 100%;
+            }
           }
         }
         .bio {
-          width: 45%;
+          width:60%;
           font-size: 20px;
           font-weight: normal;
           font-stretch: normal;
           font-style: normal;
           line-height: 1.5;
           letter-spacing: normal;
-		  color: #343b46;
-		  //margin: auto 2%;
-		  margin: 0 2%;
-		
+          color: #343b46;
+          //margin: auto 2%;
+          margin: 0 2%;
+          // @media screen and (max-width: 1300px) {
+          //   width: 55%;
+          // }
+          @media screen and (max-width: $tablet) {
+            font-size: 15px;
+            padding-top: 2%;
+            margin: 0;
+          }
+          @media screen and (max-width: 500px) {
+            width: 100%;
+            margin-bottom: 20px;
+          }
         }
       }
     }
