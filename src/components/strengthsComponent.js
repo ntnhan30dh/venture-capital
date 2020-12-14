@@ -27,9 +27,7 @@ const Strengths = () => {
             </div>
             <div class="strength-description">GLOBAL FOUNDER NETWORK</div>
             <div class="strength-overlay">
-              Instant access to the largest global network of restaurants with
-              more than 600,000 restaurants on our platforms as well as the
-              largest global sales force within the sector
+            Our network of experienced company founders is available to advise and assist portfolio companies on their journey.
             </div>
           </div>
           <div class="strength industry">
@@ -38,9 +36,7 @@ const Strengths = () => {
             </div>
             <div class="strength-description">FOUNDER-CENTRIC PHILOSOPHY</div>{" "}
             <div class="strength-overlay left">
-              Instant access to the largest global network of restaurants with
-              more than 600,000 restaurants on our platforms as well as the
-              largest global sales force within the sector
+            We believe in creating a long- term partnership with founders to grow successful and sustainable businesses.
             </div>
           </div>
           <div class="strength industry">
@@ -51,9 +47,7 @@ const Strengths = () => {
               LEVERAGING DELIVERY HERO'S PLATFORM
             </div>{" "}
             <div class="strength-overlay left">
-              Instant access to the largest global network of restaurants with
-              more than 600,000 restaurants on our platforms as well as the
-              largest global sales force within the sector
+            Delivery Hero’s global platform helps us to identify, qualify and add value to our investee companies, both in terms of global insights and local know-how.
             </div>
           </div>
           <div class="strength industry">
@@ -62,9 +56,7 @@ const Strengths = () => {
             </div>
             <div class="strength-description">ACTIVE VALUE CREATION</div>
             <div class="strength-overlay left">
-              Instant access to the largest global network of restaurants with
-              more than 600,000 restaurants on our platforms as well as the
-              largest global sales force within the sector
+            We take a hands-on approach to actively working with founders to create valuable businesses.
             </div>
           </div>
           <div class="strength industry">
@@ -73,9 +65,7 @@ const Strengths = () => {
             </div>
             <div class="strength-description">GLOBAL APPROACH AND MINDSET</div>
             <div class="strength-overlay left">
-              Instant access to the largest global network of restaurants with
-              more than 600,000 restaurants on our platforms as well as the
-              largest global sales force within the sector
+            Our team brings an international mindset and diverse global experience, and is well positioned to identify opportunities wherever they arise.
             </div>
           </div>
           <div class="strength industry">
@@ -86,9 +76,7 @@ const Strengths = () => {
               SUPPORT THROUGH THE LIFECYCLE
             </div>
             <div class="strength-overlay left">
-              Instant access to the largest global network of restaurants with
-              more than 600,000 restaurants on our platforms as well as the
-              largest global sales force within the sector
+            From start-up to IPO, we seek to support the most promising companies at critical stages of their development, with capacity to participate in multiple funding rounds.
             </div>
           </div>
           <div class="strength industry">
@@ -97,9 +85,7 @@ const Strengths = () => {
             </div>
             <div class="strength-description">FLEXIBLE INVESTMENT MANDATE</div>
             <div class="strength-overlay left">
-              Instant access to the largest global network of restaurants with
-              more than 600,000 restaurants on our platforms as well as the
-              largest global sales force within the sector
+            A broad investment mandate gives flexibility to invest across sectors, stages and geographies, as well as providing follow-on funding.
             </div>
           </div>
           <div class="logo-strength">
