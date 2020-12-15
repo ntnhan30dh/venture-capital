@@ -52,9 +52,7 @@ const News = () => {
           .sort((a, b) =>
             a.node.date < b.node.date
               ? 1
-              : b.node.wordpress_id > a.node.wordpress_id
-              ? -1
-              : 0
+              : -1
           ).slice(0, 3)
           .map(i => {
             const date = new Date(i.node.date)

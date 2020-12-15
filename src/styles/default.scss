@@ -261,6 +261,28 @@ a:hover {
   width: 60%;
   height: fit-content;
   color: #ffffff;
+  &:hover{
+    .hoverText{
+      display: block;
+    }
+
+    .title, .text{
+      display: none;
+    }
+  }
+  .hoverText{
+    display: none;
+    font-size: 36px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: center;
+    @media screen and (max-width: $tablet) {
+      font-size: 26px;
+      }
+  }
 }
 
 .card1 .focus-text {
@@ -449,6 +471,10 @@ a:hover {
 
 .left {
   transform: translate(-40px, -40px);
+}
+
+.right {
+  transform: translate( -160px, -40px);
 }
 
 // /***TEAM***/
@@ -691,59 +717,59 @@ a:hover {
 /***MEDIA QUERY***/
 
 @media only screen and (max-width: 767px) {
-  .nudge {
-    transform: translateY(40px);
-    transition: transform 1s;
-  }
+  // .nudge {
+  //   transform: translateY(40px);
+  //   transition: transform 1s;
+  // }
 
-  .nomobile {
-    display: none;
-  }
+  // .nomobile {
+  //   display: none;
+  // }
 
-  .mobile {
-    display: block;
-  }
+  // .mobile {
+  //   display: block;
+  // }
 
-  .nav {
-    height: 60px;
-  }
+  // .nav {
+  //   height: 60px;
+  // }
 
-  .hamburger {
-    display: block;
-    position: absolute;
-    right: 15px;
-    height: 30px;
-    top: 15px;
-  }
+  // .hamburger {
+  //   display: block;
+  //   position: absolute;
+  //   right: 15px;
+  //   height: 30px;
+  //   top: 15px;
+  // }
 
-  .nav-menu {
-    width: 100%;
-    right: 0px;
-    top: 60px;
-    background-color: white;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    font-size: 11px;
-    height: 40px;
-  }
+  // .nav-menu {
+  //   width: 100%;
+  //   right: 0px;
+  //   top: 60px;
+  //   background-color: white;
+  //   justify-content: space-around;
+  //   flex-wrap: wrap;
+  //   font-size: 11px;
+  //   height: 40px;
+  // }
 
-  .nav-element {
-    width: auto;
-    margin-left: 0px;
-    padding: 8px;
-  }
+  // .nav-element {
+  //   width: auto;
+  //   margin-left: 0px;
+  //   padding: 8px;
+  // }
 
-  .logo {
-    left: 15px;
-    top: 15px;
-  }
-  .logo img {
-    height: 30px;
-  }
+  // .logo {
+  //   left: 15px;
+  //   top: 15px;
+  // }
+  // .logo img {
+  //   height: 30px;
+  // }
 
-  .slideshow {
-    margin-top: 60px;
-  }
+  // .slideshow {
+  //   margin-top: 60px;
+  // }
   /** portfolio **/
 
   .portfolio.container {

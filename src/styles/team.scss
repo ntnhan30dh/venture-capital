@@ -26,6 +26,20 @@
         margin: 20px 0;
       }
       //  border: 1px solid red;
+      .team-card_left {
+        .team-text {
+          .name{
+            font-size: 26px;
+            @media screen and (max-width: $tablet) {
+              font-size: 22px;
+            }
+          }
+          .role{
+            margin-top: -20px;
+            font-size: 16px;
+          }
+        }
+      }
 
       &:hover {
         .team-card_right {
@@ -72,6 +86,15 @@
           width: 17%;
           margin-right: 2%;
           min-width: 150px;
+          .team-text {
+            .name{
+              font-size: 26px;
+            }
+            .role{
+              margin-top: -20px;
+              font-size: 16px;
+            }
+          }
           @media screen and (max-width: $mobile) {
             margin-right: 5%;
           }

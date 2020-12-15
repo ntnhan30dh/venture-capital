@@ -85,6 +85,10 @@ body{
 	top: 43px;
 	width: auto;
 	display: flex;
+	@media only screen and (max-width: 500px) {
+		min-height: 65px;
+		padding:0 20%;
+	}
 }
 
 .nav-element{
@@ -379,61 +383,7 @@ h3 {
 
 @media only screen and (max-width: 767px) {
 	
-	.nudge{
-		transform: translateY(40px);
-		transition: transform 1s;
-	}
 	
-	.nomobile{
-		display:none;
-	}
-	
-	.mobile{
-		display: block;
-	}
-
-	.nav{
-		height: 60px;
-	}
-
-	.hamburger{
-		display: block;
-		position: absolute;
-		right: 15px;
-		height: 30px;
-		top: 15px;
-		}
-
-	.nav-menu{
-		width: 100%;
-		right:0px;
-		top: 60px;
-		background-color: white;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		font-size: 11px;
-		height: 40px;
-	}
-
-	.nav-element{
-		width: auto;
-		margin-left: 0px;
-		padding: 8px;
-	}
-
-	.logo{
-		left:15px;
-		top: 15px;
-	}
-		.logo img{
-
-		height: 30px;
-		}
-
-
-	.slideshow{
-		margin-top: 60px;
-	}
 	/** portfolio **/
 
 
@@ -548,4 +498,62 @@ h3 {
 
 .is-inactive {
 	display: none;
+}
+
+@media only screen and (max-width: $tablet) {
+	.nudge{
+		transform: translateY(40px);
+		transition: transform 1s;
+	}
+	
+	.nomobile{
+		display:none;
+	}
+	
+	.mobile{
+		display: block;
+	}
+
+	.nav{
+		height: 60px;
+	}
+
+	.hamburger{
+		display: block;
+		position: absolute;
+		right: 15px;
+		height: 30px;
+		top: 15px;
+		}
+
+	.nav-menu{
+		width: 100%;
+		right:0px;
+		top: 60px;
+		background-color: white;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		font-size: 11px;
+		height: 40px;
+	}
+
+	.nav-element{
+		width: auto;
+		margin-left: 0px;
+		padding: 8px;
+	}
+
+	.logo{
+		left:15px;
+		top: 15px;
+	}
+		.logo img{
+
+		height: 30px;
+		}
+
+
+	.slideshow{
+		margin-top: 60px;
+	}
 }

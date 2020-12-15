@@ -46,7 +46,7 @@ const Strengths = () => {
             <div class="strength-description">
               LEVERAGING DELIVERY HERO'S PLATFORM
             </div>{" "}
-            <div class="strength-overlay left">
+            <div class="strength-overlay right">
             Delivery Hero’s global platform helps us to identify, qualify and add value to our investee companies, both in terms of global insights and local know-how.
             </div>
           </div>
@@ -64,7 +64,7 @@ const Strengths = () => {
               <img src={globalImg} />
             </div>
             <div class="strength-description">GLOBAL APPROACH AND MINDSET</div>
-            <div class="strength-overlay left">
+            <div class="strength-overlay right">
             Our team brings an international mindset and diverse global experience, and is well positioned to identify opportunities wherever they arise.
             </div>
           </div>

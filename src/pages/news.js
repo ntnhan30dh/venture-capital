@@ -51,7 +51,7 @@ const NewsPage = () => {
   const [state, setState] = useState({
     filteredData: [],
     query: emptyQuery,
-    numberOfPosts: 4,
+    numberOfPosts: 9,
   })
   const allPosts = data.allWordpressWpNews.edges.slice(0, state.numberOfPosts)
   const numnerOfAllPosts = data.allWordpressWpNews.edges.length
@@ -113,9 +113,7 @@ const NewsPage = () => {
             .sort((a, b) =>
               a.node.date < b.node.date
                 ? 1
-                : b.node.wordpress_id > a.node.wordpress_id
-                ? -1
-                : 0
+                : -1
             )
             .map(i => {
               const date = new Date(i.node.date)

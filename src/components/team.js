@@ -56,7 +56,7 @@ const Team = () => {
                 />
               </div>
               <div class="team-text">
-                <p class="name">{i.node.title}</p>
+                <p class="name">{i.node.title.split(" ").slice(0, -1).join(" ")} <br/> {i.node.title.split(" ")[i.node.title.split(" ").length-1]}</p>
                 <p class="role">{i.node.acf.job_title}</p>
               </div>
             </div>
