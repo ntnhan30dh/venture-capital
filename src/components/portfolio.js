@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 
 const Portfolio = () => {
   const data = useStaticQuery(graphql`

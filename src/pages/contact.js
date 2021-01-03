@@ -63,7 +63,7 @@ const handleSubmit = (e) => {
 
        
           <div className="form-group">
-            <label for="name">NAME</label>
+            <label htmlfor="name">NAME</label>
             <input
               name="name"
               type="text"
@@ -75,7 +75,7 @@ const handleSubmit = (e) => {
           </div>
 
           <div className="form-group">
-            <label for="company">COMPANY</label>
+            <label htmlfor="company">COMPANY</label>
             <input
               name="company"
               type="text"
@@ -87,7 +87,7 @@ const handleSubmit = (e) => {
           </div>
 
           <div className="form-group">
-            <label for="company_description">COMPANY DESCRIPTION</label>
+            <label htmlfor="company_description">COMPANY DESCRIPTION</label>
             <input
               name="company_description"
               type="text"
@@ -99,7 +99,7 @@ const handleSubmit = (e) => {
           </div>
 
           <div className="form-group">
-            <label for="telephone">
+            <label htmlfor="telephone">
             TELEPHONE
             </label>
             <input
@@ -114,7 +114,7 @@ const handleSubmit = (e) => {
 
 
           <div className="form-group">
-            <label for="email">EMAIL</label>
+            <label htmlfor="email">EMAIL</label>
             <input
               name="email"
               type="text"
@@ -128,7 +128,7 @@ const handleSubmit = (e) => {
          
          
           <div className="form-group">
-            <label for="website">WEBSITE</label>
+            <label htmlfor="website">WEBSITE</label>
             <input
               name="website"
               type="text"
@@ -139,7 +139,7 @@ const handleSubmit = (e) => {
             />
           </div>
           <div className="form-group">
-            <label for="message">MY MESSAGE</label>
+            <label htmlfor="message">MY MESSAGE</label>
             <input
               name="message"
               type="text"

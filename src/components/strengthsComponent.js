@@ -23,7 +23,7 @@ const Strengths = () => {
         <div class="strength-grid">
           <div class="strength network">
             <div class="strength-icon">
-              <img src={network} />
+              <img src={network} alt="network"/>
             </div>
             <div class="strength-description">GLOBAL FOUNDER NETWORK</div>
             <div class="strength-overlay">
@@ -32,7 +32,7 @@ const Strengths = () => {
           </div>
           <div class="strength industry">
             <div class="strength-icon">
-              <img src={profile} />
+              <img src={profile} alt="industry"/>
             </div>
             <div class="strength-description">FOUNDER-CENTRIC PHILOSOPHY</div>{" "}
             <div class="strength-overlay left">
@@ -41,7 +41,7 @@ const Strengths = () => {
           </div>
           <div class="strength industry">
             <div class="strength-icon">
-              <img src={comet}/>
+              <img src={comet} alt="comet" />
             </div>
             <div class="strength-description">
               LEVERAGING DELIVERY HERO'S PLATFORM
@@ -52,7 +52,7 @@ const Strengths = () => {
           </div>
           <div class="strength industry">
             <div class="strength-icon">
-              <img src={execution}/>
+              <img src={execution} alt="execution"/>
             </div>
             <div class="strength-description">ACTIVE VALUE CREATION</div>
             <div class="strength-overlay left">
@@ -61,7 +61,7 @@ const Strengths = () => {
           </div>
           <div class="strength industry">
             <div class="strength-icon">
-              <img src={globalImg} />
+              <img src={globalImg} alt="global"/>
             </div>
             <div class="strength-description">GLOBAL APPROACH AND MINDSET</div>
             <div class="strength-overlay right">
@@ -70,7 +70,7 @@ const Strengths = () => {
           </div>
           <div class="strength industry">
             <div class="strength-icon">
-              <img src={knowhow} />
+              <img src={knowhow} alt="knowhow" />
             </div>
             <div class="strength-description">
               SUPPORT THROUGH THE LIFECYCLE
@@ -81,7 +81,7 @@ const Strengths = () => {
           </div>
           <div class="strength industry">
             <div class="strength-icon">
-              <img src={graph} />
+              <img src={graph} alt="graph"/>
             </div>
             <div class="strength-description">FLEXIBLE INVESTMENT MANDATE</div>
             <div class="strength-overlay left">
@@ -89,7 +89,7 @@ const Strengths = () => {
             </div>
           </div>
           <div class="logo-strength">
-            <img src={logo} />
+            <img src={logo}  alt="logo"/>
           </div>
         </div>
       </div>

@@ -57,7 +57,7 @@ const NewsPage = () => {
   const numnerOfAllPosts = data.allWordpressWpNews.edges.length
 
   const increaseNumberOfPosts = () => {
-    const numberOfPosts = state.numberOfPosts + 1
+    const numberOfPosts = state.numberOfPosts + 9
     setState({
       numberOfPosts,
     })

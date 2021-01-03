@@ -1,30 +1,8 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+
 
 const Focus = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allWordpressWpPortfolioHome {
-        edges {
-          node {
-            title
-            wordpress_id
-            featured_media {
-              source_url
-              localFile {
-                childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid
-                    src
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
+  
   return (
     <div>
       {/* <!-- FOCUS --> */}

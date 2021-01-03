@@ -44,7 +44,7 @@ class Header extends React.Component{
 				<Link to="/contact">
 					<div id="navcontact" className="nav-element">CONTACT</div></Link>
 			</div>
-			<div onClick={this.toggleMenu}>
+			<div onClick={this.toggleMenu} onKeyDown={this.toggleMenu} role = "button" tabIndex={0}>
 			<img id="hamburger" className="hamburger" src={hamburger} alt="logo"/>
 			</div>
 		</div>

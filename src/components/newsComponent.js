@@ -63,6 +63,7 @@ const News = () => {
                     src={
                       i.node.featured_media.localFile.childImageSharp.fluid.src
                     }
+                    alt="main cover"
                   />
                 </div>
                 <div class="news-text">

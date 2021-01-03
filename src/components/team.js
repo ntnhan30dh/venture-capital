@@ -53,6 +53,7 @@ const Team = () => {
                   src={
                     i.node.featured_media.localFile.childImageSharp.fluid.src
                   }
+                  alt="teamMember"
                 />
               </div>
               <div class="team-text">
@@ -67,6 +68,7 @@ const Team = () => {
                   src={
                     i.node.featured_media.localFile.childImageSharp.fluid.src
                   }
+                  alt="teamMember"
                 />
               </div>
               <div class="team-text">
