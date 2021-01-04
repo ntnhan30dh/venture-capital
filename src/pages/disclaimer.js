@@ -26,7 +26,7 @@ const Disclaimer = () => {
           informative stay on our pages and would welcome any suggestions,
           requests or criticism you may have.
         </p>
-        <h2>Web Analytics</h2>
+        {/* <h2>Web Analytics</h2>
         This website uses Google Analytics, a web analytics service provided by
         Google, Inc. Google Analytics uses “cookies”, which are text files
         placed on your computer, to help the website analyze how users use the
@@ -80,7 +80,7 @@ const Disclaimer = () => {
           development kits (SDKs) to read, store and access information from
           your mobile device to help provide our Services as described above
           when mobile apps use or integrate with Atlas Services.
-        </p>
+        </p> */}
       </div>
     </Layout>
   )

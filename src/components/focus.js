@@ -35,7 +35,7 @@ const Focus = () => {
                 Alternative protein <br />
                 Food service concepts
                 <br />
-                Procurement Agri-tech
+                Procurement <br />Agri-tech
                 <br />
                 Sustainability
               </span>
@@ -49,7 +49,7 @@ const Focus = () => {
               <br />
               <span className="hoverText">
                 Artificial intelligence <br /> Blockchain <br />
-                Robotics Sensors & IoT <br />
+                Robotics <br/>Sensors & IoT <br/>
                 Supply chain <br /> Logistics
               </span>
             </div>

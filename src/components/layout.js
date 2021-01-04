@@ -12,7 +12,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 // import "./layout.css"
 import "../styles/index.scss"
-//import { Link } from "gatsby"
+import "semantic-ui-css/semantic.min.css";
+import { Link } from "gatsby"
 
 
 const Layout = ({ children }) => {
@@ -45,6 +46,24 @@ const Layout = ({ children }) => {
       >
       <div  id="wrapper" className={`wrapper ${wrapNudge}`} >{children}</div>
       </div>
+      <footer id="footer" className="footer container">
+        {/* <Link to="/contact"><div className="cta-button">
+			FIND OUT MORE
+				</div></Link> */}
+        <div className="footer-footer">
+          Copyright© 2020 Delivery Hero SE
+          <br />
+          <br />
+          Here impressum and disclaimers as by law.
+          <br />
+          <br />
+          <div className="buttons">
+            <Link to="/imprint">Imprint</Link>
+            <Link to="/disclaimer">Disclaimer</Link>
+            <Link to="/privacy">Privacy</Link>
+          </div>
+        </div>
+      </footer>
     </>
   )
 }

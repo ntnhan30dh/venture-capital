@@ -5,6 +5,7 @@ import Portfolio from "../components/portfolio"
 import Team from "../components/team"
 // import Philosophy from "../components/philosophy"
 import Strengths from "../components/strengthsComponent"
+//import { Link } from "gatsby"
 
 import Mission from "../components/mission"
 import Story from "../components/story"
@@ -14,52 +15,39 @@ import ContactComponent from "../components/contactComponent"
 
 import CookieConsent from "react-cookie-consent"
 
-
-
-
-
-
 const IndexPage = () => {
   return (
     <Layout>
-		{/* <Slideshow/>	 */}
-		<Mission/>	
-		<Story/>	
-		<Focus/>	
-		<Strengths/>
-		<Team/>
-		<Portfolio/>
-		<News/>
-		<ContactComponent/>
+      {/* <Slideshow/>	 */}
+      <Mission />
+      <Story />
+      <Focus />
+      <Strengths />
+      <Team />
+      <Portfolio />
+      <News />
+      <ContactComponent />
 
-		{/* <Philosophy/> */}
-		<footer id="footer" className="footer container">
-        {/* <Link to="/contact"><div className="cta-button">
-			FIND OUT MORE
-				</div></Link> */}
-			<div className="footer-footer">
-			Copyright© 2020 Delivery Hero SE<br/>
-			<br/>
-			Here impressum and disclaimers as by law.
-		</div>
-        </footer> 
-		<CookieConsent
+      {/* <Philosophy/> */}
+  
+      <CookieConsent
         location="bottom"
-        buttonText="I AGREE"
+        buttonText="Accept"
         cookieName="myAwesomeCookieName2"
         style={{ background: "#2B373B" }}
         buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
         expires={150}
         debug={true}
       >
-        <span className="cookie_consent"> We use cookies needed to run the website and for analytical purposes.{"  "}
-          <a href="/disclaimer">  
-            More information
-          </a>
-          </span>
+        <span className="cookie_consent">
+          {" "}
+          We use cookies to ensure you get the best experience on our website.
+          {"  "}
+          <a href="/disclaimer">Learn more</a>
+        </span>
       </CookieConsent>
     </Layout>
-
-)}
+  )
+}
 
 export default IndexPage
