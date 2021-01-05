@@ -1,5 +1,10 @@
 .disclaimer{
     margin-top: 104px;
-    padding: 5% 25%;
+    padding:30px 25%;
     min-height: 60vh;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: $tablet) {
+        padding:0 10%;
+	}
 }

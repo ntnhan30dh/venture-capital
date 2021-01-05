@@ -54,9 +54,6 @@ const Layout = ({ children }) => {
           Copyright© 2020 Delivery Hero SE
           <br />
           <br />
-          Here impressum and disclaimers as by law.
-          <br />
-          <br />
           <div className="buttons">
             <Link to="/imprint">Imprint</Link>
             <Link to="/disclaimer">Disclaimer</Link>
@@ -77,7 +74,7 @@ const Layout = ({ children }) => {
           {" "}
           We use cookies to ensure you get the best experience on our website.
           {"  "}
-          <a href="/disclaimer">Learn more</a>
+          <a href="/privacy">Learn more</a>
         </span>
       </CookieConsent>
     </>
