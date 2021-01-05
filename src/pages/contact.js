@@ -158,7 +158,7 @@ const ContactPage = () => {
             <div className="agreeBox">
               {isChecking && !checked && (
                 <Label basic color="red" pointing="below">
-                  Please check
+                  Please check our Privacy Policy
                 </Label>
               )}
               <p>

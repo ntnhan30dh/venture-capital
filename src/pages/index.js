@@ -13,7 +13,7 @@ import Focus from "../components/focus"
 import News from "../components/newsComponent"
 import ContactComponent from "../components/contactComponent"
 
-import CookieConsent from "react-cookie-consent"
+//import CookieConsent from "react-cookie-consent"
 
 const IndexPage = () => {
   return (
@@ -30,7 +30,7 @@ const IndexPage = () => {
 
       {/* <Philosophy/> */}
   
-      <CookieConsent
+      {/* <CookieConsent
         location="bottom"
         buttonText="Accept"
         cookieName="myAwesomeCookieName2"
@@ -45,7 +45,7 @@ const IndexPage = () => {
           {"  "}
           <a href="/disclaimer">Learn more</a>
         </span>
-      </CookieConsent>
+      </CookieConsent> */}
     </Layout>
   )
 }

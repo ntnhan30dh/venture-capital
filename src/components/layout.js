@@ -14,7 +14,7 @@ import Header from "./header"
 import "../styles/index.scss"
 import "semantic-ui-css/semantic.min.css";
 import { Link } from "gatsby"
-
+import CookieConsent from "react-cookie-consent"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -64,6 +64,22 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </footer>
+      <CookieConsent
+        location="bottom"
+        buttonText="Accept"
+        cookieName="myAwesomeCookieName2"
+        style={{ background: "#2B373B" }}
+        buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+        expires={150}
+        debug={true}
+      >
+        <span className="cookie_consent">
+          {" "}
+          We use cookies to ensure you get the best experience on our website.
+          {"  "}
+          <a href="/disclaimer">Learn more</a>
+        </span>
+      </CookieConsent>
     </>
   )
 }
