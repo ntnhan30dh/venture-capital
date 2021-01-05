@@ -21,7 +21,7 @@ const Mission = () => {
     }
   `)
   return (
-		<header id="header" className="header container">
+		<header id="mission" className="header container">
 			<div className="header bg-container"></div>
 			<div className="header-text">
 				<div className="section-title"><h2>OUR MISSION</h2></div>

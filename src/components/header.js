@@ -34,7 +34,7 @@ class Header extends React.Component{
 				<Link to="/portfolio"><div id="navportfolio" class="nav-element">PORTFOLIO</div></Link>
 				<Link to="/strengths"><div id="navstrengths" class="nav-element">OUR STRENGTHS</div></Link>
 				<Link to="/vision"><div id="navvision" class="nav-element">OUR PHILOSOPHY</div></Link> */}
-				<Link to="/"><div id="navvision" class="nav-element">MISSION</div></Link> 
+				<Link to="/#mission"><div id="navvision" class="nav-element">MISSION</div></Link> 
 				<Link to="/#story"><div id="navvision" class="nav-element">STORY</div></Link> 
 				<Link to="/#focus"><div id="navvision" class="nav-element">FOCUS</div></Link> 
 				<Link to="/#strengths"><div id="navvision" class="nav-element">STRENGTHS</div></Link> 
