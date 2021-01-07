@@ -53,8 +53,8 @@ const Portfolio = () => {
         <h2>Our Portfolio</h2>
         <div className="portfolio-text">
           <p>
-            Our investee companies range from sustainable packaging
-            manufacturers to online delivery platforms.{" "}
+            Our investee companies range from plant-based food producers to
+            online delivery platforms.{" "}
           </p>
           {/* <p>
               {
@@ -75,37 +75,76 @@ const Portfolio = () => {
                   : 0
               )
               .slice(0, 9)
-              .map(i => (
-                <a
-                  href={
-                    data.allWordpressAcfPortfolio.edges.filter(
-                      x => x.node.wordpress_id === i.node.wordpress_id
-                    )[0].node.acf.portfolio_url
-                  }
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="portfolio-brand">
-                    <img
-                      alt="logo"
-                      src={
-                        i.node.featured_media.localFile.childImageSharp.fluid
-                          .src
+              .map(i => {
+                return (
+                  // for desktop
+                  <div>
+                    <a
+                      className="porfolio-desktop"
+                      href={
+                        data.allWordpressAcfPortfolio.edges.filter(
+                          x => x.node.wordpress_id === i.node.wordpress_id
+                        )[0].node.acf.portfolio_url
                       }
-                    />
-                    <div className="portfolio-overlay">
-                      <div
-                        className="overlay-text_portfolio"
-                        dangerouslySetInnerHTML={{
-                          __html: data.allWordpressAcfPortfolio.edges.filter(
-                            x => x.node.wordpress_id === i.node.wordpress_id
-                          )[0].node.acf.portfolio_text,
-                        }}
-                      ></div>
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <div className="portfolio-brand">
+                        <img
+                          alt="logo"
+                          src={
+                            i.node.featured_media.localFile.childImageSharp
+                              .fluid.src
+                          }
+                        />
+                        <div className="portfolio-overlay">
+                          <div
+                            className="overlay-text_portfolio"
+                            dangerouslySetInnerHTML={{
+                              __html: data.allWordpressAcfPortfolio.edges.filter(
+                                x => x.node.wordpress_id === i.node.wordpress_id
+                              )[0].node.acf.portfolio_text,
+                            }}
+                          ></div>
+                        </div>
+                      </div>
+                    </a>
+                    {/* for mobile */}
+                    <div className="portfolio-brand portfolio-mobile">
+                      <img
+                        alt="logo"
+                        src={
+                          i.node.featured_media.localFile.childImageSharp.fluid
+                            .src
+                        }
+                      />
+                      <div className="portfolio-overlay">
+                        <div className="overlay-text_portfolio">
+                          <div
+                            // className="overlay-text_portfolio"
+                            dangerouslySetInnerHTML={{
+                              __html: data.allWordpressAcfPortfolio.edges.filter(
+                                x => x.node.wordpress_id === i.node.wordpress_id
+                              )[0].node.acf.portfolio_text,
+                            }}
+                          ></div>
+                          <a
+                            href={
+                              data.allWordpressAcfPortfolio.edges.filter(
+                                x => x.node.wordpress_id === i.node.wordpress_id
+                              )[0].node.acf.portfolio_url
+                            }
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            to website
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </a>
-              ))}
+                )
+              })}
           </div>
         </div>
       </div>

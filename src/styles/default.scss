@@ -573,6 +573,17 @@ a:hover {
   grid-gap: 20px;
   padding: 20px;
   margin-bottom: 135px;
+  .porfolio-desktop{
+    @media screen and (max-width: $mobile) {
+      display: none;
+       }
+  }
+  .portfolio-mobile{
+    display: none;
+    @media screen and (max-width: $mobile) {
+   display: block;
+    }
+  }
   @media screen and (max-width: $tablet) {
     //grid-template-columns: auto auto ;
   }
@@ -633,6 +644,11 @@ a:hover {
   @media screen and (max-width: $tablet) {
     font-size: 18px;
     padding: 50px 20px;
+    a{
+      //color: white;
+      text-decoration: underline;
+      font-weight: 900;
+    }
   }
 }
 
