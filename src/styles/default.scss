@@ -238,6 +238,7 @@ a:hover {
   // max-width: 940px;
   width: 100%;
   height: auto;
+  font-family: "sofia-pro","Arial", sans-serif;
 }
 
 .focus-card {
@@ -252,24 +253,29 @@ a:hover {
   @media screen and (max-width: $mobile) {
     left: 0;
     width: 100%;
-    height: 100vw;
+    height: 100vh;
+    //margin: 15px 0;
   }
 }
 
 .focus-text {
   position: absolute;
-  width: 60%;
+  width: 100%;
   height: fit-content;
   color: #ffffff;
-  &:hover{
-    .hoverText{
-      display: block;
+  @media screen and (min-width: $mobile) {
+    &:hover{
+      .hoverText{
+        display: block;
+      }
+  
+      .title, .text{
+        display: none;
+       
+      }
     }
-
-    .title, .text{
-      display: none;
     }
-  }
+ 
   .hoverText{
     display: none;
     font-size: 36px;
@@ -282,6 +288,10 @@ a:hover {
     @media screen and (max-width: $tablet) {
       font-size: 26px;
       }
+      @media screen and (max-width: $mobile) {
+        display: block;
+        font-size: 22px;
+        }
   }
 }
 
@@ -307,15 +317,30 @@ a:hover {
 
 .focus-text .title {
   font-size: 42px;
+  //margin: 0 13px 0 0;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+ // padding: 20px 0;
   @media screen and (max-width: 500px) {
 	font-size: 30px;
 	}
 }
 .focus-text .text {
   font-size: 24px;
-  @media screen and (max-width: 500px) {
-	font-size: 20px;
-	}
+  font-weight: 300;
+  margin: 0 auto;
+
+  @media screen and (max-width: $mobile) {
+    font-size: 30px;
+    }
+  
+  //width: 50%;
+  // @media screen and (max-width: 500px) {
+	// font-size: 20px;
+	// }
 }
 
 .card1 {

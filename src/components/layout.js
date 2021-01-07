@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
         style={{ background: "#2B373B" }}
         buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
         expires={150}
-        debug={true}
+        //debug={true}
       >
         <span className="cookie_consent">
           {" "}

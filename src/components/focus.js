@@ -1,8 +1,6 @@
 import React from "react"
 
-
 const Focus = () => {
-  
   return (
     <div>
       {/* <!-- FOCUS --> */}
@@ -13,9 +11,12 @@ const Focus = () => {
         <div class="focus-cont">
           <div class="focus-card card1">
             <div class="focus-text">
-              <span class="title">ON DEMAND</span>
+              <h1 class="title">ON DEMAND</h1>
               <br />
-              <span class="text">Enabling the On-Demand Economy</span>
+              <p class="text">
+                Enabling the <br />
+                On-Demand Economy
+              </p>
               <br />
               <span className="hoverText">
                 Quick commerce <br /> Online to offline <br />
@@ -26,16 +27,19 @@ const Focus = () => {
           </div>
           <div class="focus-card card2">
             <div class="focus-text">
-              <span class="title">FOOD &amp; KITCHEN 2.0</span>
+              <h1 class="title">FOOD &amp; KITCHEN 2.0</h1>
               <br />
-              <span class="text">Shaping How We Consume Food</span>
+              <p class="text">
+                Shaping How We <br /> Consume Food
+              </p>
               <br />
               <span className="hoverText">
                 Food technology <br />
                 Alternative protein <br />
                 Food service concepts
                 <br />
-                Procurement <br />Agri-tech
+                Procurement <br />
+                Agri-tech
                 <br />
                 Sustainability
               </span>
@@ -43,24 +47,29 @@ const Focus = () => {
           </div>
           <div class="focus-card card3">
             <div class="focus-text">
-              <span class="title">SUPPLY CHAIN</span>
+              <h1 class="title">SUPPLY CHAIN</h1>
               <br />
-              <span class="text">Deep Technology Capabilities</span>
+              <p class="text">
+                Deep Technology <br />
+                Capabilities
+              </p>
               <br />
               <span className="hoverText">
                 Artificial intelligence <br /> Blockchain <br />
-                Robotics <br/>Sensors & IoT <br/>
+                Robotics <br />
+                Sensors & IoT <br />
                 Supply chain <br /> Logistics
               </span>
             </div>
           </div>
           <div class="focus-card card4">
             <div class="focus-text">
-              <span class="title">FINTECH</span>
+              <h1 class="title">FINTECH</h1>
               <br />
-              <span class="text">
-                At the Forefront of the Fintech Revolution
-              </span>
+              <p class="text">
+                At the Forefront of
+                <br /> the Fintech Revolution
+              </p>
               <br />
               <span className="hoverText">
                 Financial inclusion
