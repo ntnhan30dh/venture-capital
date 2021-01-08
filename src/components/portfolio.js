@@ -50,7 +50,7 @@ const Portfolio = () => {
   return (
     <div id="portfolio" className="portfolio-page container">
       <div className="inner-container">
-        <h2>Our Portfolio</h2>
+        <h2>OUR PORTFOLIO</h2>
         <div className="portfolio-text">
           <p>
             Our investee companies range from plant-based food producers to
