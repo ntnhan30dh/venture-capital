@@ -78,6 +78,12 @@ const News = () => {
               </a>
             )
           })}
+         {(data.allWordpressWpNews.edges
+          .sort((a, b) =>
+            a.node.date < b.node.date
+              ? 1
+              : -1
+          ).slice(0, 3).length <3)&& <a href="/" className="news-card"> </a>}
       </div>
       <div className="bottom">
         <Link class="button" to="/news">
