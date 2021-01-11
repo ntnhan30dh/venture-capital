@@ -82,7 +82,7 @@
       line-height: 1.12;
       letter-spacing: -0.49px;
       color: #343b46;
-      padding: 0 30% 0 10%;
+      padding: 0 20% 0 20%;
       @media screen and (max-width: 1200px) {
         padding: 0 10% 0 10%;
         }
@@ -104,6 +104,10 @@
         max-width: 100%;
         height: auto;
         padding: 20px 0;
+      }
+
+      li {
+        margin: 15px 0;
       }
     }
   }

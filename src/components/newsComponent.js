@@ -27,6 +27,7 @@ const News = () => {
               excerpt
             }
             date
+            title
             featured_media {
               localFile {
                 childImageSharp {
@@ -71,7 +72,8 @@ const News = () => {
                     -{monthNames[date.getMonth()]} {date.getDate()},{" "}
                     {date.getFullYear()}
                   </p>
-                  <p class="excerpt">{i.node.acf.excerpt}</p>
+                  {/* <p class="excerpt">{i.node.acf.excerpt}</p> */}
+                  <p class="excerpt">{i.node.title}</p>
                 </div>
               </a>
             )
