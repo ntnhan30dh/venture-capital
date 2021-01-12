@@ -133,7 +133,7 @@ const VisionPage = () => {
           <div className="cta-button">FIND OUT MORE</div>
         </Link>
         <div className="footer-footer">
-          Copyright© 2020 Delivery Hero SE
+          Copyright© 2021 Delivery Hero SE
           <br />
           <br />
           Here impressum and disclaimers as by law.

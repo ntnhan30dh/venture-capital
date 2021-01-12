@@ -186,7 +186,7 @@ const handleSubmit = (e) => {
     </div>
     <footer id="footer" className="footer container">
       <div className="footer-footer">
-        Copyright© 2020 Delivery Hero SE
+        Copyright© 2021 Delivery Hero SE
         <br />
         <br />
         Here impressum and disclaimers as by law.

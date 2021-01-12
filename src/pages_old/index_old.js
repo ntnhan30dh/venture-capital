@@ -23,7 +23,7 @@ const IndexPage = () => {
 			FIND OUT MORE
 				</div></Link>
 			<div className="footer-footer">
-			Copyright© 2020 Delivery Hero SE<br/>
+			Copyright© 2021 Delivery Hero SE<br/>
 			<br/>
 			Here impressum and disclaimers as by law.
 		</div>
