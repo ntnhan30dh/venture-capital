@@ -69,7 +69,7 @@ const News = () => {
                 </div>
                 <div class="news-text">
                   <p class="date">
-                    -{monthNames[date.getMonth()]} {date.getDate()},{" "}
+                    {monthNames[date.getMonth()]} {date.getDate()},{" "}
                     {date.getFullYear()}
                   </p>
                   {/* <p class="excerpt">{i.node.acf.excerpt}</p> */}

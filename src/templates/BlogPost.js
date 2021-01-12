@@ -31,7 +31,7 @@ const BlogPostTemplate = ({ data }) => {
         />
         <div className="main">
           <p className="date">
-          -{monthNames[date.getMonth()]} {date.getDate()},{" "}
+          {monthNames[date.getMonth()]} {date.getDate()},{" "}
                     {date.getFullYear()}
           </p>
           <h1 className="title">
