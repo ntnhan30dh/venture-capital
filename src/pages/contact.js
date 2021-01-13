@@ -24,7 +24,7 @@ const ContactPage = () => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
-  // const handleAttachment = (e) => {
+  // const handleAttachment = e => {
   //   setState({ ...state, [e.target.name]: e.target.files[0] })
   // }
 
@@ -32,7 +32,16 @@ const ContactPage = () => {
     setIsChecking(true)
     e.preventDefault()
     const form = e.target
-    if (checked) {
+    if (
+      checked &&
+      state.name &&
+      state.company &&
+      state.company_description &&
+      state.telephone &&
+      state.email &&
+      state.website &&
+      state.message
+    ) {
       fetch("/", {
         method: "POST",
         body: encode({
@@ -79,6 +88,11 @@ const ContactPage = () => {
                 placeholder="Jane Doe"
                 onChange={handleChange}
               />
+              {isChecking && !state.name && (
+                <Label basic color="red" pointing="above">
+                  Please fill in your name
+                </Label>
+              )}
             </div>
 
             <div className="form-group">
@@ -88,9 +102,14 @@ const ContactPage = () => {
                 type="text"
                 className="form-control"
                 id="company"
-                placeholder="Leave it empty if you don't have a name"
+                placeholder="your company name"
                 onChange={handleChange}
               />
+              {isChecking && !state.company && (
+                <Label basic color="red" pointing="above">
+                  Please fill in your company
+                </Label>
+              )}
             </div>
 
             <div className="form-group">
@@ -103,6 +122,11 @@ const ContactPage = () => {
                 placeholder="Shortly describe your company"
                 onChange={handleChange}
               />
+              {isChecking && !state.company_description && (
+                <Label basic color="red" pointing="above">
+                  Please fill in your company description
+                </Label>
+              )}
             </div>
 
             <div className="form-group">
@@ -115,6 +139,11 @@ const ContactPage = () => {
                 placeholder="+59 001122334455"
                 onChange={handleChange}
               />
+              {isChecking && !state.telephone && (
+                <Label basic color="red" pointing="above">
+                  Please fill in your telephone number
+                </Label>
+              )}
             </div>
 
             <div className="form-group">
@@ -127,6 +156,11 @@ const ContactPage = () => {
                 placeholder="Your email address"
                 onChange={handleChange}
               />
+              {isChecking && !state.email && (
+                <Label basic color="red" pointing="above">
+                  Please fill in your email
+                </Label>
+              )}
             </div>
 
             <div className="form-group">
@@ -139,6 +173,11 @@ const ContactPage = () => {
                 placeholder="Your website"
                 onChange={handleChange}
               />
+              {isChecking && !state.website && (
+                <Label basic color="red" pointing="above">
+                  Please fill in your website address
+                </Label>
+              )}
             </div>
             <div className="form-group">
               <label htmlfor="message">MY MESSAGE</label>
@@ -150,11 +189,22 @@ const ContactPage = () => {
                 placeholder="Please, tell us about your project ..."
                 onChange={handleChange}
               />
+              {isChecking && !state.message && (
+                <Label basic color="red" pointing="above">
+                  Please share your message
+                </Label>
+              )}
             </div>
             {/* <div className="form-group">
-            <label for="file">UPLOAD A DOCUMENT</label>
-            <input name="file" type="file" className="" id="file" onChange={handleAttachment}/>
-          </div> */}
+              <label for="file">UPLOAD A DOCUMENT</label>
+              <input
+                name="file"
+                type="file"
+                className=""
+                id="file"
+                onChange={handleAttachment}
+              />
+            </div> */}
             <div className="agreeBox">
               {isChecking && !checked && (
                 <Label basic color="red" pointing="below">
@@ -162,13 +212,16 @@ const ContactPage = () => {
                 </Label>
               )}
               <p>
-                <span>  <input
-                name="agree"
-                type="checkbox"
-                checked={checked}
-                onChange={() => setChecked(!checked)}
-              /> </span>
-             By checking this box, I agree to be contacted by DX Ventures in
+                <span>
+                  {" "}
+                  <input
+                    name="agree"
+                    type="checkbox"
+                    checked={checked}
+                    onChange={() => setChecked(!checked)}
+                  />{" "}
+                </span>
+                By checking this box, I agree to be contacted by DX Ventures in
                 relation to investment opportunities. Please, check our{" "}
                 <Link to="/privacy">Privacy Policy</Link> to see how we protect
                 and manage your personal data.{" "}
@@ -178,6 +231,19 @@ const ContactPage = () => {
               <button className="button" type="submit">
                 SUBMIT
               </button>
+              {isChecking &&
+                (!state.name ||
+                  !state.company ||
+                  !state.company_description ||
+                  !state.telephone ||
+                  !state.email ||
+                  !state.website ||
+                  !state.message ||
+                  !checked) && (
+                  <Label basic color="red" pointing="above">
+                    Please fill in all the required fields.
+                  </Label>
+                )}
             </div>
           </form>
         </div>
