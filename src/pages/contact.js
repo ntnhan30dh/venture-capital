@@ -59,6 +59,14 @@ const ContactPage = () => {
       <div id="contact" className="contact-page container">
         <div className="contact-header">
           <h1>GET IN TOUCH</h1>
+          <h2>Have an interesting business? Send us your pitch deck at {" "}
+            <span>
+              <a href="mailto:info@dxventures.vc">
+              
+            info@dxventures.vc
+              </a>
+            </span>
+            </h2>
         </div>
         <div className="inner-container">
           <form
