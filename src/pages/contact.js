@@ -162,7 +162,7 @@ const ContactPage = () => {
               <label htmlfor="email">EMAIL</label>
               <input
                 name="email"
-                type="text"
+                type="email"
                 className="form-control"
                 id="email"
                 placeholder="Your email address"
