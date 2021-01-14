@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { navigate } from "gatsby-link"
 import { Link } from "gatsby"
-import { Label } from "semantic-ui-react"
+// import { Label } from "semantic-ui-react"
 
 //import SEO from "../components/seo"
 function encode(data) {
@@ -17,8 +17,8 @@ function encode(data) {
 
 const ContactPage = () => {
   const [state, setState] = React.useState({})
-  const [checked, setChecked] = React.useState(false)
-  const [isChecking, setIsChecking] = React.useState(false)
+   const [checked, setChecked] = React.useState(false)
+  // const [isChecking, setIsChecking] = React.useState(false)
 
   const handleChange = e => {
     setState({ ...state, [e.target.name]: e.target.value })
@@ -29,19 +29,19 @@ const ContactPage = () => {
   // }
 
   const handleSubmit = e => {
-    setIsChecking(true)
+   // setIsChecking(true)
     e.preventDefault()
     const form = e.target
-    if (
-      checked &&
-      state.name &&
-      state.company &&
-      state.company_description &&
-      state.telephone &&
-      state.email &&
-      state.website &&
-      state.message
-    ) {
+    // if (
+    //   checked &&
+    //   state.name &&
+    //   state.company &&
+    //   state.company_description &&
+    //   state.telephone &&
+    //   state.email &&
+    //   state.website &&
+    //   state.message
+    // ) {
       fetch("/", {
         method: "POST",
         body: encode({
@@ -51,7 +51,7 @@ const ContactPage = () => {
       })
         .then(() => navigate(form.getAttribute("action")))
         .catch(error => alert(error))
-    } else return true
+    //} else return true
   }
 
   return (
@@ -95,12 +95,13 @@ const ContactPage = () => {
                 id="name"
                 placeholder="Jane Doe"
                 onChange={handleChange}
+                required
               />
-              {isChecking && !state.name && (
+              {/* {isChecking && !state.name && (
                 <Label basic color="red" pointing="above">
                   Please fill in your name
                 </Label>
-              )}
+              )} */}
             </div>
 
             <div className="form-group">
@@ -112,12 +113,13 @@ const ContactPage = () => {
                 id="company"
                 placeholder="your company name"
                 onChange={handleChange}
+                required
               />
-              {isChecking && !state.company && (
+              {/* {isChecking && !state.company && (
                 <Label basic color="red" pointing="above">
                   Please fill in your company
                 </Label>
-              )}
+              )} */}
             </div>
 
             <div className="form-group">
@@ -129,12 +131,13 @@ const ContactPage = () => {
                 id="company_description"
                 placeholder="Shortly describe your company"
                 onChange={handleChange}
+                required
               />
-              {isChecking && !state.company_description && (
+              {/* {isChecking && !state.company_description && (
                 <Label basic color="red" pointing="above">
                   Please fill in your company description
                 </Label>
-              )}
+              )} */}
             </div>
 
             <div className="form-group">
@@ -146,12 +149,13 @@ const ContactPage = () => {
                 id="telephone"
                 placeholder="+59 001122334455"
                 onChange={handleChange}
+                required
               />
-              {isChecking && !state.telephone && (
+              {/* {isChecking && !state.telephone && (
                 <Label basic color="red" pointing="above">
                   Please fill in your telephone number
                 </Label>
-              )}
+              )} */}
             </div>
 
             <div className="form-group">
@@ -163,12 +167,13 @@ const ContactPage = () => {
                 id="email"
                 placeholder="Your email address"
                 onChange={handleChange}
+                required
               />
-              {isChecking && !state.email && (
+              {/* {isChecking && !state.email && (
                 <Label basic color="red" pointing="above">
                   Please fill in your email
                 </Label>
-              )}
+              )} */}
             </div>
 
             <div className="form-group">
@@ -180,12 +185,13 @@ const ContactPage = () => {
                 id="website"
                 placeholder="Your website"
                 onChange={handleChange}
+                required
               />
-              {isChecking && !state.website && (
+              {/* {isChecking && !state.website && (
                 <Label basic color="red" pointing="above">
                   Please fill in your website address
                 </Label>
-              )}
+              )} */}
             </div>
             <div className="form-group">
               <label htmlfor="message">MY MESSAGE</label>
@@ -196,12 +202,13 @@ const ContactPage = () => {
                 id="message"
                 placeholder="Please, tell us about your project ..."
                 onChange={handleChange}
+                required
               />
-              {isChecking && !state.message && (
+              {/* {isChecking && !state.message && (
                 <Label basic color="red" pointing="above">
                   Please share your message
                 </Label>
-              )}
+              )} */}
             </div>
             {/* <div className="form-group">
               <label for="file">UPLOAD A DOCUMENT</label>
@@ -214,11 +221,11 @@ const ContactPage = () => {
               />
             </div> */}
             <div className="agreeBox">
-              {isChecking && !checked && (
+              {/* {isChecking && !checked && (
                 <Label basic color="red" pointing="below">
                   Please check our Privacy Policy
                 </Label>
-              )}
+              )} */}
               <p>
                 <span>
                   {" "}
@@ -227,6 +234,7 @@ const ContactPage = () => {
                     type="checkbox"
                     checked={checked}
                     onChange={() => setChecked(!checked)}
+                    required
                   />{" "}
                 </span>
                 By checking this box, I agree to be contacted by DX Ventures in
@@ -239,7 +247,7 @@ const ContactPage = () => {
               <button className="button" type="submit">
                 SUBMIT
               </button>
-              {isChecking &&
+              {/* {isChecking &&
                 (!state.name ||
                   !state.company ||
                   !state.company_description ||
@@ -251,7 +259,7 @@ const ContactPage = () => {
                   <Label basic color="red" pointing="above">
                     Please fill in all the required fields.
                   </Label>
-                )}
+                )} */}
             </div>
           </form>
         </div>
