@@ -16,7 +16,7 @@ const ContactPage = () => {
             <span>
               <a href="mailto:info@dxventures.vc">info@dxventures.vc</a>
             </span>
-            . To note, if you are seeking funding, please include a pitch deck."
+            . To note, if you are seeking funding, please include a pitch deck.
           </h2>
         </div>
       </div>
