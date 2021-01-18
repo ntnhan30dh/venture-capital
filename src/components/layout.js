@@ -9,6 +9,7 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+
 import Header from "./header"
 // import "./layout.css"
 import "../styles/index.scss"
@@ -73,8 +74,9 @@ const Layout = ({ children }) => {
         <span className="cookie_consent">
           {" "}
           We use cookies to ensure you get the best experience on our website.
-          {"  "}
-          <a href="/privacy">Learn more</a>
+          {" "}
+          {/* <a href="/privacy/#cookie">Learn more</a> */}
+          <Link to="privacy/#cookie">Learn more</Link>
         </span>
       </CookieConsent>
     </>

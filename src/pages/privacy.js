@@ -147,61 +147,144 @@ const Privacy = () => {
         <h3>
           <strong> Right to access </strong>
         </h3>
-          <p>You have the right to be informed which data we store about you and how we process this data.</p>
-          <h3>
+        <p>
+          You have the right to be informed which data we store about you and
+          how we process this data.
+        </p>
+        <h3>
           <strong> Right to rectification </strong>
         </h3>
-          <p>If you notice that stored data is incorrect, you can always ask us to correct it.
-</p>
-          <h3>
+        <p>
+          If you notice that stored data is incorrect, you can always ask us to
+          correct it.
+        </p>
+        <h3>
           <strong> Right to erasure </strong>
         </h3>
-          <p>You can ask us at any time to delete the data we have stored about you.</p>
+        <p>
+          You can ask us at any time to delete the data we have stored about
+          you.
+        </p>
 
-          <h3>
+        <h3>
           <strong> Right to object to the processing of your data </strong>
         </h3>
-          <p>You can revoke your consent at any time or object to the further processing of your data. This also includes objecting to our processing, which we process without your consent but based on our legitimate interest. 
-.</p>
-<p>If you do not agree with one of our processing purposes based on our legitimate interest or wish to object to it, you may object to the processing at any time on grounds relating to the particular situation. Please fill in the contact form on our website stating your concerns in the comments. In this case we will review the processing activity again and either stop processing your data for this purpose or explain to you our reasons worth protecting and why we will continue with the processing.</p>
-     
-<h3>
+        <p>
+          You can revoke your consent at any time or object to the further
+          processing of your data. This also includes objecting to our
+          processing, which we process without your consent but based on our
+          legitimate interest. .
+        </p>
+        <p>
+          If you do not agree with one of our processing purposes based on our
+          legitimate interest or wish to object to it, you may object to the
+          processing at any time on grounds relating to the particular
+          situation. Please fill in the contact form on our website stating your
+          concerns in the comments. In this case we will review the processing
+          activity again and either stop processing your data for this purpose
+          or explain to you our reasons worth protecting and why we will
+          continue with the processing.
+        </p>
+
+        <h3>
           <strong> Right of complaint </strong>
         </h3>
         <p>
-        If you believe that we have done something wrong with your personal data or your rights, you can complain to the appropriate supervisory authority at any time.
+          If you believe that we have done something wrong with your personal
+          data or your rights, you can complain to the appropriate supervisory
+          authority at any time.
         </p>
-        <p>To exercise your rights, you can contact dpo@deliveryhero.com at any time.
-</p>
-     <p>
-     The responsible supervisory authority for Delivery Hero is: <br/><br/>
-Berliner Beauftragte für Datenschutz und Informationsfreiheit <br/><br/>
-Friedrichstr. 219<br/><br/>
-10969 Berlin<br/><br/>
-E-Mail: mailbox@datenschutz-berlin.de
+        <p>
+          To exercise your rights, you can contact dpo@deliveryhero.com at any
+          time.
+        </p>
+        <p>
+          The responsible supervisory authority for Delivery Hero is: <br />
+          <br />
+          Berliner Beauftragte für Datenschutz und Informationsfreiheit <br />
+          <br />
+          Friedrichstr. 219
+          <br />
+          <br />
+          10969 Berlin
+          <br />
+          <br />
+          E-Mail: mailbox@datenschutz-berlin.de
+        </p>
 
-     </p>
+        <p>
+          You can also send your complaint to the supervisory authority in your
+          habitual residence or place of work
+        </p>
+        <p>
+          If you would like to exercise your rights as a data subject, please do
+          not hesitate to contact us under the contact information provided
+          above.
+        </p>
 
-     <p>
-     You can also send your complaint to the supervisory authority in your habitual residence or place of work
-     </p>
-     <p>
-     If you would like to exercise your rights as a data subject, please do not hesitate to contact us under the contact information provided above. 
-     </p>
-     
-     <h3>
+        <h3 id="cookie">
           <strong> Automated decision-making </strong>
         </h3>
-     <p>We do not have any processes where decisions are made in an automated way having a legal effect or similar effects on you.</p>
-     <h3>
+        <p>
+          We do not have any processes where decisions are made in an automated
+          way having a legal effect or similar effects on you.
+        </p>
+        <h3 >
+          <strong>Cookie Information</strong>
+        </h3>
+        <p>
+          In order for your visit to DX Ventures to be attractive and to enable
+          the use of certain functions, we use the so-called cookies on various
+          pages. Cookies are small text files that are stored in your browser.
+          Some of the cookies we use are deleted after the end of the operation
+          period of your browser, eg. after the closing of the browser. Other
+          cookies remain in your browser and allow us to identify your browser
+          on your next visit (permanent cookies). You can configure your browser
+          so that you are informed about the setting of cookies and decide
+          individually on their acceptance or deviation for specific cases or in
+          general. Non-acceptance of cookies may limit the functionality of our
+          website.
+        </p>
+        <p>We classify the cookies in three categories:</p>
+        <ul>
+          <li>Necessary</li>
+          <li>Functionality</li>
+          <li>Personalization</li>
+        </ul>
+        <p>
+          We are only using Necessary cookies that are required to navigate our
+          site and use its features. Without the use of these cookies, the
+          proper functioning of our website is not guaranteed (eg entering text)
+          while browsing the pages of the website. In addition, they are cookies
+          that collect information about how visitors use our site, for example,
+          which pages they visit most often and if they receive error messages.
+          They also let our site remember your choices, such as language or
+          region, to provide enhanced features. They are also used to store
+          information about the consent option where required. No action is
+          required from you to activate them.
+        </p>
+
+        <h3>
           <strong> Changes to this Privacy Notice </strong>
         </h3>
-     <p>We reserve the right to modify this privacy notice at any time, so please review it frequently. Changes and clarifications will take effect immediately upon their posting on the website. If we make material changes to this policy, we will notify you here that it has been updated, so that you are aware of what information we collect, how we use it, and under what circumstances, if any, we use and/or disclose it.</p>
-     <h3>
+        <p>
+          We reserve the right to modify this privacy notice at any time, so
+          please review it frequently. Changes and clarifications will take
+          effect immediately upon their posting on the website. If we make
+          material changes to this policy, we will notify you here that it has
+          been updated, so that you are aware of what information we collect,
+          how we use it, and under what circumstances, if any, we use and/or
+          disclose it.
+        </p>
+        <h3>
           <strong> Questions and Contact Information </strong>
         </h3>
-        <p>If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information, please fill out the contact form on the website to get in touch with us.</p>
-     
+        <p>
+          If you would like to: access, correct, amend or delete any personal
+          information we have about you, register a complaint, or simply want
+          more information, please fill out the contact form on the website to
+          get in touch with us.
+        </p>
       </div>
     </Layout>
   )
