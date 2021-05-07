@@ -88,6 +88,8 @@ const NewsPage = () => {
       numberOfPosts,
     })
   }
+
+  
   const { filteredData, query } = state
   const hasSearchResults = filteredData && query !== emptyQuery
   const posts = hasSearchResults ? filteredData : allPosts
