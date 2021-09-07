@@ -74,7 +74,7 @@ const Portfolio = () => {
                   ? -1
                   : 0
               )
-              .slice(0, 9)
+              .slice(0, 12)
               .map(i => {
                 return (
                   // for desktop
