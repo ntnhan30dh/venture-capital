@@ -7,9 +7,12 @@ import Team from "../components/team"
 import Strengths from "../components/strengthsComponent"
 //import { Link } from "gatsby"
 
-import Mission from "../components/mission"
-import Story from "../components/story"
-import Focus from "../components/focus"
+ import Mission from "../components/mission"
+import Mission2 from "../components/mission2"
+ import Story from "../components/story"
+import Story2 from "../components/story2"
+ import Focus from "../components/focus"
+import Focus2 from "../components/focus2"
 import News from "../components/newsComponent"
 import ContactComponent from "../components/contactComponent"
 
@@ -20,8 +23,11 @@ const IndexPage = () => {
     <Layout>
       {/* <Slideshow/>	 */}
       <Mission />
+      {/* <Mission2 /> */}
       <Story />
+      {/* <Story2 /> */}
       <Focus />
+      {/* <Focus2 /> */}
       <Strengths />
       <Team />
       <Portfolio />
