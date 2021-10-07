@@ -30,7 +30,7 @@ module.exports = {
         yellow: "#fdd040",
         orange: "##E5E5E5",
         skin: "#ffeed8",
-        blue: "#2b28c1",
+        blue: "#006EFF",
         gray: '#F7F7F9',
         space: '#2D3339',
         green:'#31FFC1'
@@ -105,6 +105,9 @@ module.exports = {
         '9vw': '9vw',
         '10vw': '10vw',
         '14vw': '14vw',
+       },
+       zIndex: {
+        '-1': '-1',
        }
     },
     borderWidth: {

@@ -9,7 +9,7 @@ $mobile: 700px;
 
 @import "bootstrap";
 @import "bootstrap_theme";
-@import "portfolio";
+//@import "portfolio";
 @import "strengths";
 @import "vision";
 @import "team";
@@ -106,7 +106,7 @@ body {
   // color: #862f5d;
   font-family: Open Sans;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   color: #000000;
   &:hover{
 	color: #426efe;

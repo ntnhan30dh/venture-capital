@@ -164,7 +164,6 @@ a:hover {
   @media screen and (max-width: 500px) {
     font-size: 18px;
   }
-  
 }
 
 /** story **/
@@ -238,7 +237,7 @@ a:hover {
   // max-width: 940px;
   width: 100%;
   height: auto;
-  font-family: "sofia-pro","Arial", sans-serif;
+  font-family: "sofia-pro", "Arial", sans-serif;
 }
 
 .focus-card {
@@ -264,19 +263,19 @@ a:hover {
   height: fit-content;
   color: #ffffff;
   @media screen and (min-width: $mobile) {
-    &:hover{
-      .hoverText{
+    &:hover {
+      .hoverText {
         display: block;
       }
-  
-      .title, .text{
+
+      .title,
+      .text {
         display: none;
-       
       }
     }
-    }
- 
-  .hoverText{
+  }
+
+  .hoverText {
     display: none;
     font-size: 24px;
     font-weight: 300;
@@ -287,11 +286,11 @@ a:hover {
     text-align: center;
     @media screen and (max-width: $tablet) {
       font-size: 26px;
-      }
-      @media screen and (max-width: $mobile) {
-        display: block;
-        font-size: 22px;
-        }
+    }
+    @media screen and (max-width: $mobile) {
+      display: block;
+      font-size: 22px;
+    }
   }
 }
 
@@ -323,10 +322,10 @@ a:hover {
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
- // padding: 20px 0;
+  // padding: 20px 0;
   @media screen and (max-width: 500px) {
-	font-size: 30px;
-	}
+    font-size: 30px;
+  }
 }
 .focus-text .text {
   font-size: 24px;
@@ -335,12 +334,12 @@ a:hover {
 
   @media screen and (max-width: $mobile) {
     font-size: 30px;
-    }
-  
+  }
+
   //width: 50%;
   // @media screen and (max-width: 500px) {
-	// font-size: 20px;
-	// }
+  // font-size: 20px;
+  // }
 }
 
 .card1 {
@@ -499,7 +498,7 @@ a:hover {
 }
 
 .right {
-  transform: translate( -160px, -40px);
+  transform: translate(-160px, -40px);
 }
 
 // /***TEAM***/
@@ -573,15 +572,15 @@ a:hover {
   grid-gap: 20px;
   padding: 20px;
   margin-bottom: 135px;
-  .porfolio-desktop{
+  .porfolio-desktop {
     @media screen and (max-width: $mobile) {
       display: none;
-       }
+    }
   }
-  .portfolio-mobile{
+  .portfolio-mobile {
     display: none;
     @media screen and (max-width: $mobile) {
-   display: block;
+      display: block;
     }
   }
   @media screen and (max-width: $tablet) {
@@ -592,18 +591,24 @@ a:hover {
 .portfolio-brand {
   display: block;
   position: relative;
-  background-color: #f5f5f6;
+//  background-color: #ffffff;
   max-width: 300px;
   max-height: 300px;
   width: 30vw;
   height: 30vw;
   @media only screen and (max-width: 767px) {
-	max-width: 100%;
-	max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  &:hover {
+    
+    .blueCrad {
+      background-color: #006eff;
+    }
   }
 }
 
-.portfolio-brand img {
+.portfolio-brand_img {
   position: absolute;
   margin: auto;
   top: 0;
@@ -616,7 +621,6 @@ a:hover {
 
 .portfolio-overlay {
   position: absolute;
-  background-color: #862f5d;
   top: 0;
   left: 0;
   width: 100%;
@@ -644,7 +648,7 @@ a:hover {
   @media screen and (max-width: $tablet) {
     font-size: 18px;
     padding: 50px 20px;
-    a{
+    a {
       //color: white;
       text-decoration: underline;
       font-weight: 900;
@@ -659,13 +663,13 @@ a:hover {
   background-image: url("../images/contact-background.jpg");
   background-size: cover;
   @media screen and (max-width: $tablet) {
-	height: 500px;
-	}
+    height: 500px;
+  }
 
-	@media screen and (max-width: 500px) {
-		height: 200px;
-		margin-top: 50px
-		}
+  @media screen and (max-width: 500px) {
+    height: 200px;
+    margin-top: 50px;
+  }
 }
 
 .contact .button {
@@ -675,12 +679,12 @@ a:hover {
   right: 0;
   margin: auto;
   @media screen and (max-width: $tablet) {
-	top: 300px;
-	}
+    top: 300px;
+  }
 
-	@media screen and (max-width: 500px) {
-		top: 80px
-		}
+  @media screen and (max-width: 500px) {
+    top: 80px;
+  }
 }
 
 .contact .text {
@@ -694,12 +698,12 @@ a:hover {
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   @media screen and (max-width: $tablet) {
-	top: 100px;
-	}
+    top: 100px;
+  }
 
-	@media screen and (max-width: 500px) {
-		display: none;
-		}
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -720,12 +724,12 @@ a:hover {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 10px;
-	padding: 10px;
-	
-	@media only screen and (max-width: 500px) {
-		grid-template-columns: auto;
-		padding: 10px 20px;
-	}
+    padding: 10px;
+
+    @media only screen and (max-width: 500px) {
+      grid-template-columns: auto;
+      padding: 10px 20px;
+    }
   }
 
   .portfolio-brand {
