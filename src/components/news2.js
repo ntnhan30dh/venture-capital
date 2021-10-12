@@ -69,7 +69,10 @@ const News2 = () => {
                 <div class="news-text">
                   <h1 class="excerpt pt-4">{i.node.title}</h1>
                 </div>
-                <a class="readMore flex items-center mt-6 text-blue text-lg font-bold" href={`/post/${i.node.slug}`}>
+                <a
+                  class="readMore flex items-center mt-6 text-blue text-lg font-bold"
+                  href={`/post/${i.node.slug}`}
+                >
                   Read more{" "}
                   <span>
                     {" "}
@@ -89,12 +92,24 @@ const News2 = () => {
           </a>
         )}
       </div>
-      <div className="bottom relative">
-      <div className="blueCrad  absolute w-full h-full bg-green top-0 -z-1 "></div>
-        <Link class="button bg-blue text-white hover:text-white transform hover:translate-x-3 hover:-translate-y-3" to="/news">
+      {/* <div>
+        <div className="greenCard  absolute w-full h-full bg-green top-0  -z-1 "></div>
+      <div className="transform  hover:translate-x-3 hover:-translate-y-3 mx-auto bg-blue max-w-max ">
+        <Link class=" text-white hover:text-white   " to="/news">
           See more news
         </Link>
       </div>
+      </div> */}
+
+      <article class="relative card my-20  mx-auto z-0 max-w-max ">
+                <div className="blueCrad  absolute w-full h-full  bg-green top-0 -z-1 "></div>
+                <div className="picCard bg-blue z-10 px-20 py-5 transform hover:translate-x-3 hover:-translate-y-3">
+                <Link class=" text-2xl font-bold text-white hover:text-white " to="/news">
+          See more news
+        </Link>
+                </div>
+              </article>
+              <div className="opacity-0">hi</div>
     </div>
   )
 }

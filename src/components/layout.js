@@ -14,7 +14,7 @@ import Header from "./header"
 // import "./layout.css"
 import "../styles/index.scss"
 import "semantic-ui-css/semantic.min.css";
-// import '../styles/global.css';
+ import '../styles/global.css';
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import { Link } from "gatsby"

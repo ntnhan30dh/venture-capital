@@ -23,20 +23,20 @@ const IndexPage = () => {
   return (
     <Layout>
       {/* <Slideshow/>	 */}
-      <Mission />
-      {/* <Mission2 /> */}
-      <Story />
-      {/* <Story2 /> */}
-      <Focus />
-      {/* <Focus2 /> */}
-      <Strengths />
-      {/* <Strengths2 /> */}
-      <Team/>
-      {/* <Team2/> */}
+      {/* <Mission /> */}
+      <Mission2 />
+      {/* <Story /> */}
+      <Story2 />
+      {/* <Focus /> */}
+      <Focus2 />
+      {/* <Strengths /> */}
+      <Strengths2 />
+      {/* <Team/> */}
+      <Team2/>
       {/* <Portfolio /> */}
       <Portfolio2 />
-      <News />
-      {/* <News2 /> */}
+      {/* <News /> */}
+      <News2 />
       <ContactComponent />
 
       {/* <Philosophy/> */}
