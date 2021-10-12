@@ -657,10 +657,13 @@ a:hover {
 }
 
 /** contact **/
-.contact .container {
+// .contact .container {
+ .contact .container2 {
   position: relative;
-  height: 846px;
-  background-image: url("../images/contact-background.jpg");
+  // height: 846px;
+  height: 646px;
+  // background-image: url("../images/contact-background.jpg");
+  background-image: url("../images/contact_bg.png");
   background-size: cover;
   @media screen and (max-width: $tablet) {
     height: 500px;

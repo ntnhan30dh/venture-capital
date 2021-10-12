@@ -2,9 +2,10 @@ import React, { useRef } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Slider from "react-slick"
 
-import pic1 from "../images/fields1.png"
-import pic2 from "../images/fields2.png"
-import pic3 from "../images/fields3.png"
+import pic1 from "../images/story_pic1.png"
+import pic2 from "../images/story_pic2.png"
+import pic3 from "../images/story_pic3.png"
+
 
 const Story2 = () => {
   const data = useStaticQuery(graphql`
@@ -38,7 +39,7 @@ const Story2 = () => {
     dots: true,
     infinite: true,
     fade: true,
-    speed: 0,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: false,

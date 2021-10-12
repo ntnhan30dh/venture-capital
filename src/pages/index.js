@@ -16,6 +16,7 @@ import Portfolio2 from "../components/portfolio2"
 import News from "../components/newsComponent"
 import News2 from "../components/news2"
 import ContactComponent from "../components/contactComponent"
+import Contact2 from "../components/contact2"
 
 //import CookieConsent from "react-cookie-consent"
 
@@ -37,7 +38,8 @@ const IndexPage = () => {
       <Portfolio2 />
       {/* <News /> */}
       <News2 />
-      <ContactComponent />
+      {/* <ContactComponent /> */}
+      <Contact2/>
 
       {/* <Philosophy/> */}
   

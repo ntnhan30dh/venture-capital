@@ -50,7 +50,7 @@ const Layout = ({ children }) => {
       >
       <div  id="wrapper" className={`wrapper ${wrapNudge}`} >{children}</div>
       </div>
-      <footer id="footer" className="footer container">
+      <footer id="footer" className="footer c">
         {/* <Link to="/contact"><div className="cta-button">
 			FIND OUT MORE
 				</div></Link> */}
