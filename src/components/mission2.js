@@ -17,19 +17,23 @@ const Mission2 = () => {
           }
         }
       }
-    
     }
   `)
   return (
-<section id="mission" className="missionWrapper">
-<div className="imgDiv w-full">
-  <img src={pic} alt="mission" className="w-full"/>
-</div>
-<div className="text w-full text-center p-10 bg-gray">
-  <h1 className="font-bold text-5xl p-10">Our Mission</h1>
-  <p className=" mx-auto text-2xl text-center p-10 leading-loose">DX Ventures' mission is to support the next generation of <br /> <span className="font-bold"> founder-led technology companies </span>   that are disrupting <br />  some of the most fast-moving industries around the world.</p>
-</div>
-</section>
+    <section  className="missionWrapper">
+      <div className="imgDiv w-full">
+        <img src={pic} alt="mission" className="w-full" />
+      </div>
+      <div className="text w-full text-center p-10 bg-gray" id="mission">
+        <h1 className="font-bold text-5xl p-10">Our Mission</h1>
+        <p className=" mx-auto text-2xl text-center p-10 leading-loose">
+          DX Ventures' mission is to support the next generation of <br />{" "}
+          <span className="font-bold"> founder-led technology companies </span>{" "}
+          that are disrupting <br /> some of the most fast-moving industries
+          around the world.
+        </p>
+      </div>
+    </section>
   )
 }
 

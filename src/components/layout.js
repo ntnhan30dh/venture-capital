@@ -9,12 +9,12 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-
 import Header from "./header"
+import Header2 from "./header2"
 // import "./layout.css"
 import "../styles/index.scss"
-import "semantic-ui-css/semantic.min.css";
- import '../styles/global.css';
+import "semantic-ui-css/semantic.min.css"
+import "../styles/global.css"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import { Link } from "gatsby"
@@ -31,16 +31,24 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const [nudge, setNudge] = useState(true);
-  const toggleNudge=()=>{
+  const [nudge, setNudge] = useState(true)
+  const toggleNudge = () => {
     setNudge(!nudge)
-    console.log("nudge",nudge)
+    console.log("nudge", nudge)
   }
-  const wrapNudge = nudge? 'nudge' : '';
+  const wrapNudge = nudge ? "nudge" : ""
+
+  let [menuActive, setmenuActive] = useState(false)
+  const toggleMenu = () => {
+    setmenuActive(!menuActive)
+  }
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} toggleNudgeHandle={toggleNudge}/>
+    <div className="relative">
+      {/* <Header siteTitle={data.site.siteMetadata.title} toggleNudgeHandle={toggleNudge}/> */}
+
+      <Header2 toggleMenu={toggleMenu} menuState={menuActive} />
+
       <div
         style={{
           margin: `0 auto`,
@@ -48,7 +56,10 @@ const Layout = ({ children }) => {
           padding: 0,
         }}
       >
-      <div  id="wrapper" className={`wrapper ${wrapNudge}`} >{children}</div>
+        {/* <div id="wrapper" className={`wrapper ${wrapNudge}`}> */}
+        <div id="wrapper" className={`wrapper`}>
+          {children}
+        </div>
       </div>
       <footer id="footer" className="footer c">
         {/* <Link to="/contact"><div className="cta-button">
@@ -76,13 +87,12 @@ const Layout = ({ children }) => {
       >
         <span className="cookie_consent">
           {" "}
-          We use cookies to ensure you get the best experience on our website.
-          {" "}
+          We use cookies to ensure you get the best experience on our website.{" "}
           {/* <a href="/privacy/#cookie">Learn more</a> */}
           <Link to="privacy/#cookie">Learn more</Link>
         </span>
       </CookieConsent>
-    </>
+    </div>
   )
 }
 

@@ -17,6 +17,7 @@ import News from "../components/newsComponent"
 import News2 from "../components/news2"
 import ContactComponent from "../components/contactComponent"
 import Contact2 from "../components/contact2"
+import Header2 from "../components/header2"
 
 //import CookieConsent from "react-cookie-consent"
 
@@ -25,6 +26,8 @@ const IndexPage = () => {
     <Layout>
       {/* <Slideshow/>	 */}
       {/* <Mission /> */}
+      
+      {/* <Header2 /> */}
       <Mission2 />
       {/* <Story /> */}
       <Story2 />

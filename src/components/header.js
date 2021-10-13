@@ -83,7 +83,7 @@ class Header extends React.Component {
           onKeyDown={this.toggleMenu}
           role="button"
           tabIndex={0}
-		  className="hamburger"
+          className="hamburgerr"
         >
           <img
             id="hamburger"
