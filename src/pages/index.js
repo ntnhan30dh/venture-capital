@@ -36,13 +36,13 @@ const IndexPage = () => {
       {/* <Strengths /> */}
       <Strengths2 />
       {/* <Team/> */}
-      {/* <Team2/> */}
+      <Team2/>
       {/* <Portfolio /> */}
-      {/* <Portfolio2 /> */}
+      <Portfolio2 />
       {/* <News /> */}
-      {/* <News2 /> */}
+      <News2 />
       {/* <ContactComponent /> */}
-      {/* <Contact2/> */}
+      <Contact2/>
 
       {/* <Philosophy/> */}
   

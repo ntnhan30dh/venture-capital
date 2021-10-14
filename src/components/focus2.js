@@ -36,14 +36,14 @@ const Focus2 = () => {
     ],
   }
 
-  const card = "bg-space border-t-4 border-green p-8 "
+  const card = "bg-space border-t-4 border-green p-8 mb-10"
   const title = "text-white text-2xl font-bold py-2"
   const p = "text-white sm:text-lg mb-8"
-  const item = "bg-white py-1 p-2 mr-2"
+  const item = "bg-white py-1 p-2 mr-2 font-bold"
 
   return (
-    <section id="focus" className="px-1/20 pb-20 bg-gray">
-      <h1 className="font-bold text-4xl sm:text-5xl p-10  text-center">
+    <section id="focus" className="px-1/20 pb-20 bg-gray mt-10 ">
+      <h1 className="font-bold text-4xl sm:text-5xl py-16 md:py-28 text-center">
         Our Focus
       </h1>
       <div className="/md:flex w-full">

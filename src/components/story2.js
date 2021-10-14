@@ -45,14 +45,14 @@ const Story2 = () => {
     autoplay: false,
     autoplaySpeed: 4000,
   }
-  const slick = "w-full flex flex-col lg:flex-row bg-gray"
+  const slick = "w-full flex flex-col lg:flex-row lg:bg-gray lg:mb-10"
   const imgDiv = "lg:w-1/2"
   const text = "lg:w-1/2  m-auto "
-  const p = "m-auto text-lg xxsm:text-xl sm:text-2xl text-center md:text-left p-4 sm:p-10 md:px-20 leading-12  "
+  const p = "m-auto text-lg xxsm:text-xl sm:text-2xl text-center md:text-left py-8 px-4 sm:p-10 md:px-20 leading-12  "
   return (
-    <section id="story" className="w-full md:my-10">
-      <h1 className="font-bold text-4xl sm:text-5xl p-10  text-center">Our Story</h1>
-      <div className="sliderWrap py-10 px-1/10">
+    <section id="story" className="w-full my-10 ">
+      <h1 className="font-bold text-4xl sm:text-5xl py-10 md:py-20  text-center">Our Story</h1>
+      <div className="sliderWrap py-10 lg:px-1/20 xl:px-1/10">
         <Slider {...settings} ref={customeSlider} className=" ">
           <div>
             <div className={slick}>

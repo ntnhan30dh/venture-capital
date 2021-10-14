@@ -52,7 +52,7 @@ const Strengths2 = () => {
    }
   
   return (
-    <section id="strengths" className="my-20">
+    <section id="strengths" className="my-10 sm:my-20">
       <h1 className="font-bold text-4xl sm:text-5xl p-10 text-center">Our Strengths</h1>
       <div className="cards mx-4 lg:mx-20 hidden md:block">
         <div className="row flex justify-center xl:mx-32 my-20">

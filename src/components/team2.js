@@ -51,17 +51,16 @@ const Team2 = () => {
     )
   }
   return (
-    <div id="team" class="team2 bg-gray py-20">
-      <h1 className="font-bold text-5xl p-20 text-center">Our Team</h1>
-
-      <div class="cards flex justify-center  ">
+    <div id="team" class="team2 bg-gray sm:pb-20 md:px-1/10">
+      <h1 className="font-bold text-4xl sm:text-5xl p-20 md:py-28 text-center">Our Team</h1>
+      <div class="cards flex flex-col md:flex-row justify-center  ">
         {teamArr.map(i => (
           <Modal
             trigger={
               <article class="relative card   mx-4 w-1/10 z-0">
-                <div className="blueCrad  absolute w-full h-full bg-blue top-0 -z-1 "></div>
-                <div className="picCard bg-white z-10 pb-10 transform hover:translate-x-3 hover:-translate-y-3">
-                  <div class="picWrap ">
+                <div className="blueCrad hidden md:block absolute w-full h-full bg-blue top-0 -z-1 "></div>
+                <div className="picCard h-full flex  md:flex-col  bg-white z-10  mb-10 md:mb-0  transform hover:translate-x-3 hover:-translate-y-3 sm:mx-1/10 md:mx-0">
+                  <div class="picWrap w-1/3 md:w-full ">
                     <img
                       src={
                         i.node.featured_media.localFile.childImageSharp.fluid
@@ -70,9 +69,9 @@ const Team2 = () => {
                       alt="teamMember"
                     />
                   </div>
-                  <div class="team-text my-10 px-8">
+                  <div class="team-text xxsm:my-10 px-8">
                     {/* <p class="name">{i.node.title.split(" ").slice(0, -1).join(" ")} <br/> {i.node.title.split(" ")[i.node.title.split(" ").length-1]}</p> */}
-                    <p class="font-bold text-2xl">{i.node.title}</p>
+                    <p class="font-bold pt-2 text-xl md:text-2xl">{i.node.title}</p>
                     <p class="text-lg">{i.node.acf.job_title}</p>
                   </div>
                 </div>
@@ -105,7 +104,7 @@ const Team2 = () => {
                   </div>
                 </div>
               </div>
-              <p class="bio mt-8 ">{i.node.acf.biography}</p>
+              <p class="bio pt-8 ">{i.node.acf.biography}</p>
             </div>
           </Modal>
         ))}

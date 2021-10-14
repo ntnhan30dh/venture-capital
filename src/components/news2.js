@@ -48,16 +48,16 @@ const News2 = () => {
   return (
     <div id="news" class="newsComponent pt-10 bg-gray">
       <div class="section-title">
-        <h1 className="font-bold text-5xl py-10 text-center">From the News</h1>
+        <h1 className="font-bold text-4xl sm:text-5xl py-20 md:py-28 text-center">From the News</h1>
       </div>
-      <div class="news-cards">
+      <div class="news-cards sm:px-1/10">
         {data.allWordpressWpNews.edges
           .sort((a, b) => (a.node.date < b.node.date ? 1 : -1))
           .slice(0, 3)
           .map(i => {
             const date = new Date(i.node.date)
             return (
-              <div className="news-card">
+              <div className="news-card bg-white my-4 sm:m-4">
                 <div class="news-picture">
                   <img
                     src={
