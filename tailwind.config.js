@@ -37,7 +37,7 @@ module.exports = {
       },
       lineHeight: {
         "extra-loose": "2.5",
-        12: "3rem",
+        12: "3rem !important;",
       },
       height: {
         wFull: "100vw",
@@ -108,7 +108,7 @@ module.exports = {
        },
        zIndex: {
         '-1': '-1',
-       }
+       },
     },
     borderWidth: {
       DEFAULT: "1px",

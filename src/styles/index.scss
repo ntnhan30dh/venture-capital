@@ -598,3 +598,11 @@ h3 {
     display: inline-flex ;
   }
 }
+
+.missionWrapper{
+  .imgMobile{
+    background-image: url(../images/mission_pic.png);
+    background-position: center;
+    background-size: cover;
+  }
+}

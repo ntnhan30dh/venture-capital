@@ -57,7 +57,7 @@ const Layout = ({ children }) => {
         }}
       >
         {/* <div id="wrapper" className={`wrapper ${wrapNudge}`}> */}
-        <div id="wrapper" className={`wrapper`}>
+        <div id="wrapper" className={`wrapper overflow-hidden	`}>
           {children}
         </div>
       </div>
