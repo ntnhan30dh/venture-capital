@@ -34,7 +34,7 @@ const IndexPage = () => {
       {/* <Focus /> */}
       <Focus2 />
       {/* <Strengths /> */}
-      {/* <Strengths2 /> */}
+      <Strengths2 />
       {/* <Team/> */}
       {/* <Team2/> */}
       {/* <Portfolio /> */}
