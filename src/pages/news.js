@@ -96,7 +96,7 @@ const NewsPage = () => {
 
   return (
     <Layout>
-      <div className="news py-20">
+      <div className="news py-10 md:py-20">
         <div className="top">
           <h1>Recent articles</h1>
           {/* <h2>{numnerOfAllPosts}</h2> */}
@@ -136,7 +136,7 @@ const NewsPage = () => {
                       {date.getFullYear()}
                     </p> */}
                     {/* <p class="excerpt">{i.node.acf.excerpt}</p> */}
-                    <p class="excerpt pt-4">{i.node.title}</p>
+                    <p class="/excerpt text-lg xxsm:text-xl sm:text-2xl font-bold pt-4">{i.node.title}</p>
                   </div>
                 </a>
               )

@@ -22,27 +22,35 @@ import Header2 from "../components/header2"
 //import CookieConsent from "react-cookie-consent"
 
 const IndexPage = () => {
+
+  const fontSize = {
+    "h1" : "text-4xl sm:text-5xl",
+    "h2" : "text-2xl sm:text-24px",
+    "p" : "text-lg xxsm:text-xl sm:text-2xl",
+    "p2" : "text-lg  "
+
+  }
   return (
     <Layout>
       {/* <Slideshow/>	 */}
       {/* <Mission /> */}
       
       {/* <Header2 /> */}
-      <Mission2 />
+      <Mission2 size={fontSize}/>
       {/* <Story /> */}
-      <Story2 />
+      <Story2  size={fontSize}/>
       {/* <Focus /> */}
-      <Focus2 />
+      <Focus2 size={fontSize} />
       {/* <Strengths /> */}
-      <Strengths2 />
+      <Strengths2 size={fontSize} />
       {/* <Team/> */}
-      <Team2/>
+      <Team2 size={fontSize}/>
       {/* <Portfolio /> */}
-      <Portfolio2 />
+      <Portfolio2 size={fontSize} />
       {/* <News /> */}
-      <News2 />
+      <News2 size={fontSize} />
       {/* <ContactComponent /> */}
-      <Contact2/>
+      <Contact2 size={fontSize}/>
 
       {/* <Philosophy/> */}
   

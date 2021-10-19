@@ -9,13 +9,13 @@ import support from "../images/strengths_support.png"
 import active from "../images/strengths_active.png"
 import founder from "../images/strengths_founder.png"
 
-const Strengths2 = () => {
+const Strengths2 = (props) => {
 
  
-  const card = "w-1/4 text-center px-10 md:px-3 lg:px-10 mb-6"
+  const card = "w-1/4 text-center px-10 md:px-3 lg:px-6 2xl:px-8 mb-6"
   const icon = "w-14 mx-auto"
-  const title = "text-3xl md:text-2xl lg:text-3xl font-bold text-black leading-normal py-6	"
-  const p = "text-lg md:text-base lg:text-lg"
+  const title = `${props.size.h2} font-bold text-black leading-normal py-6`
+  const p = props.size.p2
   
 
    //creating the ref
@@ -30,32 +30,16 @@ const Strengths2 = () => {
      autoplaySpeed: 4000,
  
      responsive: [
-      //  {
-      //    breakpoint: 1280,
-      //    settings: {
-      //      slidesToShow: 2,
-      //      slidesToScroll: 2,
-      //      infinite: true,
-      //      dots: true,
-      //    },
-      //  },
- 
-      //  {
-      //    breakpoint: 768,
-      //    settings: {
-      //      slidesToShow: 1,
-      //      slidesToScroll: 1,
-      //      dots: true,
-      //    },
-      //  },
      ],
    }
   
   return (
-    <section id="strengths" className="my-10 sm:my-20">
-      <h1 className="font-bold text-4xl sm:text-5xl p-10 text-center">Our Strengths</h1>
-      <div className="cards mx-4 lg:mx-20 hidden md:block">
-        <div className="row flex justify-center xl:mx-32 my-20">
+    <section className=" relative my-10 sm:my-20">
+    <div id="strengths" className="absolute -top-32" ></div>
+
+      <h1 className={`font-bold ${props.size.h1} p-10 text-center`}>Our Strengths</h1>
+      <div className="cards mx-4 lg:mx-20  hidden md:block">
+        <div className="row flex justify-center 2xl:mx-20 my-20">
           <article className={card}>
             <div className={icon}>
               <img src={global_founder_network} alt="" className="w-full" />

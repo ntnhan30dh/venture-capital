@@ -20,7 +20,7 @@ const Header2 = props => {
   //   scroll ? " text-white sm:text-black" : "text-white"
   // }  uppercase hover:text-blue mx-2  text-2xl sm:text-base `
 
-  const span = `my-auto text-white sm:text-black uppercase hover:text-blue mx-2  text-2xl sm:text-base `
+  const span = `my-auto text-white sm:text-black  hover:text-blue hover:border-b-2  mx-2  text-2xl sm:text-base lg:text-xl `
   
   // const fillColor = scroll ? "black" : "white"
   const fillColor =  "black"
@@ -47,7 +47,7 @@ const Header2 = props => {
           </Link>
           <div
             to="/"
-            className={`burgerMenu rounded-full p-3 m-3 absolute ${scroll?"bg-space":""}  ${change}`}
+            className={`burgerMenu /rounded-full p-6 /m-3 absolute bg-white  ${change}`}
             onClick={props.toggleMenu}
             onKeyDown={props.toggleMenu}
             role="button"
@@ -80,6 +80,9 @@ const Header2 = props => {
           <Link onClick={props.toggleMenu} to="/#focus" className={link}>
             <span className={span}>Focus</span>
           </Link>
+          <Link onClick={props.toggleMenu} to="/#strengths" className={link}>
+            <span className={span}>Strengths</span>
+          </Link>
 
           <Link onClick={props.toggleMenu} to="/#team" className={link}>
             <span className={span}>Team</span>
@@ -90,7 +93,7 @@ const Header2 = props => {
           </Link>
 
           <Link onClick={props.toggleMenu} to="/#news" className={link}>
-            <span className={span}>news</span>
+            <span className={span}>News</span>
           </Link>
 
           <Link onClick={props.toggleMenu} to="/#contact" className={link}>

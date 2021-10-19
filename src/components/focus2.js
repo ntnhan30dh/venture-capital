@@ -1,7 +1,7 @@
 import React, { useRef } from "react"
 import Slider from "react-slick"
 
-const Focus2 = () => {
+const Focus2 = (props) => {
   //creating the ref
   const customeSlider = useRef()
   const settings = {
@@ -37,20 +37,22 @@ const Focus2 = () => {
   }
 
   const card = "bg-space border-t-4 border-green p-8 mb-10"
-  const title = "text-white text-2xl font-bold py-2"
-  const p = "text-white sm:text-lg mb-8"
-  const item = "bg-white py-1 p-2 mr-2 font-bold"
+  const title = `text-white ${props.size.h2} font-bold py-2`
+  const p = `text-white ${props.size.p2} mb-8`
+  const item = "bg-white py-1 xl:py-2 px-2 xl:px-3 mr-2 font-bold"
 
   return (
-    <section id="focus" className="px-1/20 pb-20 bg-gray mt-10 ">
-      <h1 className="font-bold text-4xl sm:text-5xl py-16 md:py-28 text-center">
+    <section  className=" relative 2xl:px-1/20 pb-20 bg-gray mt-10 ">
+    <div id="focus" className="absolute -top-32" ></div>
+
+      <h1 className={`font-bold ${props.size.h1} py-16 md:py-28 text-center`}>
         Our Focus
       </h1>
       <div className="/md:flex w-full">
         <Slider
           {...settings}
           ref={customeSlider}
-          className=" xsm:mx-1/10  /sm:mx-1/5 xl:mx-10"
+          className=" xsm:mx-1/10   xl:mx-6 2xl:mx-10"
         >
           <div className="px-2 ">
             <article className={card}>

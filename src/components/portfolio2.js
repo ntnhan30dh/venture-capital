@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import arrow from "../images/portfolio_arrow-up-right.png"
 
-const Portfolio2 = () => {
+const Portfolio2 = (props) => {
   const data = useStaticQuery(graphql`
     {
       allWordpressWpPortfolio {
@@ -49,29 +49,24 @@ const Portfolio2 = () => {
     }
   `)
   return (
-    <div id="portfolio" className="portfolio-page sm:pb-20">
-      <div className="inner-container">
-        <h1 className="font-bold text-4xl sm:text-5xl py-16 md:py-28 text-center">
+    <div  className="portfolio-page w-full relative sm:pb-20">
+    <div id="portfolio" className="absolute -top-32" ></div>
+
+      <div className="px-1/10 w-full">
+        <h1 className={`font-bold ${props.size.h1} py-16 md:py-28 text-center`}>
           Our Portfolio
         </h1>
         <div className="portfolio-text">
-          <p className="text-lg md:text-2xl leading-relaxed text-center mx-2 sm:mx-1/5">
+          <p className={`${props.size.p} leading-relaxed text-center mx-2 sm:mx-1/5 xl:mx-1/4`}>
             Our investee companies range{" "}
             <span className="font-bold">
               {" "}
               from plant-based food producers to online delivery platforms.{" "}
             </span>
           </p>
-          {/* <p>
-              {
-                data.allWordpressAcfPages.edges.filter(
-                  i => i.node.wordpress_id === 65
-                )[0].node.acf.text
-              }
-            </p> */}
         </div>
-        <div className="inner-container">
-          <div className="portfolio-container">
+        <div className=" w-full mt-10">
+          <div className=" flex flex-wrap justify-center w-full">
             {data.allWordpressWpPortfolio.edges
               .sort((a, b) =>
                 a.node.wordpress_id < b.node.wordpress_id
@@ -84,7 +79,7 @@ const Portfolio2 = () => {
               .map(i => {
                 return (
                   // for desktop
-                  <div>
+                  <div className="w-1/2 md:w-1/3 xl:w-1/4">
                     <a
                       className=""
                       href={

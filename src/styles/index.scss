@@ -27,7 +27,7 @@ $mobile: 700px;
 html,
 body {
   // overflow-x: hidden;
-  //scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -580,7 +580,7 @@ h3 {
     .bar2,
     .bar3 {
       height: 3px;
-      background-color: white;
+      background-color: black;
       margin: 3px 0;
       transition: 0.4s;
     }
@@ -599,7 +599,7 @@ h3 {
   .change {
     .bar1 {
       -webkit-transform: rotate(-45deg) translate(-6px, 3px);
-      transform: rotate(-45deg) translate(-6px, 3px);
+      transform: rotate(-45deg) translate(-5px, 3px);
     }
 
     .bar2 {
@@ -608,7 +608,7 @@ h3 {
 
     .bar3 {
       -webkit-transform: rotate(45deg) translate(-4px, -4px);
-      transform: rotate(45deg) translate(-4px, -4px);
+      transform: rotate(45deg) translate(-5px, -4px);
       width: 25px;
     }
   }
@@ -629,12 +629,21 @@ h3 {
 // slick customize
 
 .slick-dots li button:before {
-  font-size: "Open Sans", "Arial", sans-serif !important;
-  font-size: 20px !important;
+  font-size: 14px !important;
   content: "\25A0" !important;
 }
 
 .slick-dots li.slick-active button:before {
   color: #006EFF !important;
+  ;
+}
+
+.slick-dots li {
+   margin: 0 !important
+}
+// svg
+
+svg:hover {
+  fill:  #006EFF;
   ;
 }

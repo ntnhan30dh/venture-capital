@@ -105,6 +105,7 @@ module.exports = {
         '9vw': '9vw',
         '10vw': '10vw',
         '14vw': '14vw',
+        '24px': '24px'
        },
        zIndex: {
         '-1': '-1',
@@ -124,6 +125,7 @@ module.exports = {
   variants: {
     extend: {
       display: ["responsive", "hover", "focus"],
+      borderWidth: ['hover', 'focus'],
     },
   },
   plugins: [],

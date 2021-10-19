@@ -29,12 +29,12 @@ const BlogPostTemplate = ({ data }) => {
             data.wordpressWpNews.featured_media.localFile.childImageSharp.fluid
           }
         />
-        <div className="main">
-          <p className="date">
+        <div className="main pt-10">
+          {/* <p className="date">
           {monthNames[date.getMonth()]} {date.getDate()},{" "}
                     {date.getFullYear()}
-          </p>
-          <h1 className="title">
+          </p> */}
+          <h1 className="title ">
         {data.wordpressWpNews.title}
           </h1>
           <div className="content" dangerouslySetInnerHTML={{ __html: data.wordpressWpNews.acf.content }}>

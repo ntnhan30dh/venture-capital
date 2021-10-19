@@ -7,7 +7,7 @@ import pic2 from "../images/story_pic2.png"
 import pic3 from "../images/story_pic3.png"
 
 
-const Story2 = () => {
+const Story2 = (props) => {
   const data = useStaticQuery(graphql`
     {
       allWordpressAcfStory {
@@ -48,10 +48,11 @@ const Story2 = () => {
   const slick = "w-full flex flex-col lg:flex-row lg:bg-gray lg:mb-10"
   const imgDiv = "lg:w-1/2"
   const text = "lg:w-1/2  m-auto "
-  const p = "m-auto text-lg xxsm:text-xl sm:text-2xl text-center md:text-left py-8 px-4 sm:p-10 md:px-20 leading-12  "
+  const p = `m-auto ${props.size.p} text-center md:text-left py-8 px-4 sm:p-10 md:px-20 leading-12  `
   return (
-    <section id="story" className="w-full my-10 ">
-      <h1 className="font-bold text-4xl sm:text-5xl py-10 md:py-20  text-center">Our Story</h1>
+    <section  className=" relative w-full my-10 ">
+    <div id="story" className="absolute -top-32" ></div>
+      <h1 className={`font-bold ${props.size.h1} py-10 md:py-20  text-center`}>Our Story</h1>
       <div className="sliderWrap py-10 lg:px-1/20 xl:px-1/10">
         <Slider {...settings} ref={customeSlider} className=" ">
           <div>
