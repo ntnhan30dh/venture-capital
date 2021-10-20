@@ -38,7 +38,7 @@ const Focus2 = (props) => {
 
   const card = "bg-space border-t-4 border-green p-8 mb-10"
   const title = `text-white ${props.size.h2} font-bold py-2`
-  const p = `text-white ${props.size.p2} mb-8`
+  const p = `text-white ${props.size.p2} mb-8 `
   const item = "bg-white py-1 xl:py-2 px-2 xl:px-3 mr-2 font-bold"
 
   return (

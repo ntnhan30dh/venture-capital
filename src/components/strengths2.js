@@ -120,7 +120,7 @@ const Strengths2 = (props) => {
               <img src={active} alt="active" className="w-full" />
             </div>
             <h2 className={title}>
-              Active value creation <br />{" "}
+              Active value <br /> creation {" "}
             </h2>
             <p className={p}>
               Our network of experienced company founders is available to advise

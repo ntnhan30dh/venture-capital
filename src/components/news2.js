@@ -72,7 +72,7 @@ const News2 = (props) => {
                 </div>
                 <div className="textWrap flex flex-col justify-between px-2 md:px-4 flex-grow">
                   <div class="news-text  ">
-                    <h1 class={`/excerpt ${props.size.p} font-bold pt-4`}>{i.node.title}</h1>
+                    <h1 class={`/excerpt ${props.size.p2} font-bold pt-4`}>{i.node.title}</h1>
                   </div>
                   <a
                     class="readMore flex items-center mt-6 text-blue text-lg font-semibold"
@@ -98,15 +98,7 @@ const News2 = (props) => {
           </a>
         )}
       </div>
-      {/* <div>
-        <div className="greenCard  absolute w-full h-full bg-green top-0  -z-1 "></div>
-      <div className="transform  hover:translate-x-3 hover:-translate-y-3 mx-auto bg-blue max-w-max ">
-        <Link class=" text-white hover:text-white   " to="/news">
-          See more news
-        </Link>
-      </div>
-      </div> */}
-
+      
       <article class="relative card my-4 md:my-20  mx-auto z-0 max-w-max ">
         <Link to="/news">
           <div className="blueCrad  absolute w-full h-full  bg-green top-0 -z-1 "></div>

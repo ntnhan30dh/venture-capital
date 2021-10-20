@@ -57,7 +57,7 @@ const Portfolio2 = (props) => {
           Our Portfolio
         </h1>
         <div className="portfolio-text">
-          <p className={`${props.size.p} leading-relaxed text-center mx-2 sm:mx-1/5 xl:mx-1/4`}>
+          <p className={`${props.size.p} leading-relaxed text-center mx-2 sm:mx-1/5 xl:mx-1/4 font-light	`}>
             Our investee companies range{" "}
             <span className="font-bold">
               {" "}
@@ -110,7 +110,7 @@ const Portfolio2 = (props) => {
                               {i.node.title}
                             </h1>
                             <div
-                              className="overlay-text_portfolio2 text-lg text-black "
+                              className="overlay-text_portfolio2 text-lg text-black font-light	"
                               dangerouslySetInnerHTML={{
                                 __html: data.allWordpressAcfPortfolio.edges.filter(
                                   x =>
