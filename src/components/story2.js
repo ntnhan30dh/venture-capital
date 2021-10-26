@@ -48,7 +48,7 @@ const Story2 = (props) => {
   const slick = "w-full flex flex-col lg:flex-row lg:bg-gray lg:mb-10"
   const imgDiv = "lg:w-1/2"
   const text = "lg:w-1/2  m-auto "
-  const p = `m-auto ${props.size.p} text-center md:text-left py-8 px-4 sm:p-10 md:px-20 leading-12 font-light`
+  const p = `m-auto ${props.size.p2} text-center md:text-left py-8 px-4 sm:p-10 md:px-20 leading-12 font-light`
   return (
     <section  className=" relative w-full my-10 ">
     <div id="story" className="absolute -top-32" ></div>
