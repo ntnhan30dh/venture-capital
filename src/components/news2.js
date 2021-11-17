@@ -5,20 +5,20 @@ import { Link } from "gatsby"
 import arrow from "../images/news_arrow.png"
 
 const News2 = (props) => {
-  const monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ]
+  // const monthNames = [
+  //   "January",
+  //   "February",
+  //   "March",
+  //   "April",
+  //   "May",
+  //   "June",
+  //   "July",
+  //   "August",
+  //   "September",
+  //   "October",
+  //   "November",
+  //   "December",
+  // ]
   const data = useStaticQuery(graphql`
     {
       allWordpressWpNews {
@@ -59,7 +59,7 @@ const News2 = (props) => {
           .sort((a, b) => (a.node.date < b.node.date ? 1 : -1))
           .slice(0, 3)
           .map(i => {
-            const date = new Date(i.node.date)
+           // const date = new Date(i.node.date)
             return (
               <div className="news-card bg-white my-4 sm:m-4 flex flex-col pb-4">
                 <div class="news-picture">

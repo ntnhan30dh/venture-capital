@@ -2,9 +2,9 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { Modal } from "semantic-ui-react"
 
-import twitter from "../images/team_twitter.png"
-import fb from "../images/team_fb.png"
-import slack from "../images/team_slack.png"
+// import twitter from "../images/team_twitter.png"
+// import fb from "../images/team_fb.png"
+// import slack from "../images/team_slack.png"
 
 const Team2 = (props) => {
   const data = useStaticQuery(graphql`
@@ -43,13 +43,13 @@ const Team2 = (props) => {
       : 0
   )
 
-  const icon = pic => {
-    return (
-      <div class="picWrap w-8 mr-4 ">
-        <img src={pic} alt="teamMember" />
-      </div>
-    )
-  }
+  // const icon = pic => {
+  //   return (
+  //     <div class="picWrap w-8 mr-4 ">
+  //       <img src={pic} alt="teamMember" />
+  //     </div>
+  //   )
+  // }
   return (
     <div  class="team2 relative bg-gray sm:pb-20 md:px-1/10">
     <div id="team" className="absolute -top-32" ></div>

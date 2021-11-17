@@ -1,24 +1,24 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+//import { graphql, useStaticQuery } from "gatsby"
 import pic from "../images/mission_pic.png"
 
 const Mission2 = (props) => {
-  const data = useStaticQuery(graphql`
-    {
-      allWordpressAcfMission {
-        edges {
-          node {
-            id
-          }
-        }
-        nodes {
-          acf {
-            text
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   {
+  //     allWordpressAcfMission {
+  //       edges {
+  //         node {
+  //           id
+  //         }
+  //       }
+  //       nodes {
+  //         acf {
+  //           text
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
   return (
     <section  className="missionWrapper">
       <div className="imgDiv w-full hidden sm:block">

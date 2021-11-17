@@ -7,9 +7,9 @@
 
 import React, { useState } from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+//import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+//import Header from "./header"
 import Header2 from "./header2"
 // import "./layout.css"
 import "../styles/index.scss"
@@ -21,22 +21,22 @@ import { Link } from "gatsby"
 import CookieConsent from "react-cookie-consent"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
 
-  const [nudge, setNudge] = useState(true)
-  const toggleNudge = () => {
-    setNudge(!nudge)
-    console.log("nudge", nudge)
-  }
-  const wrapNudge = nudge ? "nudge" : ""
+  // const [nudge, setNudge] = useState(true)
+  // const toggleNudge = () => {
+  //   setNudge(!nudge)
+  //   console.log("nudge", nudge)
+  // }
+  // const wrapNudge = nudge ? "nudge" : ""
 
   let [menuActive, setmenuActive] = useState(false)
   const toggleMenu = () => {

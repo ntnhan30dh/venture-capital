@@ -5,21 +5,21 @@ import Layout from "../components/layout"
 import BackgroundImage from "gatsby-background-image"
 
 const BlogPostTemplate = ({ data }) => {
-  const monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ]
-  const date = new Date(data.wordpressWpNews.date)
+  // const monthNames = [
+  //   "January",
+  //   "February",
+  //   "March",
+  //   "April",
+  //   "May",
+  //   "June",
+  //   "July",
+  //   "August",
+  //   "September",
+  //   "October",
+  //   "November",
+  //   "December",
+  // ]
+  // const date = new Date(data.wordpressWpNews.date)
   return (
     <Layout>
       <div className="news-single">

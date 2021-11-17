@@ -118,7 +118,7 @@ const NewsPage = () => {
                 : -1
             )
             .map(i => {
-              const date = new Date(i.node.date)
+              {/* const date = new Date(i.node.date) */}
               return (
                 <a class="news-card" href={`/post/${i.node.slug}`}>
                   <div class="news-picture">

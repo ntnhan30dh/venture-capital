@@ -1,5 +1,5 @@
 import React, { useRef } from "react"
-import { graphql, useStaticQuery } from "gatsby"
+//import { graphql, useStaticQuery } from "gatsby"
 import Slider from "react-slick"
 
 import pic1 from "../images/story_pic1.png"
@@ -8,22 +8,22 @@ import pic3 from "../images/story_pic3.png"
 
 
 const Story2 = (props) => {
-  const data = useStaticQuery(graphql`
-    {
-      allWordpressAcfStory {
-        edges {
-          node {
-            id
-          }
-        }
-        nodes {
-          acf {
-            text
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   {
+  //     allWordpressAcfStory {
+  //       edges {
+  //         node {
+  //           id
+  //         }
+  //       }
+  //       nodes {
+  //         acf {
+  //           text
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   //creating the ref
   const customeSlider = useRef()
