@@ -63,7 +63,7 @@ const Story2 = (props) => {
               <div className={text}>
                 <p className={p}>
                   At DX Ventures, we recognise that <span className='font-bold'> entrepreneurs are the true
-                  heroes </span> , and we aim to support them in  achieving their
+                  heroes</span>, and we aim to support them in  achieving their
                   ambitions on the world stage.
                 </p>
               </div>
@@ -73,7 +73,7 @@ const Story2 = (props) => {
             <div className={`${slick} flex-col-reverse` }>
               <div className={text}>
                 <p className={p}>
-                We seek to leverage global insights alongside our local know how, to <span className="font-bold"> help founders grow outstanding companies.</span> 
+                We leverage global insights alongside our local know-how, to<span className="font-bold"> help founders grow outstanding companies.</span> 
                 </p>
               </div>
               <div className={imgDiv}>

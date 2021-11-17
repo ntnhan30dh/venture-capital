@@ -48,7 +48,7 @@ const Strengths2 = (props) => {
               Global founder <br /> network
             </h2>
             <p className={p}>
-              Our network of experienced company founders is available to advise
+              Our network of experienced company founders are available to advise
               and assist portfolio companies on their journey.
             </p>
           </article>
@@ -123,7 +123,7 @@ const Strengths2 = (props) => {
               Active value <br /> creation {" "}
             </h2>
             <p className={p}>
-              Our network of experienced company founders is available to advise
+              Our network of experienced company founders are available to advise
               and assist portfolio companies on their journey.
             </p>
           </article>
@@ -158,7 +158,7 @@ const Strengths2 = (props) => {
               Global founder <br /> network
             </h2>
             <p className={p}>
-              Our network of experienced company founders is available to advise
+              Our network of experienced company founders are available to advise
               and assist portfolio companies on their journey.
             </p>
           </article>
@@ -231,7 +231,7 @@ const Strengths2 = (props) => {
               Active value creation <br />{" "}
             </h2>
             <p className={p}>
-              Our network of experienced company founders is available to advise
+              Our network of experienced company founders are available to advise
               and assist portfolio companies on their journey.
             </p>
           </article>

@@ -12,7 +12,7 @@ const Contact2 = (props) => {
             <p>We are looking forward to hearing from you!</p>
             <p className="my-6">Please reach out to us at <span className="font-bold underline hover:text-green">  info@dxventures.vc </span> </p>
             <p>
-              To note, if you are seeking funding, <br /> please include a pitch deck.
+            Please note, if you are seeking funding, <br /> include a pitch deck to your email. 
             </p>
           </div>
         </div>

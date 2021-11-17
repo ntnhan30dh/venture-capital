@@ -27,7 +27,7 @@ const Strengths = () => {
             </div>
             <div class="strength-description">GLOBAL FOUNDER NETWORK</div>
             <div class="strength-overlay">
-            Our network of experienced company founders is available to advise and assist portfolio companies on their journey.
+            Our network of experienced company founders are available to advise and assist portfolio companies on their journey.
             </div>
           </div>
           <div class="strength industry">
