@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { Modal } from "semantic-ui-react"
 
-// import twitter from "../images/team_twitter.png"
+ import twitter from "../images/team_twitter.png"
 // import fb from "../images/team_fb.png"
 // import slack from "../images/team_slack.png"
 
@@ -58,7 +58,7 @@ const Team2 = (props) => {
         {teamArr.map(i => (
           <Modal
             trigger={
-              <article class="relative card   mx-4 w-1/10 z-0">
+              <article class="relative card md:w-1/4  mx-4 w-1/10 z-0">
                 <div className="blueCrad hidden md:block absolute w-full h-full bg-blue top-0 -z-1 "></div>
                 <div className="picCard h-full flex  md:flex-col  bg-white z-10  mb-10 md:mb-0  transform hover:translate-x-3 hover:-translate-y-3 sm:mx-1/10 md:mx-0">
                   <div class="picWrap w-1/4 md:w-1/3 md:w-full ">
