@@ -50,6 +50,7 @@ const Team2 = (props) => {
   //     </div>
   //   )
   // }
+  { console.log('teamArr',teamArr)}
   return (
     <div  class="team2 relative bg-gray sm:pb-20 md:px-1/10">
     <div id="team" className="absolute -top-32" ></div>

@@ -66,7 +66,7 @@ const Portfolio2 = (props) => {
           </p>
         </div>
         <div className=" w-full mt-10">
-          <div className=" flex flex-wrap justify-center w-full">
+          <div className=" flex flex-wrap justify-start w-full">
             {data.allWordpressWpPortfolio.edges
               .sort((a, b) =>
                 a.node.wordpress_id < b.node.wordpress_id
@@ -75,7 +75,7 @@ const Portfolio2 = (props) => {
                   ? -1
                   : 0
               )
-              .slice(0, 12)
+              //.slice(0, 12)
               .map(i => {
                 return (
                   // for desktop
