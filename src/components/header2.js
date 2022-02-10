@@ -68,7 +68,7 @@ const Header2 = props => {
             className={link}
             activeClassName="bg-black"
           >
-            <span className={span}>Missionn</span>
+            <span className={span}>Mission</span>
           </Link>
           <Link
             onClick={props.toggleMenu}
