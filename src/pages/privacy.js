@@ -233,7 +233,7 @@ const Privacy = () => {
           <strong>Cookie Information</strong>
         </h3>
         <p>
-          In order for your visit to DX Ventures to be attractive and to enable
+          In order for your visit to Delivery Hero Ventures to be attractive and to enable
           the use of certain functions, we use the so-called cookies on various
           pages. Cookies are small text files that are stored in your browser.
           Some of the cookies we use are deleted after the end of the operation

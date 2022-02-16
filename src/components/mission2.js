@@ -32,14 +32,14 @@ const Mission2 = (props) => {
         <div id="mission" className="absolute -top-32" ></div>
         <h1 className={`font-bold ${props.size.h1}  py-10`}>Our Mission</h1>
         <p  className={`mx-auto  ${props.size.p2} text-center p-2 sm:w-2/3 md:w-1/2 /lg:px-16 lg:px-28 leading-12 font-light`}>
-          DX Ventures' mission is to support the next generation of 
+        Delivery Hero Ventures' mission is to support the next generation of 
           <span className="font-bold"> founder-led technology companies </span>{" "}
           that are disrupting  some of the most fast-moving industries
           around the world.
         </p>
 
         {/* <p className=" sm:hidden mx-auto text-xl text-center p-6 leading-loose">
-          DX Ventures' mission is to support the next generation of
+          Delivery Hero Ventures' mission is to support the next generation of
           <span className="font-bold"> founder-led <br />{" "} technology companies </span>{" "}
           that are <br /> disrupting  some of the most fast-moving industries
           around the world.

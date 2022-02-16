@@ -62,7 +62,7 @@ const Story2 = (props) => {
               </div>
               <div className={text}>
                 <p className={p}>
-                  At DX Ventures, we recognise that <span className='font-bold'> entrepreneurs are the true
+                  At Delivery Hero Ventures, we recognise that <span className='font-bold'> entrepreneurs are the true
                   heroes</span>, and we aim to support them in  achieving their
                   ambitions on the world stage.
                 </p>
@@ -88,7 +88,7 @@ const Story2 = (props) => {
               </div>
               <div className={text}>
                 <p className={p}>
-                DX Ventures is backed by Delivery Hero, a truly global food  technology company whose network, distribution and expertise can be harnessed to <span className="font-bold"> help  our companies fulfil their global ambitions. </span> 
+                Delivery Hero Ventures is backed by Delivery Hero, a truly global food  technology company whose network, distribution and expertise can be harnessed to <span className="font-bold"> help  our companies fulfil their global ambitions. </span> 
                 </p>
               </div>
             </div>

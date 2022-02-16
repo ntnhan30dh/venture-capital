@@ -237,7 +237,7 @@ const ContactPage = () => {
                     required
                   />{" "}
                 </span>
-                By checking this box, I agree to be contacted by DX Ventures in
+                By checking this box, I agree to be contacted by Delivery Hero Ventures in
                 relation to investment opportunities. Please, check our{" "}
                 <Link to="/privacy">Privacy Policy</Link> to see how we protect
                 and manage your personal data.{" "}
