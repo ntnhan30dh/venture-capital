@@ -1,6 +1,7 @@
 import React from "react"
 //import { graphql, useStaticQuery } from "gatsby"
 import pic from "../images/mission_pic.png"
+import pic_mobile from "../images/mission_pic__mobile.png"
 
 const Mission2 = (props) => {
   // const data = useStaticQuery(graphql`
@@ -26,6 +27,7 @@ const Mission2 = (props) => {
       </div>
 
       <div className="imgMobile w-full h-screen bg-mission sm:hidden">
+      <img src={pic_mobile} alt="mission" className="w-full" />
 
       </div>
       <div className="relative text w-full text-center p-10 md:py-20 bg-gray" >

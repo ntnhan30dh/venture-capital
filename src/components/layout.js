@@ -66,7 +66,7 @@ const Layout = ({ children }) => {
 			FIND OUT MORE
 				</div></Link> */}
         <div className="footer-footer">
-          Copyright© 2021 Delivery Hero SE
+          Copyright© 2022 Delivery Hero SE
           <br />
           <br />
           <div className="buttons">
