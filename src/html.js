@@ -21,6 +21,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+      <title> DH Ventures</title>
         {props.headComponents}
       </head>
       {/* <noscript dangerouslySetInnerHTML={{
