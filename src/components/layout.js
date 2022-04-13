@@ -9,7 +9,6 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 //import { useStaticQuery, graphql } from "gatsby"
 
-//import Header from "./header"
 import Header2 from "./header2"
 // import "./layout.css"
 import "../styles/index.scss"
@@ -45,8 +44,6 @@ const Layout = ({ children }) => {
 
   return (
     <div className="relative">
-      {/* <Header siteTitle={data.site.siteMetadata.title} toggleNudgeHandle={toggleNudge}/> */}
-
       <Header2 toggleMenu={toggleMenu} menuState={menuActive} />
 
       <div
