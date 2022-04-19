@@ -3,22 +3,17 @@
 $tablet: 1000px;
 $mobile: 700px;
 
-// @import url('https://use.typekit.net/qkw4qjp.css');
-//@import url("https://use.typekit.net/ckx5yuk.css");
-// @import url("https://use.typekit.net/bvm0cpe.css");
- @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://use.typekit.net/qkw4qjp.css');
+@import url("https://use.typekit.net/ckx5yuk.css");
+@import url("https://use.typekit.net/bvm0cpe.css");
 
-// @import "bootstrap";
-// @import "bootstrap_theme";
-//@import "portfolio";
+
 @import "strengths";
 @import "vision";
 @import "team";
 @import "news";
 @import "disclaimer";
 @import "contact";
-// @import "arrow";
-@import "default";
 
 /* CSS Document */
 
@@ -46,8 +41,8 @@ body {
   position: absolute;
   width: 100%;
   margin: 0;
-  // font-family: "sofia-pro","Arial", sans-serif;
-  font-family: "Open Sans", "Arial", sans-serif !important;
+   font-family: "sofia-pro","Arial", sans-serif !important;
+  
   font-weight: 400;
   font-size: 14px;
   color: #343b46;
@@ -58,8 +53,7 @@ body {
   h4,
   h5,
   p {
-    font-family: "Open Sans", "Arial", sans-serif !important;
-  }
+    font-family: "sofia-pro","Arial", sans-serif !important;  }
 }
 
 // fix the p margin
@@ -581,7 +575,7 @@ h3 {
     .bar2,
     .bar3 {
       height: 3px;
-      background-color: black;
+      //background-color: white;
       margin: 3px 0;
       transition: 0.4s;
     }
@@ -593,14 +587,14 @@ h3 {
       width: 20px;
     }
     .bar3{
-      width: 15px;
+      width: 25px;
     }
   }
 
   .change {
     .bar1 {
-      -webkit-transform: rotate(-45deg) translate(-6px, 3px);
-      transform: rotate(-45deg) translate(-5px, 3px);
+      -webkit-transform: rotate(-45deg) translate(0px, 0px);
+      transform: rotate(-45deg) translate(0px, 0px);
     }
 
     .bar2 {
@@ -609,8 +603,8 @@ h3 {
 
     .bar3 {
       -webkit-transform: rotate(45deg) translate(-4px, -4px);
-      transform: rotate(45deg) translate(-5px, -4px);
-      width: 25px;
+      transform: rotate(45deg) translate(-4px, -4px);
+     
     }
   }
 

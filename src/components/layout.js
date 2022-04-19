@@ -9,8 +9,7 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 //import { useStaticQuery, graphql } from "gatsby"
 
-import Header2 from "./header2"
-// import "./layout.css"
+import Header from "./header"
 import "../styles/index.scss"
 import "semantic-ui-css/semantic.min.css"
 import "../styles/global.css"
@@ -44,7 +43,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className="relative">
-      <Header2 toggleMenu={toggleMenu} menuState={menuActive} />
+      <Header toggleMenu={toggleMenu} menuState={menuActive} />
 
       <div
         style={{
