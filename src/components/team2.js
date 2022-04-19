@@ -2,9 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { Modal } from "semantic-ui-react"
 
- import twitter from "../images/team_twitter.png"
-// import fb from "../images/team_fb.png"
-// import slack from "../images/team_slack.png"
+
 
 const Team2 = (props) => {
   const data = useStaticQuery(graphql`
