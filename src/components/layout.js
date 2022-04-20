@@ -52,15 +52,11 @@ const Layout = ({ children }) => {
           padding: 0,
         }}
       >
-        {/* <div id="wrapper" className={`wrapper ${wrapNudge}`}> */}
         <div id="wrapper" className={`wrapper overflow-hidden	`}>
           {children}
         </div>
       </div>
       <footer id="footer" className="footer c">
-        {/* <Link to="/contact"><div className="cta-button">
-			FIND OUT MORE
-				</div></Link> */}
         <div className="footer-footer">
           Copyright© 2022 Delivery Hero SE
           <br />

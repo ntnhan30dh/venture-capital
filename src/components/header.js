@@ -17,16 +17,17 @@ const Header
 
   let menuActive = props.menuState ? "is-inactive" : ""
   let change = props.menuState ? "change" : ""
-  const link = " font-bold pb-6 sm:pb-0 "
-  const span = `my-auto text-white sm:text-black  hover:text-blue hover:border-b-2  mx-2  text-2xl sm:text-base lg:text-xl`
+  const link = "pb-6 lg:pb-0 "
+  const span = `my-auto text-white ${scroll?"lg:text-black":""}  hover:text-green hover:border-b-2  mx-2  label2 lg:text-sm lg:font-bold`
   const logoState = props.menuState?logo_green:logo_blue
   const barState = props.menuState?"bg-white":"bg-black"
   
   return (
     <header className={`headerWrapper  ${position} z-50 w-full  ${scroll ? " bg-white" : "bg-transparent" } `} >
-      <nav className={` flex justify-between px-4 ${props.menuState ? "bg-space md:bg-transparent" : ""} bg-transparent`}>
-          <Link to="/" className={`w-36 md:w-52 my-4 ${props.menuState?" absolute md:relative":""} left-4 top-4`}>
-            <img src={scroll?logoState:logo_green} alt="logo" />
+      <nav className={` relative flex justify-between px-4 lg:mx-24 ${props.menuState ? "bg-space lg:bg-transparent" : ""} bg-transparent 	`}>
+          <Link to="/" className={`w-44 lg:w-72 my-4 lg:my-5 ${props.menuState?" absolute lg:static":""} left-4 top-4`}>
+            <img src={scroll?logoState:logo_green} alt="logo" className="lg:hidden" />
+            <img src={scroll?logo_blue:logo_green} alt="logo"  className="hidden lg:block"/>
           </Link>
           <div
             to="/"
@@ -41,7 +42,7 @@ const Header
             <div class={`bar3 ${scroll?barState: "bg-white"}`}></div>
           </div>
         <div
-          className={`rightDiv  hidden flex sm:flex flex-col justify-start sm:justify-center items-center sm:flex-row w-screen sm:w-screen h-screen sm:h-auto sm:w-max flex-wrap sm:flex-nowrap  md:justify-between md:w-3/5  pt-10 xxsm:pt-1/5 xsm:pt-1/10 sm:pt-0  ${menuActive}`}
+          className={`rightDiv h-full  hidden flex lg:flex flex-col justify-center items-center lg:flex-row w-screen lg:w-full h-screen lg:h-auto flex-wrap lg:flex-nowrap  lg:justify-between lg:ml-20    ${menuActive}`}
         >
           <Link
             onClick={props.toggleMenu}
@@ -74,14 +75,11 @@ const Header
             <span className={span}>News</span>
           </Link>
 
-          <Link onClick={props.toggleMenu} to="/#news" className={link}>
+          <Link onClick={props.toggleMenu} to="/#contact" className={link}>
             <span className={span}>Contact Us</span>
           </Link>
-
-          <Link onClick={props.toggleMenu} to="/#contact" className={link}>
-            <span className={span}>Contact</span>
-          </Link>
         </div>
+        <div className="w-full h-1 bg-white opacity-20 absolute bottom-0 left-0 /mx-24 hidden lg:block"> </div>
       </nav>
     </header>
   )

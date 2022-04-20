@@ -24,6 +24,7 @@ html,
 body {
   // overflow-x: hidden;
   scroll-behavior: smooth;
+  font-size: 16px !important; 
 }
 
 * {
@@ -94,10 +95,6 @@ body {
 }
 
 .nav-menu {
- // position: absolute;
- // right: 100px;
- // top: 43px;
- // width: auto;
   display: flex;
   @media only screen and (max-width: 500px) {
     min-height: 65px;
@@ -144,11 +141,6 @@ body {
   margin: auto;
 }
 
-h2 {
-  margin: 0;
-  font-size: 32px;
-  color: #862f5d;
-}
 
 /***PAGE1****/
 
@@ -246,158 +238,6 @@ h2 {
   margin-top: 53px;
 }
 
-/***TEAM***/
-
-.team.container {
-  //background-color: white;
-  // height: 762px;
-}
-
-.team.bg-container {
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  top: 0;
-  left: 0;
-  background-image: url("../images/team-bg.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-  transform: translateX(-100px);
-}
-
-.team.inner-container {
-  height: 100%;
-}
-
-.team-right {
-  padding-top: 60px;
-  position: absolute;
-  right: 0;
-  width: 60%;
-  height: 100%;
-}
-
-.team-grid {
-  padding-top: 69px;
-  padding-bottom: 49px;
-}
-
-.member-cont {
-  position: relative;
-  display: flex;
-  margin-bottom: 24px;
-}
-
-.member-cont:nth-child(2) {
-  transform: translateX(-60px);
-}
-
-.member-cont:nth-child(3) {
-  transform: translateX(-120px);
-}
-
-.name-cont {
-  color: #343b46;
-  position: relative;
-  padding-left: 50px;
-  font-size: 24px;
-  height: 100%;
-  padding-top: 25px;
-}
-
-.name {
-  font-weight: 900;
-}
-
-.avatar {
-  width: 120px;
-  height: 120px;
-}
-
-/** philosophy **/
-
-.philosophy.container {
-  background-color: #f5f5f6;
-  height: 704px;
-}
-
-.philosophy.inner-container {
-  height: 100%;
-  padding-top: 90px;
-  padding-bottom: 76px;
-  _background-color: gray;
-}
-
-.philosophy-grid {
-  padding: 97px 10px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.philosophy-element {
-  text-align: center;
-  width: 220px;
-}
-
-.philosophy-text {
-  text-align: center;
-  color: #343b46;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 22px;
-  padding-top: 40px;
-}
-
-.footer {
-  position: relative;
-  background-color: #343b46;
-  height: 200px;
-  @media screen and (max-width: 500px) {
-    height: 200px;
-  }
-}
-
-.footer-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #343b46;
-  color: #f5f5f6;
-  text-align: center;
-  font-size: 15px;
-  padding: 40px;
-  height: 100%;
-  //bottom: 0;
-  width: 100%;
-  //	border: 1px solid red;
-
-  .buttons * {
-    margin: 0 10px;
-  }
-}
-
-.cta-button {
-  position: relative;
-  height: 55px;
-  width: auto;
-  max-width: 214px;
-  color: white;
-  background-color: #00c269;
-  font-size: 20px;
-  text-align: center;
-  line-height: 55px;
-  margin: auto;
-  transform: translateY(-28px);
-}
-
-h3 {
-  margin: 0;
-  font-size: 22px;
-  color: #862f5d;
-}
-
 /***MEDIA QUERY***/
 
 @media only screen and (max-width: 767px) {
@@ -463,44 +303,6 @@ h3 {
     padding-top: 25px;
   }
 
-  // .avatar{
-  // 	width: 100px;
-  // }
-
-  /** philosophy **/
-
-  .philosophy.container {
-    height: auto;
-    padding: 40px 20px 0px 20px;
-  }
-
-  .philosophy.inner-container {
-    padding-top: 0px;
-    padding-bottom: 60px;
-  }
-
-  .philosophy-grid {
-    padding: 60px 10px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-gap: 30px;
-  }
-
-  .philosophy-element {
-    width: 100%;
-    height: auto;
-    text-align: center;
-  }
-
-  .philosophy-icon img {
-    width: 100%;
-  }
-
-  .philosophy-text {
-    display: none;
-  }
 }
 
 .is-inactive {
@@ -568,7 +370,7 @@ h3 {
   .burgerMenu {
     display: none;
     cursor: pointer;
-    @media screen and (max-width: 639px) {
+    @media screen and (max-width: 1023px) {
       display: inline;
     }
     .bar1,
@@ -641,4 +443,19 @@ h3 {
 svg:hover {
   fill:  #006EFF;
   ;
+}
+
+
+// font 
+
+.label1{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.label2{
+  font-weight:600;
+  font-size: 24px;
+  line-height: 28px;
 }
