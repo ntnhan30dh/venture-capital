@@ -110,6 +110,10 @@ module.exports = {
        zIndex: {
         '-1': '-1',
        },
+       rotate: {
+        '90': '90deg',
+        '180': '180deg',
+      }
     },
     borderWidth: {
       DEFAULT: "1px",

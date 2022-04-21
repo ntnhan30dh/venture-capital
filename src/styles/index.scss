@@ -495,3 +495,52 @@ body {
   color: white !important;
   opacity: 0.25;
 }
+
+// strengths
+.strengths{
+
+
+svg:not(:root) {
+  overflow: visible;
+}
+
+.medal {
+  &:hover{
+    #star{
+      transform: rotate(-90deg);
+      transition: width 1s, height 1s, transform 1s;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+  }
+}
+
+.founder {
+  &:hover{
+    #head{
+      transform: rotate(45deg);
+      transition: width 0.4s, height 0.4s, transform 0.4s;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+  }
+}
+
+.rocket {
+  &:hover{
+    #main{
+      transform: translate(5px,-10px);
+      transition: width 0.4s, height 0.4s, transform 0.4s;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    #sub{
+      transform: scale(0.7);
+      transition: width 0.4s, height 0.4s, transform 0.4s;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+  }
+}
+
+}
