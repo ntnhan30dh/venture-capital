@@ -69,8 +69,13 @@ const Focus = () => {
     card("b2b"),
     card("fintech"),
       ];
-  
+  const caro = () => {
+    if( typeof window !== 'undefined'){
+      return  <Carousel slides={slides} autoplay={false} interval={500} arrows={false}   />
+    }
+  }
   return (
+    
     <section id="focus" className="focus">
       <h2 className="h2 text-center  pt-14 lg:pt-20  pb-8 lg:mb-40">
         Our Focus
@@ -80,8 +85,8 @@ const Focus = () => {
       {card("b2b")}
       {card("fintech")}
       </div>
-      <div className="lg:hidden">
-      <Carousel slides={slides} autoplay={false} interval={500} arrows={false}   />
+      <div className="lg:hidden">    
+     { caro()}
       </div>
     </section>
   )

@@ -37,3 +37,18 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   })
 }
+
+exports.onCreateWebpackConfig = ({actions, stage}) => {
+  if (stage === "build-html") {
+      actions.setWebpackConfig({
+          module: {
+              rules: [
+                  {
+                      test: /3d-react-carousal/,
+                      use: ['null-loader']
+                  },
+              ],
+          }
+      })
+  }
+};
