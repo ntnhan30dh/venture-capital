@@ -7,6 +7,7 @@ $lg: 	1024px;
 @import url('https://use.typekit.net/qkw4qjp.css');
 @import url("https://use.typekit.net/ckx5yuk.css");
 @import url("https://use.typekit.net/bvm0cpe.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 
 @import "strengths";
@@ -441,6 +442,11 @@ body {
   line-height: 28px;
 }
 
+.body1{
+  font-size: 20px;
+  line-height: 28px;
+}
+
 .h1{
   font-weight:bold;
   font-size: 32px;
@@ -543,4 +549,9 @@ svg:not(:root) {
   }
 }
 
+}
+
+// focus
+.react-3d-carousel {
+  height: 535px !important;
 }

@@ -55,6 +55,8 @@ module.exports = {
         "4/7": "57.1428571%",
         "5/7": "71.4285714%",
         "6/7": "85.7142857%",
+        "343": "343px",
+        "400": "400px",
       },
       padding: {
         '140': '140%',
@@ -130,6 +132,8 @@ module.exports = {
     extend: {
       display: ["responsive", "hover", "focus"],
       borderWidth: ['hover', 'focus'],
+      translate: ['group-hover'],
+      transform: ['group-hover'],
     },
   },
   plugins: [],

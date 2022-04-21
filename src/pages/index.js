@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Slideshow from "../components/slideshow"
 import Mission2 from "../components/mission2"
 import Story2 from "../components/story2"
-import Focus2 from "../components/focus2"
+import Focus from "../components/focus"
 import Strengths from "../components/strengths"
 import Team2 from "../components/team2"
 import Portfolio2 from "../components/portfolio2"
@@ -23,13 +23,13 @@ const IndexPage = () => {
   }
   return (
     <Layout>
-      <Slideshow size={fontSize}/>
-      <Strengths size={fontSize} />
-      <Focus2 size={fontSize} />
-      <Team2 size={fontSize}/>
-      <Portfolio2 size={fontSize} />
-      <News2 size={fontSize} />
-      <Contact2 size={fontSize}/>  
+      <Slideshow/>
+      <Strengths/>
+      <Focus />
+      {/* <Team2 size={fontSize}/> */}
+      {/* <Portfolio2 size={fontSize} /> */}
+      {/* <News2 size={fontSize} /> */}
+      {/* <Contact2 size={fontSize}/>   */}
     </Layout>
   )
 }

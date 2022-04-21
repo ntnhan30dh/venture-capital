@@ -8,7 +8,7 @@ const Strengths = () => {
   
   return (
     <section className="strengths">
-      <h1 className="h2 text-center  pt-14 lg:pt-20  pb-8 lg:mb-14">Our Strengths</h1>
+      <h2 className="h2 text-center  pt-14 lg:pt-20  pb-8 lg:mb-14">Our Strengths</h2>
       <div className="grid grid-rows-3 lg:grid-rows-2 grid-cols-2 lg:grid-cols-5 max-w-7xl mx-auto">
         <div className={`rocket lg:row-start-1  lg:col-start-1 ${card}`}>
           <div className={` rocket ${iconDiv}`}>

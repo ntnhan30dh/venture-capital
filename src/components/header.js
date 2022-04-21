@@ -79,7 +79,7 @@ const Header
             <span className={span}>Contact Us</span>
           </Link>
         </div>
-        <div className="w-full h-1 bg-white opacity-20 absolute bottom-0 left-0 /mx-24 hidden lg:block"> </div>
+        <div className="w-full h-0.5 bg-white opacity-20 absolute bottom-0 left-0 /mx-24 hidden lg:block"> </div>
       </nav>
     </header>
   )
