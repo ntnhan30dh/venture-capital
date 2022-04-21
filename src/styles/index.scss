@@ -2,6 +2,7 @@
 
 $tablet: 1000px;
 $mobile: 700px;
+$lg: 	1024px;
 
 @import url('https://use.typekit.net/qkw4qjp.css');
 @import url("https://use.typekit.net/ckx5yuk.css");
@@ -425,19 +426,6 @@ body {
 
 // slick customize
 
-.slick-dots li button:before {
-  font-size: 14px !important;
-  content: "\25A0" !important;
-}
-
-.slick-dots li.slick-active button:before {
-  color: #006EFF !important;
-  ;
-}
-
-.slick-dots li {
-   margin: 0 !important
-}
 // svg
 
 svg:hover {
@@ -458,4 +446,49 @@ svg:hover {
   font-weight:600;
   font-size: 24px;
   line-height: 28px;
+}
+
+.h1{
+  font-weight:bold;
+  font-size: 32px;
+  line-height: 32px;
+  @media only screen and (min-width: $lg) {
+    font-size: 56px;
+  line-height: 60px
+  }
+}
+
+.h2{
+  font-weight:bold;
+  font-size: 28px;
+  line-height: 36px;
+  @media only screen and (min-width: $lg) {
+    font-size: 36px;
+  line-height: 44px
+  }
+}
+
+.body1{
+  font-size: 16px;
+  line-height: 24px;
+  @media only screen and (min-width: $lg) {
+    font-size: 20px;
+    line-height: 28px;
+}}
+// slick
+
+.slick-dots {
+  bottom: 32px !important;
+  @media only screen and (min-width: $lg) {
+    bottom: 40px !important;
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
+
+.slick-dots li button:before {
+  color: white !important;
+  opacity: 0.25;
 }

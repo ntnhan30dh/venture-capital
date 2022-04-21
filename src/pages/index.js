@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 
+import Slideshow from "../components/slideshow"
 import Mission2 from "../components/mission2"
 import Story2 from "../components/story2"
 import Focus2 from "../components/focus2"
@@ -22,7 +23,7 @@ const IndexPage = () => {
   }
   return (
     <Layout>
-      <Mission2 size={fontSize}/>
+      <Slideshow size={fontSize}/>
       <Story2  size={fontSize}/>
       <Focus2 size={fontSize} />
       <Strengths2 size={fontSize} />
