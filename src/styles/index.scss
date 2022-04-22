@@ -553,5 +553,8 @@ svg:not(:root) {
 
 // focus
 .react-3d-carousel {
-  height: 535px !important;
+  height: 335px !important;
+  @media only screen and (min-width: 450px) {
+    height: 535px !important;
+  }
 }

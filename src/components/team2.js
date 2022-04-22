@@ -41,14 +41,6 @@ const Team2 = (props) => {
       : 0
   )
 
-  // const icon = pic => {
-  //   return (
-  //     <div class="picWrap w-8 mr-4 ">
-  //       <img src={pic} alt="teamMember" />
-  //     </div>
-  //   )
-  // }
-  { console.log('teamArr',teamArr)}
   return (
     <div  class="team2 relative bg-gray sm:pb-20 md:px-1/10">
     <div id="team" className="absolute -top-32" ></div>

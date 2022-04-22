@@ -7,7 +7,7 @@ import Story2 from "../components/story2"
 import Focus from "../components/focus"
 import Strengths from "../components/strengths"
 import Team2 from "../components/team2"
-import Portfolio2 from "../components/portfolio2"
+import Portfolio from "../components/portfolio"
 import News2 from "../components/news2"
 import Contact2 from "../components/contact2"
 
@@ -26,8 +26,8 @@ const IndexPage = () => {
       <Slideshow/>
       <Strengths/>
       <Focus />
+      <Portfolio/>
       {/* <Team2 size={fontSize}/> */}
-      {/* <Portfolio2 size={fontSize} /> */}
       {/* <News2 size={fontSize} /> */}
       {/* <Contact2 size={fontSize}/>   */}
     </Layout>

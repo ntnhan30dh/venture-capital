@@ -40,7 +40,7 @@ const Slideshow = () => {
               source_url
               localFile {
                 childImageSharp {
-                  fluid(maxWidth: 2000, maxHeight: 1500) {
+                  fluid(maxWidth: 5000) {
                     ...GatsbyImageSharpFluid
                     src
                   }
@@ -145,7 +145,7 @@ const Slideshow = () => {
             <div className="relative">
               <div className=" h-screen">
                 <img
-                  src={i.node.featured_media.source_url}
+                  src={i.node.featured_media.localFile.childImageSharp.fluid.src}
                   alt="background pic"
                   className="w-full h-full object-cover  "
                 ></img>
