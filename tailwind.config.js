@@ -33,7 +33,8 @@ module.exports = {
         blue: "#006EFF",
         gray: '#F7F7F9',
         space: '#2D3339',
-        green:'#31FFC1'
+        green:'#31FFC1',
+        portfolioGrey:'#F2F2F2'
       },
       lineHeight: {
         "extra-loose": "2.5",
@@ -126,7 +127,8 @@ module.exports = {
       6: "6px",
       8: "8px",
     },
-   
+    borderRadius: {
+      '48px': '48px',}
   },
   variants: {
     extend: {
