@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { Modal } from "semantic-ui-react"
 
-const Portfolio = props => {
-  const [region, setRegion] = useState("ALL")
-  const [industry, setIndustry] = useState("ALL")
-
+const Portfolio = () => {
+  const [region, setRegion] = useState(["ALL"])
+  const [industry, setIndustry] = useState(["ALL"])
   const data = useStaticQuery(graphql`
     {
       allWordpressWpPortfolio {
@@ -53,14 +52,24 @@ const Portfolio = props => {
     }
   `)
 
-  const filterButton = (filterText,field)=>{
+  const filterButton = (filterText,type)=>{
+    const categories = type==="region"?region:industry
+    const handleCategories = type==="region"?setRegion:setIndustry
     return (
-      <button className={`filterButton py-2 px-6 ${filterText===field?"bg-blue text-white":"border-2"} rounded-48px  label1 mx-1 mb-4`}>
+      <button className={`filterButton py-2 px-6 ${categories.includes(filterText)?"bg-blue text-white":"border-2"} rounded-48px  label1 mx-1 mb-4`} onClick={()=>handleClick(filterText,categories,handleCategories)}>
       {filterText}  
       </button>
     )
   }
-
+const handleClick=(filterText,categories,handleCategories)=>{
+  const categoriesArr= [...categories]
+  if(categories.includes(filterText)){
+    let index = categoriesArr.indexOf(filterText);
+    categoriesArr.splice(index, 1);
+  } else categoriesArr.push(filterText)
+  handleCategories(categoriesArr)
+ 
+}
   const filterFlield = "text-center"
   const filterHeader = "text-center mb-4"
   return (
@@ -72,21 +81,21 @@ const Portfolio = props => {
         <div className={` ${filterFlield}`}>
         <h4 className={`h4 ${filterHeader}`}>Region</h4>
 <div className="buttons">
-{filterButton("ALL",region)}
-{filterButton("Europe",region)}
-{filterButton("APAC",region)}
-{filterButton("MENA",region)}
-{filterButton("Americas",region)}
+{filterButton("ALL","region")}
+{filterButton("Europe","region")}
+{filterButton("APAC","region")}
+{filterButton("MENA","region")}
+{filterButton("Americas","region")}
 </div>
   </div>
   <div className={` ${filterFlield}`}>
         <h4 className={`h4 ${filterHeader}`}>Industry</h4>
 <div className="buttons">
-{filterButton("ALL",industry)}
-{filterButton("Internet",industry)}
-{filterButton("B2B",industry)}
-{filterButton("Fintech",industry)}
-{filterButton("Others",industry)}
+{filterButton("ALL","industry")}
+{filterButton("Internet","industry")}
+{filterButton("B2B","industry")}
+{filterButton("Fintech","industry")}
+{filterButton("Others","industry")}
 </div>
   </div>
       </div>
