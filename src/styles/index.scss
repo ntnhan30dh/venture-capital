@@ -546,7 +546,7 @@ svg:not(:root) {
   &:hover{
     #star{
       transform: rotate(-90deg);
-      transition: width 1s, height 1s, transform 1s;
+      transition: width 0.6s, height 0.6s, transform 0.6s;
       transform-box: fill-box;
       transform-origin: center;
     }
@@ -557,7 +557,7 @@ svg:not(:root) {
   &:hover{
     #head{
       transform: rotate(45deg);
-      transition: width 0.4s, height 0.4s, transform 0.4s;
+      transition: width 0.3s, height 0.3s, transform 0.3s;
       transform-box: fill-box;
       transform-origin: center;
     }
@@ -568,13 +568,13 @@ svg:not(:root) {
   &:hover{
     #main{
       transform: translate(5px,-10px);
-      transition: width 0.4s, height 0.4s, transform 0.4s;
+      transition: width 0.3s, height 0.3s, transform 0.3s;
       transform-box: fill-box;
       transform-origin: center;
     }
     #sub{
       transform: scale(0.7);
-      transition: width 0.4s, height 0.4s, transform 0.4s;
+      transition: width 0.3s, height 0.3s, transform 0.3s;
       transform-box: fill-box;
       transform-origin: center;
     }

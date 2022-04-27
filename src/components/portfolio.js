@@ -120,7 +120,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <div className=" flex flex-wrap justify-center items-center w-full max-w-6xl mx-auto">
+      <div className=" flex flex-wrap justify-center items-center w-full max-w-7xl mx-auto">
         {filteredPortfolios
           .sort((a, b) =>
             a.node.wordpress_id < b.node.wordpress_id
@@ -134,14 +134,14 @@ const Portfolio = () => {
             return (
               <Modal
                 trigger={
-                  <div className="w-32 lg:w-40 mx-4 lg:mx-8 my-8">
+                  <div className="w-32 lg:w-60 lg:h-40 mx-4 lg:mx-0 my-8 hover:bg-portfolioGrey flex justify-center items-center">
                     <img
                       alt="logo"
                       src={
                         i.node.featured_media.localFile.childImageSharp.fluid
                           .src
                       }
-                      className="w-full"
+                      className="w-3/5 max-h-full"
                     />
                   </div>
                 }
