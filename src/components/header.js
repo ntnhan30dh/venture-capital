@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import logo from "../images/logo_positive.png"
 import logo_blue from "../images/logo_blue.png"
 import logo_green from "../images/logo_green.png"
 import { Link } from "gatsby"
@@ -17,8 +16,8 @@ const Header
 
   let menuActive = props.menuState ? "is-inactive" : ""
   let change = props.menuState ? "change" : ""
-  const link = "pb-6 lg:pb-0 "
-  const span = `my-auto text-white ${scroll?"lg:text-black":""}  hover:text-green hover:border-b-2  mx-2  label2 lg:text-sm lg:font-bold`
+  const link = "pb-6 lg:pb-0 h-full flex items-center"
+  const span = `my-auto text-white ${scroll?"lg:text-black":""}  hover:text-blue /hover:border-b-2  mx-2  label2 lg:text-sm lg:font-bold`
   const logoState = props.menuState?logo_green:logo_blue
   const barState = props.menuState?"bg-white":"bg-black"
   

@@ -418,6 +418,25 @@ body {
   .is-inactive {
     display: inline-flex ;
   }
+  .rightDiv{
+    a {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #006EFF;
+        transform: scaleX(0);
+        transition: transform .15s ease-in-out;
+        }
+        &:hover:after {
+          transform: scaleX(1);
+      }
+    }
+  }
 }
 
 .missionWrapper{
@@ -591,5 +610,19 @@ svg:not(:root) {
   height: 335px !important;
   @media only screen and (min-width: 450px) {
     height: 535px !important;
+  }
+}
+
+// slideShow
+.buttonArrow{
+  .brandingE {
+      transform: scaleY(0);
+      transition: transform .15s ease-in-out;
+    }
+    &:hover {
+      .brandingE{
+        transform: scaleY(1);
+        transform-origin: bottom;
+      }
   }
 }

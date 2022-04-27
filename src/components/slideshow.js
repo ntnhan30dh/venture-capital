@@ -14,8 +14,8 @@ const Slideshow = () => {
     customeSlider.current.slickPrev()
   }
 
-  const btnStyle = "absolute z-30 mx-24 hidden lg:block"
-  const arrowStyle = "w-14"
+  const btnStyle = "absolute buttonArrow z-30 mx-24 hidden lg:block"
+  const arrowStyle = "w-14 relative z-20"
 
   const settings = {
     // autoplay: true,
@@ -72,12 +72,13 @@ const Slideshow = () => {
     }
   `)
   return (
-      <div className="section"> 
+      <section className="Slideshow"> 
     <div id="slideshow" className=" w-full relative">
       <button
         onClick={() => gotoPrev()}
         className={` left-20 bottom-24 ${btnStyle} `}
       >
+      <div className="ralative">
         <div className={arrowStyle}>
           <svg
             width="100%"
@@ -105,11 +106,19 @@ const Slideshow = () => {
             </defs>
           </svg>
         </div>
+        <div className="brandingE absolute top-0 left-3">
+        <svg width="35" height="56" viewBox="0 0 35 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.1246 0L0 56H17.6488L26.3244 28L35 0H17.1246Z" fill="#006EFF"/>
+</svg>
+
+        </div>
+      </div>
       </button>
       <button
         onClick={() => gotoNext()}
         className={` right-20 bottom-24 ${btnStyle}  `}
       >
+      <div className="relative">
         <div className={arrowStyle}>
           <svg
             width="100%"
@@ -137,6 +146,13 @@ const Slideshow = () => {
             </defs>
           </svg>
         </div>
+        <div className="brandingE absolute top-0 right-3">
+        <svg width="35" height="56" viewBox="0 0 35 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.1246 0L0 56H17.6488L26.3244 28L35 0H17.1246Z" fill="#006EFF"/>
+</svg>
+
+        </div>
+      </div>
       </button>
       <Slider {...settings} ref={customeSlider} className="/m-20">
         {data.allWordpressWpSlideshow.edges.reverse().map(i => {
@@ -185,7 +201,7 @@ const Slideshow = () => {
 Delivery Hero Ventures is backed by Delivery Hero, a truly global food delivery platform - whose network, distribution and expertise can be harnessed to help our portfolio companies fulfill their global ambitions.
 </p>
     </div>
-    </div>
+    </section>
   )
 }
 
