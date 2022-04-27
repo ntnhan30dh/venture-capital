@@ -95,7 +95,7 @@ const Portfolio = () => {
   const filterHeader = "text-center mb-4"
   return (
     <div className="portfolio w-full relative ">
-      <h2 className="h2 text-center  pt-14 lg:pt-20  pb-8 lg:mb-40">
+      <h2 className="h2 text-center  pt-14 lg:pt-20  pb-8 lg:mb-10">
         Our Portfolio
       </h2>
       <div className="filter lg:flex justify-between max-w-7xl mx-auto mb-8 lg:mb-20 px-16">

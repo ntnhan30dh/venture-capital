@@ -13,9 +13,9 @@ const Focus = () => {
     "b2b" : b2b,
   }
   const number = {
-    "internet" : 1,
-    "b2b" : 2,
-    "fintech" : 3,
+    "internet" : "01",
+    "b2b" : "02",
+    "fintech" : "03",
   }
 
   const name = {
@@ -77,7 +77,7 @@ const Focus = () => {
   return (
     
     <section id="focus" className="focus">
-      <h2 className="h2 text-center  pt-14 lg:pt-20  pb-8 lg:mb-40">
+      <h2 className="h2 text-center  pt-14 lg:pt-20  pb-8 lg:mb-14">
         Our Focus
       </h2>
       <div className="cards hidden lg:flex justify-center">
