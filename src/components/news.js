@@ -59,7 +59,7 @@ const News = (props) => {
             return (
               <a
                     href={`/post/${i.node.slug}`}
-                    className="news-card w-full bg-white my-4 sm:m-4 pb-4 lg:w-1/3 max-w-sm hover:text-black"
+                    className="news-card w-full bg-white my-4 sm:m-4 pb-4 lg:w-1/3 max-w-sm hover:text-space"
                   >
                   <div className="overflow-hidden">
                 <div className="transform ease-linear duration-300 hover:scale-125 ">

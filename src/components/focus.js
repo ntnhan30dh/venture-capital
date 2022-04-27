@@ -72,7 +72,7 @@ const Focus = () => {
         </div>
         <div className="textBottom absolute left-6 bottom-12 mr-4">
           <h1 className="h1 mb-4 lg:mb-6 text-white">{name[props]}</h1>
-          <p className="body1 my-2 text-white"> {p[props]}</p>
+          <p className="body1 my-2 text-white"> {p[props]}  <span className="opacity-0"> "Digital payments" </span> </p>
           <div className="w-full h-0.5 bg-white opacity-20 /absolute bottom-0 left-0 ">
             {" "}
           </div>

@@ -97,7 +97,7 @@ const Portfolio = () => {
       <h2 className="h2 text-center  pt-14 lg:pt-20  pb-8 lg:mb-10">
         Our Portfolio
       </h2>
-      <div className="filter lg:flex justify-between max-w-7xl mx-auto mb-8 lg:mb-20 ">
+      <div className="filter lg:flex justify-between max-w-1240 mx-auto mb-8 lg:mb-20 ">
         <div className={` ${filterFlield}`}>
           <h4 className={`h4 ${filterHeader}`}>Region</h4>
           <div className="buttons w-full flex overflow-x-scroll xsm:justify-center">
@@ -119,7 +119,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <div className=" flex flex-wrap justify-center items-center w-full max-w-7xl mx-auto">
+      <div className=" flex flex-wrap justify-center items-center w-full max-w-1240 mx-auto">
         {filteredPortfolios
           .sort((a, b) =>
             a.node.wordpress_id < b.node.wordpress_id

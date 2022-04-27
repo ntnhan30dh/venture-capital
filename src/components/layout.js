@@ -58,7 +58,7 @@ const Layout = ({ children }) => {
         </div>
       </div>
       <footer id="footer" className=" bg-dhBlack text-white px-4 lg:px-24 pt-10 lg:pt-12 pb-6 ">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-1240 mx-auto">
         <div className="top md:flex items-center md:mb-10">
           <div className="left md:w-1/2">
             <div className="w-36 lg:w-52">

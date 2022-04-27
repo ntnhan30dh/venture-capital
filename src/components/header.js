@@ -19,15 +19,15 @@ const Header
   let menuActive = props.menuState ? "is-inactive" : ""
   let change = props.menuState ? "change" : ""
   const link = "pb-6 lg:pb-0 lg:h-full lg:flex lg:items-center"
-  const span = `my-auto text-white ${scroll?"lg:text-black":""}  hover:text-blue /hover:border-b-2  mx-2  label2 lg:text-sm lg:font-bold`
+  const span = `my-auto text-white ${scroll?"lg:text-space hover:text-blue":"hover:text-green"}   /hover:border-b-2  mx-2  label2 lg:text-sm lg:font-bold`
   const logoState = props.menuState?logo_green:logo_blue
-  const barState = props.menuState?"bg-white":"bg-black"
+  const barState = props.menuState?"bg-white":"bg-space"
   
   return (
-    <header className={`headerWrapper  ${position} z-50 w-full  ${scroll ? " bg-white" : "bg-transparent" } `} >
-      <nav className={` relative flex justify-between px-4 lg:mx-24 ${props.menuState ? "bg-space lg:bg-transparent" : ""} bg-transparent 	`}
+    <header className={`headerWrapper px-4  ${position} z-50 w-full  ${scroll ? " bg-white" : "bg-transparent" } `} >
+      <nav className={` relative flex justify-between   max-w-1240 mx-auto ${props.menuState ? "bg-space lg:bg-transparent" : ""} bg-transparent 	`}
       >
-          <Link to="/" className={`w-44 lg:w-72 my-4 lg:my-5 ${props.menuState?" absolute lg:static":""} left-4 top-4`}>
+          <Link to="/" className={`w-44 lg:w-72 my-4 lg:my-5 ${props.menuState?" absolute lg:static":""} left-4 lg:left-0 top-4`}>
             <img src={scroll?logoState:logo_green} alt="logo" className="lg:hidden" />
             <img src={scroll?logo_blue:logo_green} alt="logo"  className="hidden lg:block"/>
           </Link>
@@ -44,7 +44,7 @@ const Header
             <div class={`bar3 ${scroll?barState: "bg-white"}`}></div>
           </div>
         <Scrollspy
-          className={`rightDiv h-full  hidden flex lg:flex flex-col justify-center items-center lg:flex-row w-screen lg:w-full h-screen lg:h-auto flex-wrap lg:flex-nowrap  lg:justify-between lg:ml-20    ${menuActive}`}
+          className={`rightDiv ${scroll?"blue":"green"} h-full  hidden flex lg:flex flex-col justify-center items-center lg:flex-row w-screen lg:w-full h-screen lg:h-auto flex-wrap lg:flex-nowrap  lg:justify-between lg:ml-20    ${menuActive}`}
           currentClassName={scroll?"current":""}
           items={ ['about', 'strengths','focus', 'portfolio', 'team','news', 'contact'] }
           offset={ -50 }
@@ -54,7 +54,7 @@ const Header
             to="/#about"
             href="about"
             className={link}
-            activeClassName="bg-black"
+            activeClassName="bg-space"
           >
             <span className={span}>About Us</span>
           </Link>
@@ -63,7 +63,7 @@ const Header
             to="/#strengths"
             href="strengths"
             className={link}
-            activeClassName="bg-black"
+            activeClassName="bg-space"
           >
             <span className={span}>Our Strengths</span>
           </Link>
@@ -86,7 +86,7 @@ const Header
             <span className={span}>Contact Us</span>
           </Link>
         </Scrollspy>
-        <div className="w-full h-0.5 bg-white opacity-20 absolute bottom-0 left-0 /mx-24 hidden lg:block"> </div>
+        <div className="w-full h-0.5 bg-white opacity-20 absolute -bottom-0.5 left-0 /mx-24 hidden lg:block"> </div>
       </nav>
     </header>
   )

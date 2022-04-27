@@ -158,7 +158,7 @@ const Slideshow = () => {
         {data.allWordpressWpSlideshow.edges.reverse().map(i => {
           return (
             <div className="relative">
-              <div className="absolute top-0 left-0 bg-black w-full h-full opacity-30">
+              <div className="absolute top-0 left-0 bg-space w-full h-full opacity-30">
 
               </div>
               <div className=" h-screen">
@@ -180,7 +180,7 @@ const Slideshow = () => {
                     className="w-full"
                   ></img>
                 </div>
-                <h1 className="text-white h1 max-w-6xl px-4 mx-auto mb-4 lg:mb-8">
+                <h1 className="text-white h1 max-w-1240 px-4 mx-auto mb-4 lg:mb-8">
                   {" "}
                   {
                     data.allWordpressAcfSlideshow.edges.filter(

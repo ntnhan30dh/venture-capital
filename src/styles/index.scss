@@ -439,6 +439,22 @@ body {
       }
     }
   }
+  .blue{
+    a{
+      &::after{
+    background-color: #006EFF;
+   }
+    }
+  }
+
+  .green{
+    a{
+      &::after{
+    background-color: #31FFC1;
+   }
+    }
+  }
+ 
   .current{
     span{
       color: #006EFF;
@@ -556,6 +572,7 @@ body {
 
 .slick-dots li.slick-active button:before {
   color: white !important;
+  font-size: 8px !important;
 }
 
 .slick-dots li button:before {
