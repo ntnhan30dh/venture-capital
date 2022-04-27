@@ -46,7 +46,7 @@ const News = (props) => {
     }
   `)
   return (
-    <div class="mx-4">
+    <section class="mx-4" id="news">
         <h2 className={` pt-14 lg:pt-20 mb-8 lg:mb-10 h2 text-center`}>
         News
         </h2>
@@ -92,7 +92,7 @@ const News = (props) => {
         </Link>
       </div>
       <div className="opacity-0">hi</div>
-    </div>
+    </section>
   )
 }
 

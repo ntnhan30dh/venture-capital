@@ -195,7 +195,7 @@ const Slideshow = () => {
         })}
       </Slider>
     </div>
-    <div className="about text-center">
+    <div className="about text-center" id="about">
 <h2 className="h2 mb-4 lg:mb-6 pt-14 lg:pt-16">About Us</h2>
 <p className="body1 mx-4 mb-8 max-w-3xl mx-auto">
 Delivery Hero Ventures is backed by Delivery Hero, a truly global food delivery platform - whose network, distribution and expertise can be harnessed to help our portfolio companies fulfill their global ambitions.

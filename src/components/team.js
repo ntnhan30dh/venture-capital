@@ -41,7 +41,7 @@ const Team = props => {
   )
 
   return (
-    <div class="team bg-gray sm:w-4/5 mx-auto lg:w-full max-w-7xl	">
+    <section class="team bg-gray sm:w-4/5 mx-auto lg:w-full max-w-7xl" id="team">
       {console.log(teamArr)}
       <h2 className="h2 text-center mt-14 lg:mt-20  mb-8 lg:mb-10">Our Team</h2>
       <div class="cards flex flex-wrap justify-center">
@@ -152,7 +152,7 @@ const Team = props => {
         ))}
         <div className="w-40 lg:w-72 sm:hidden"></div>
       </div>
-    </div>
+    </section>
   )
 }
 

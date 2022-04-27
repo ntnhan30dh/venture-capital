@@ -94,7 +94,7 @@ const Portfolio = () => {
     const filterFlield = "text-center"
   const filterHeader = "text-center mb-4"
   return (
-    <div className="portfolio w-full relative ">
+    <section className="portfolio w-full relative" id="portfolio">
       <h2 className="h2 text-center  pt-14 lg:pt-20  pb-8 lg:mb-10">
         Our Portfolio
       </h2>
@@ -229,7 +229,7 @@ const Portfolio = () => {
             )
           })}
       </div>
-    </div>
+    </section>
   )
 }
 
