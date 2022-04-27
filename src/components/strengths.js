@@ -129,7 +129,7 @@ const Strengths = () => {
           <p className={p}> Founder-centric <br />  philosophy</p>
         </div>
         <div className={`triple lg:row-start-2  lg:col-start-2 ${card}`}>
-          <div className={`  transform hover:rotate-90 ease-linear	duration-75 ${iconDiv}`}>
+          <div className={`  transform hover:rotate-90 ease-linear	duration-300 ${iconDiv}`}>
             <svg
               width="100%"
               height="auto"
