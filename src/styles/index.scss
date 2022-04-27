@@ -449,12 +449,17 @@ body {
   @media only screen and (min-width: $lg) {
     font-size: 20px;
     line-height: 28px;
-}}
+}
+}
 
 .body2{
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   font-weight:300;
+  @media only screen and (min-width: $lg) {
+    font-size: 16px;
+    line-height: 24px;
+}
 }
 
 .h1{

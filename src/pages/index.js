@@ -23,7 +23,7 @@ const IndexPage = () => {
   }
   return (
     <Layout>
-      {/* <Slideshow/> */}
+      <Slideshow/>
       <Strengths/>
       <Focus />
       <Portfolio/>
