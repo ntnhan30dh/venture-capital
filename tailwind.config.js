@@ -34,7 +34,8 @@ module.exports = {
         gray: '#F7F7F9',
         space: '#2D3339',
         green:'#31FFC1',
-        portfolioGrey:'#F2F2F2'
+        portfolioGrey:'#F2F2F2',
+        dhBlack: '#343B46'
       },
       lineHeight: {
         "extra-loose": "2.5",
@@ -58,6 +59,7 @@ module.exports = {
         "6/7": "85.7142857%",
         "343": "343px",
         "400": "400px",
+        "462px": "462px",
       },
       padding: {
         '140': '140%',
