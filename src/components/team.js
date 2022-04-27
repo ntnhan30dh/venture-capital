@@ -49,7 +49,8 @@ const Team = props => {
           <Modal
             trigger={
               <article class="relative mx-2 lg:mx-3 mb-6 lg:mb-14">
-                <div class="w-40 lg:w-72">
+                <div className="overflow-hidden">
+                <div class="w-40 lg:w-72 transform ease-linear duration-300 hover:scale-125">
                   <img
                     src={
                       i.node.featured_media.localFile.childImageSharp.fluid.src
@@ -57,6 +58,7 @@ const Team = props => {
                     alt="teamMember"
                     className="w-full"
                   />
+                </div>
                 </div>
                 <div class="w-40 lg:w-72">
                   <h3 class="h3">{i.node.title}</h3>

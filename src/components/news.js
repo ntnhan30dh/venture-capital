@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 import arrow from "../images/news_arrow.png"
 
-const News2 = (props) => {
+const News = (props) => {
   // const monthNames = [
   //   "January",
   //   "February",
@@ -46,48 +46,36 @@ const News2 = (props) => {
     }
   `)
   return (
-    <div class="newsComponent relative pt-10 bg-gray">
-      <div id="news" className="absolute -top-32"></div>
-
-      <div class="section-title">
-        <h1 className={`font-bold ${props.size.h1} py-20 md:py-28 text-center`}>
-          From the News
-        </h1>
-      </div>
-      <div class="news-cards sm:px-1/10">
+    <div class="mx-4">
+        <h2 className={` pt-14 lg:pt-20 mb-8 lg:mb-10 h2 text-center`}>
+        News
+        </h2>
+      <div class="news-cards  lg:flex  justify-center ">
         {data.allWordpressWpNews.edges
           .sort((a, b) => (a.node.date < b.node.date ? 1 : -1))
           .slice(0, 3)
           .map(i => {
            // const date = new Date(i.node.date)
             return (
-              <div className="news-card bg-white my-4 sm:m-4 flex flex-col pb-4">
-                <div class="news-picture">
+              <a
+                    href={`/post/${i.node.slug}`}
+                    className="news-card w-full bg-white my-4 sm:m-4 pb-4 lg:w-1/3 max-w-sm hover:text-black"
+                  >
+                  <div className="overflow-hidden">
+                <div className="transform ease-linear duration-300 hover:scale-125 ">
                   <img
                     src={
                       i.node.featured_media.localFile.childImageSharp.fluid.src
                     }
                     alt="main cover"
+                    className="w-full"
                   />
                 </div>
-                <div className="textWrap flex flex-col justify-between px-2 md:px-4 flex-grow">
-                  <div class="news-text  ">
-                    <h1 class={`/excerpt ${props.size.p2} font-bold pt-4`}>{i.node.title}</h1>
                   </div>
-                  <a
-                    class="readMore flex items-center mt-6 text-blue text-lg font-semibold"
-                    href={`/post/${i.node.slug}`}
-                  >
-                    Read more{" "}
-                    <span>
-                      {" "}
-                      <div class="picWrap ml-2 w-6 ">
-                        <img src={arrow} alt="arrow" className="w-full" />
-                      </div>
-                    </span>
-                  </a>
+                <div className="textWrap flex flex-col justify-between px-2 md:px-4 flex-grow">
+                    <h3 class={`/excerpt h3 pt-4 pb-8`}>{i.node.title}</h3>
                 </div>
-              </div>
+                  </a>
             )
           })}
         {data.allWordpressWpNews.edges
@@ -98,23 +86,14 @@ const News2 = (props) => {
           </a>
         )}
       </div>
-      
-      <article class="relative card my-4 md:my-20  mx-auto z-0 max-w-max ">
-        <Link to="/news">
-          <div className="blueCrad  absolute w-full h-full  bg-green top-0 -z-1 "></div>
-          <div className="picCard bg-blue z-10 px-20 py-5 transform hover:translate-x-3 hover:-translate-y-3">
-            <div
-              class=" text-2xl font-bold text-white hover:text-white "
-              to="/news"
-            >
-              See more news
-            </div>
-          </div>
+      <div className="w-full sm:w-44 mx-auto bg-blue py-4 rounded-48px text-center">
+        <Link to="/news" className=" label1 text-white   "> 
+            See all the News
         </Link>
-      </article>
+      </div>
       <div className="opacity-0">hi</div>
     </div>
   )
 }
 
-export default News2
+export default News

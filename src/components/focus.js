@@ -34,7 +34,7 @@ const Focus = () => {
         className={`internet relative w-343 lg:w-400 overflow-hidden text-white mx-3`}
       >
         <div
-          className={`internet transform ease-linear duration-75 hover:scale-125`}
+          className={`internet transform ease-linear duration-300 hover:scale-125`}
         >
           <img src={pic[props]} alt="internet" />
         </div>

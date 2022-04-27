@@ -8,7 +8,7 @@ import Focus from "../components/focus"
 import Strengths from "../components/strengths"
 import Team from "../components/team"
 import Portfolio from "../components/portfolio"
-import News2 from "../components/news2"
+import News from "../components/news"
 import Contact2 from "../components/contact2"
 
 
@@ -27,8 +27,8 @@ const IndexPage = () => {
       <Strengths/>
       <Focus />
       <Portfolio/>
-      <Team size={fontSize}/>
-      <News2 size={fontSize} />
+      <Team/>
+      <News size={fontSize} />
       {/* <Contact2 size={fontSize}/>   */}
     </Layout>
   )
