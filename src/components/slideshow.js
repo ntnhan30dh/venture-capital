@@ -3,8 +3,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import Link from "gatsby-link"
-
 const Slideshow = () => {
   //creating the ref
   const customeSlider = useRef()
@@ -23,6 +21,7 @@ const Slideshow = () => {
     // autoplay: true,
     autoplaySpeed: 5000,
     infinite: true,
+    fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     touchThreshold: 1000,
@@ -143,6 +142,9 @@ const Slideshow = () => {
         {data.allWordpressWpSlideshow.edges.reverse().map(i => {
           return (
             <div className="relative">
+              <div className="absolute top-0 left-0 bg-black w-full h-full opacity-30">
+
+              </div>
               <div className=" h-screen">
                 <img
                   src={i.node.featured_media.localFile.childImageSharp.fluid.src}

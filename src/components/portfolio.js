@@ -134,7 +134,7 @@ const Portfolio = () => {
             return (
               <Modal
                 trigger={
-                  <div className="w-32 lg:w-60 lg:h-40 mx-4 lg:mx-0 my-8 hover:bg-portfolioGrey flex justify-center items-center">
+                  <div className="w-32 lg:w-60 lg:h-40 mx-4 lg:mx-0 my-8 hover:bg-portfolioGrey ease-linear duration-300 flex justify-center items-center">
                     <img
                       alt="logo"
                       src={

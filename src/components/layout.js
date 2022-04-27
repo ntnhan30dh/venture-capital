@@ -67,13 +67,13 @@ const Layout = ({ children }) => {
           </div>
           <div className="right flex w-3/4 justify-between mt-8 md:mt-0  mb-8 md:mb-0 md:w-1/2 ">
             <div className="md:w-1/2">
-              <h4 className="h4">
+              <h4 className="h4 text-white">
               Get in Touch
               </h4>
-              <p className="body2 mt-2">info@dhventures.vc</p>
+              <p className="body2 mt-2 text-white">info@dhventures.vc</p>
             </div>
             <div className="md:w-1/2">
-              <h4 className="h4 mb-1">Follow us on</h4>
+              <h4 className="h4 mb-1 text-white">Follow us on</h4>
               <a href="https://www.linkedin.com/company/dx-ventures/about/" className="w-5">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M4.4773 20H0.330726V6.64714H4.4773V20ZM2.40151 4.82571C1.07575 4.82571 0 3.72714 0 2.40143C0 1.76453 0.253016 1.15372 0.703387 0.703362C1.15376 0.253007 1.76459 0 2.40151 0C3.03844 0 3.64927 0.253007 4.09964 0.703362C4.55001 1.15372 4.80303 1.76453 4.80303 2.40143C4.80303 3.72714 3.72728 4.82571 2.40151 4.82571ZM19.9964 20H15.8591V13.5C15.8591 11.9507 15.8277 9.96429 13.7033 9.96429C11.5476 9.96429 11.2168 11.6471 11.2168 13.3886V20H7.07454V6.64714H11.0511V8.46857H11.109C11.6626 7.41929 13.0148 6.31214 15.032 6.31214C19.2285 6.31214 20 9.07572 20 12.665V20H19.9964Z" fill="white"/>
@@ -92,7 +92,7 @@ const Layout = ({ children }) => {
             <Link to="/privacy">Privacy</Link>
             <Link to="/privacy">Terms</Link>
           </div>
-          <p className="body3 text-center mt-6 md:mt-0">
+          <p className="body3 text-white text-center mt-6 md:mt-0">
           DH Ventures GmbH I © Copyright 2022
           </p>
         
