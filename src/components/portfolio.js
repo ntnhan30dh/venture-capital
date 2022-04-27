@@ -54,7 +54,6 @@ const Portfolio = () => {
 
   const filterButton = (filterText, type) => {
     const categories = type === "region" ? region : industry
-    const handleCategories = type === "region" ? setRegion : setIndustry
     return (
       <button
         className={`filterButton py-2 px-6 ${
@@ -98,10 +97,10 @@ const Portfolio = () => {
       <h2 className="h2 text-center  pt-14 lg:pt-20  pb-8 lg:mb-10">
         Our Portfolio
       </h2>
-      <div className="filter lg:flex justify-between max-w-7xl mx-auto mb-8 lg:mb-20 px-16">
+      <div className="filter lg:flex justify-between max-w-7xl mx-auto mb-8 lg:mb-20 ">
         <div className={` ${filterFlield}`}>
           <h4 className={`h4 ${filterHeader}`}>Region</h4>
-          <div className="buttons">
+          <div className="buttons w-full flex overflow-x-scroll xsm:justify-center">
             {filterButton("ALL", "region")}
             {filterButton("Europe", "region")}
             {filterButton("APAC", "region")}
@@ -111,7 +110,7 @@ const Portfolio = () => {
         </div>
         <div className={` ${filterFlield}`}>
           <h4 className={`h4 ${filterHeader}`}>Industry</h4>
-          <div className="buttons">
+          <div className="buttons w-full flex overflow-x-scroll xsm:justify-center">
             {filterButton("ALL", "industry")}
             {filterButton("Internet", "industry")}
             {filterButton("B2B", "industry")}

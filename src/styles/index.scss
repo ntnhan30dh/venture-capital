@@ -242,7 +242,9 @@ body {
 .portfolio .link {
   margin-top: 53px;
 }
-
+.buttons::-webkit-scrollbar {
+  display: none;
+}
 /***MEDIA QUERY***/
 
 @media only screen and (max-width: 767px) {
