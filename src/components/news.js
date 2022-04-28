@@ -2,8 +2,6 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
-import arrow from "../images/news_arrow.png"
-
 const News = (props) => {
   // const monthNames = [
   //   "January",

@@ -11,12 +11,11 @@ $lg: 	1024px;
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 
-@import "strengths";
-@import "vision";
-@import "team";
+
+
 @import "news";
 @import "disclaimer";
-@import "contact";
+//@import "contact";
 
 /* CSS Document */
 
@@ -148,101 +147,12 @@ body {
 }
 
 
-/***PAGE1****/
 
-.section-title {
-  text-align: center;
-}
 
-.link {
-  text-align: center;
-  color: #00c269;
-  font-size: 20px;
-}
-
-.slideshow {
-  margin-top: 94px;
-  width: 100%;
-  max-width: 2440px;
-  max-height: 780px;
-  //   border: 1px solid green;
-}
-
-.slide {
-  _width: 100%;
-  _height: 100%;
-  _background-color: teal;
-  //   border: 1px solid green;
-}
-
-.slide img {
-  max-height: 100%;
-  max-width: 100%;
-}
 
 /** portfolio **/
 
-.portfolio.container {
-  background-color: #f5f5f6;
-  height: 704px;
-}
 
-.portfolio.bg-container {
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  top: 0;
-  right: 0;
- // background-image: url("../images/portfolio-bg.png");
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: cover;
-}
-
-.portfolio.inner-container {
-  height: 100%;
-  _background-color: gray;
-}
-
-.portfolio-left {
-  padding-top: 107px;
-  position: relative;
-  width: 50%;
-  height: 100%;
-}
-
-.portfolio .section-title {
-  position: relative;
-  margin-bottom: 60px;
-}
-
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-  padding: 10px;
-}
-
-.brand-box {
-  position: relative;
-  text-align: center;
-  height: 100px;
-}
-
-.brand-box img {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  max-width: 70%;
-  max-height: 70%;
-  margin: auto;
-}
-
-.portfolio .link {
-  margin-top: 53px;
-}
 .buttons::-webkit-scrollbar {
   display: none;
 }
@@ -260,130 +170,12 @@ body {
 
 /***MEDIA QUERY***/
 
-@media only screen and (max-width: 767px) {
-  /** portfolio **/
-
-  .portfolio.container {
-    height: auto;
-  }
-
-  .portfolio.bg-container {
-    display: none;
-  }
-
-  .portfolio.inner-container {
-    height: 100%;
-    padding-bottom: 60px;
-  }
-
-  .portfolio-left {
-    padding-top: 40px;
-    width: 100%;
-  }
-
-  /***TEAM***/
-
-  .team.container {
-    height: auto;
-    padding-bottom: 60px;
-  }
-
-  .team.bg-container {
-    display: none;
-  }
-
-  .team-right {
-    position: relative;
-    width: 100%;
-    padding: 40px 20px 0px 20px;
-  }
-
-  .team-grid {
-    padding-top: 49px;
-    padding-bottom: 49px;
-  }
-
-  .member-cont {
-    position: relative;
-    display: flex;
-    margin-bottom: 24px;
-  }
-
-  .member-cont:nth-child(2) {
-    transform: translateX(0px);
-  }
-
-  .member-cont:nth-child(3) {
-    transform: translateX(0px);
-  }
-
-  .name-cont {
-    padding-left: 25px;
-    font-size: 20px;
-    padding-top: 25px;
-  }
-
-}
 
 .is-inactive {
   display: none;
 }
 
-@media only screen and (max-width: $tablet) {
-  .nudge {
-    transform: translateY(40px);
-    transition: transform 1s;
-  }
 
-  .nomobile {
-    display: none;
-  }
-
-  .mobile {
-    display: block;
-  }
-
-  .nav {
-    height: 60px;
-  }
-
-  .hamburger {
-    display: block;
-    position: absolute;
-    right: 15px;
-    height: 30px;
-    top: 15px;
-  }
-
-  .nav-menu {
-    width: 100%;
-    right: 0px;
-    top: 60px;
-    background-color: white;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    font-size: 11px;
-    height: 40px;
-  }
-
-  .nav-element {
-    width: auto;
-    margin-left: 0px;
-    padding: 8px;
-  }
-
-  .logo {
-    left: 15px;
-    top: 15px;
-  }
-  .logo img {
-    height: 30px;
-  }
-
-  .slideshow {
-    margin-top: 60px;
-  }
-}
 
 
 .headerWrapper {
@@ -475,13 +267,7 @@ body {
   }
 }
 
-.missionWrapper{
-  .imgMobile{
-    background-image: url(../images/mission_pic.png);
-    background-position: center;
-    background-size: cover;
-  }
-}
+
 
 
 

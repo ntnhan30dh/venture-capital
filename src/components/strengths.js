@@ -4,7 +4,6 @@ const Strengths = () => {
   const card = "mx-auto  text-center  py-8 "
   const iconDiv = "mx-auto w-14 "
   const p = "h3_strengths mt-3 lg:mt-5 lg:whitespace-nowrap"
-  const medalAnimation  = "transform hover:rotate-45 ease-linear	duration-75 "
   
   return (
     <section className="strengths"id="strengths">

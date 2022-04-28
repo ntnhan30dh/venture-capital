@@ -2,8 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 
 import Slideshow from "../components/slideshow"
-import Mission2 from "../components/mission2"
-import Story2 from "../components/story2"
 import Focus from "../components/focus"
 import Strengths from "../components/strengths"
 import Team from "../components/team"
