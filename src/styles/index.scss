@@ -2,6 +2,7 @@
 
 $tablet: 1000px;
 $mobile: 700px;
+$md: 	768px;
 $lg: 	1024px;
 
 @import url('https://use.typekit.net/qkw4qjp.css');
@@ -245,6 +246,18 @@ body {
 .buttons::-webkit-scrollbar {
   display: none;
 }
+.portfolio {
+  .cards {
+    .card:nth-child(n+6) {
+      display: none ;
+      @media only screen and (min-width: $md) {
+        display: flex ;
+    }
+  }
+  }
+ 
+}
+
 /***MEDIA QUERY***/
 
 @media only screen and (max-width: 767px) {

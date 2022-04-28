@@ -24,7 +24,7 @@ const Header
   const barState = props.menuState?"bg-white":"bg-space"
   
   return (
-    <header className={`headerWrapper px-4  ${position} z-50 w-full  ${scroll ? " bg-white" : "bg-transparent" } `} >
+    <header className={`headerWrapper ${props.menuState?"":"px-4"} lg:px-4  ${position} z-50 w-full  ${scroll ? " bg-white" : "bg-transparent" } `} >
       <nav className={` relative flex justify-between   max-w-1240 mx-auto ${props.menuState ? "bg-space lg:bg-transparent" : ""} bg-transparent 	`}
       >
           <Link to="/" className={`w-44 lg:w-72 my-4 lg:my-5 ${props.menuState?" absolute lg:static":""} left-4 lg:left-0 top-4`}>

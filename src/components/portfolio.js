@@ -5,6 +5,8 @@ import { Modal } from "semantic-ui-react"
 const Portfolio = () => {
   const [region, setRegion] = useState("ALL")
   const [industry, setIndustry] = useState("ALL")
+  const [show, setShow] = useState(false)
+
   const data = useStaticQuery(graphql`
     {
       allWordpressWpPortfolio {
@@ -119,7 +121,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <div className=" flex flex-wrap justify-center items-center w-full max-w-1240 mx-auto">
+      <div className={`${show?"":"cards"}  flex flex-wrap justify-center items-center w-full max-w-1240 mx-auto`}>
         {filteredPortfolios
           .sort((a, b) =>
             a.node.wordpress_id < b.node.wordpress_id
@@ -133,7 +135,7 @@ const Portfolio = () => {
             return (
               <Modal
                 trigger={
-                  <div className="w-32 lg:w-60 lg:h-40 mx-4 lg:mx-0 my-8 hover:bg-portfolioGrey ease-linear duration-300 flex justify-center items-center">
+                  <div className=" card w-32 lg:w-60 lg:h-40 mx-4 lg:mx-0 my-8 hover:bg-portfolioGrey ease-linear duration-300 flex justify-center items-center">
                     <img
                       alt="logo"
                       src={
@@ -228,6 +230,14 @@ const Portfolio = () => {
             )
           })}
       </div>
+     {!show&& 
+     <div className="  mx-4 xsm:mx-auto max-w-sm  bg-blue py-4 rounded-48px text-center md:hidden my-8">
+        <button to="/news" className=" label1 text-white   " onClick={()=>setShow(true)}> 
+        +View full Portfolio
+        </button>
+      </div>
+     
+     }
     </section>
   )
 }
