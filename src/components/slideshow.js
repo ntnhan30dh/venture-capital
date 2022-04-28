@@ -18,7 +18,7 @@ const Slideshow = () => {
   const arrowStyle = "w-14 relative z-20"
 
   const settings = {
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 5000,
     infinite: true,
     fade: true,
@@ -26,8 +26,6 @@ const Slideshow = () => {
     slidesToScroll: 1,
     touchThreshold: 1000,
     dots: true,
-    //  prevArrow: false,
-    //  nextArrow: false
   }
   const data = useStaticQuery(graphql`
     {

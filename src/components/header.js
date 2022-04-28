@@ -23,7 +23,7 @@ const Header = props => {
     }
   }, [position])
   let header_position = scroll ? "sticky top-0" : "absolute"
-  const cls = visible ? "visible" : "opacity-0"
+  const cls = visible ? "visible" : "transform -translate-y-20"
   let menuActive = props.menuState ? "is-inactive" : ""
   let change = props.menuState ? "change" : ""
   const link = "pb-6 lg:pb-0 lg:h-full lg:flex lg:items-center"
@@ -155,7 +155,7 @@ const Header = props => {
             <span className={span}>Contact Us</span>
           </Link>
         </Scrollspy>
-        <div className="w-full h-0.5 bg-white opacity-20 absolute -bottom-0.5 left-0 /mx-24 hidden lg:block">
+        <div className="w-full h-0.5 bg-white opacity-20 absolute -bottom-0.5 left-0 hidden lg:block">
           {" "}
         </div>
       </nav>

@@ -20,23 +20,6 @@ import CookieConsent from "react-cookie-consent"
 import logo from '../images/logo_white.png'
 
 const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
-
-  // const [nudge, setNudge] = useState(true)
-  // const toggleNudge = () => {
-  //   setNudge(!nudge)
-  //   console.log("nudge", nudge)
-  // }
-  // const wrapNudge = nudge ? "nudge" : ""
-
   let [menuActive, setmenuActive] = useState(false)
   const toggleMenu = () => {
     setmenuActive(!menuActive)

@@ -2,7 +2,6 @@ import React from "react"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-
 import internet from "../images/focus_internet.png"
 import fintech from "../images/focus_fintech.png"
 import b2b from "../images/focus_b2b.png"
