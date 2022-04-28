@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
-const News = (props) => {
+const News = () => {
   // const monthNames = [
   //   "January",
   //   "February",
