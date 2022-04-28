@@ -60,7 +60,7 @@ const Portfolio = () => {
       <button
         className={`filterButton py-2 px-6 ${
           categories.includes(filterText) ? "bg-blue text-white" : "border-2"
-        } rounded-48px  label1 mx-1 mb-4`}
+        } rounded-48px  label1 mx-1 mb-4 hover:bg-portfolioGrey`}
         onClick={() => handleClick(filterText, type)}
       >
         {filterText}
@@ -142,7 +142,7 @@ const Portfolio = () => {
                         i.node.featured_media.localFile.childImageSharp.fluid
                           .src
                       }
-                      className="w-3/5 max-h-full"
+                      className="w-full max-h-full"
                     />
                   </div>
                 }

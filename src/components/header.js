@@ -23,7 +23,7 @@ const Header = props => {
     }
   }, [position])
   let header_position = scroll ? "sticky top-0" : "absolute"
-  const cls = visible ? "visible" : "transform -translate-y-20"
+  const cls = visible ? "visible" : "transform lg:-translate-y-20"
   let menuActive = props.menuState ? "is-inactive" : ""
   let change = props.menuState ? "change" : ""
   const link = "pb-6 lg:pb-0 lg:h-full lg:flex lg:items-center"

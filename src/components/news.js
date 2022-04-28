@@ -60,7 +60,7 @@ const News = () => {
                     className="news-card w-full bg-white my-4 sm:m-4 pb-4 lg:w-1/3 max-w-sm hover:text-space"
                   >
                   <div className="overflow-hidden">
-                <div className="transform ease-linear duration-300 hover:scale-125 ">
+                <div className="lg:transform ease-linear duration-300 hover:scale-125 brightness75 ">
                   <img
                     src={
                       i.node.featured_media.localFile.childImageSharp.fluid.src
@@ -70,7 +70,7 @@ const News = () => {
                   />
                 </div>
                   </div>
-                <div className="textWrap flex flex-col justify-between px-2 md:px-4 flex-grow">
+                <div className="textWrap flex flex-col justify-between flex-grow">
                     <h3 class={`/excerpt h3 pt-4 pb-8`}>{i.node.title}</h3>
                 </div>
                   </a>
@@ -84,8 +84,8 @@ const News = () => {
           </a>
         )}
       </div>
-      <div className="w-full sm:w-44 mx-auto bg-blue py-4 rounded-48px text-center">
-        <Link to="/news" className=" label1 text-white   "> 
+      <div className="w-full sm:w-44 mx-auto bg-blue hover:bg-darkBlue py-4 rounded-48px text-center">
+        <Link to="/news" className=" label1 text-white hover:text-white   "> 
             See all the News
         </Link>
       </div>

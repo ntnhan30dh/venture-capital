@@ -48,9 +48,9 @@ const Team = props => {
         {teamArr.map(i => (
           <Modal
             trigger={
-              <article class="relative mx-2 lg:mx-3 mb-6 lg:mb-14">
+              <article class="relative mx-2 lg:mx-3 mb-6 lg:mb-14 cursor-pointer">
                 <div className="overflow-hidden">
-                <div class="w-40 lg:w-72 transform ease-linear duration-300 hover:scale-125">
+                <div class="w-40 lg:w-72 brightness80 lg:transform ease-linear duration-300 hover:scale-110">
                   <img
                     src={
                       i.node.featured_media.localFile.childImageSharp.fluid.src
@@ -60,7 +60,7 @@ const Team = props => {
                   />
                 </div>
                 </div>
-                <div class="w-40 lg:w-72">
+                <div class="w-40 lg:w-72 lg:mt-4">
                   <h3 class="h3">{i.node.title}</h3>
                   <p class="body1 ">{i.node.acf.job_title}</p>
                 </div>
@@ -70,7 +70,7 @@ const Team = props => {
             fluid
             closeIcon
           >
-          <article className="p-4 pt-14 lg:flex">
+          <article className="p-4 lg:p-8 pt-14 lg:flex">
             <div className="top flex lg:flex-col lg:mr-10">
               <div className="w-40 lg:w-72 relative mr-4 mb-10">
                 <img
@@ -130,20 +130,20 @@ const Team = props => {
               </div>
             </div>
             <div className="bottom ">
-              <h3 className="h3">
+              <h3 className="h3_team">
               Professional background:
               </h3>
-              <p className="body1 my-6 /lg:w-96">{i.node.acf.biography}</p>
-              <h3 className="h3">
+              <p className="body1_team my-6 /lg:w-96">{i.node.acf.biography}</p>
+              <h3 className="h3_team">
               Academic background:
               </h3>
-              <p className="body1 my-6"  dangerouslySetInnerHTML={{
+              <p className="body1_team my-6"  dangerouslySetInnerHTML={{
                           __html:i.node.acf.academic_background,
                         }}></p>
-                        <h3 className="h3">
+                        <h3 className="h3_team">
               Companies:
               </h3>
-              <p className="body1 my-6"  dangerouslySetInnerHTML={{
+              <p className="body1_team my-6"  dangerouslySetInnerHTML={{
                           __html:i.node.acf.companies,
                         }}></p>
             </div>

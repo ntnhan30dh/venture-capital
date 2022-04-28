@@ -46,10 +46,10 @@ const Focus = () => {
   const card = props => {
     return (
       <div
-        className={`internet relative w-343 lg:w-400 overflow-hidden text-white lg:mx-3 `}
+        className={` relative w-343 lg:w-400 overflow-hidden text-white lg:mx-3 brightness-50 `}
       >
         <div
-          className={`internet transform ease-linear duration-300 hover:scale-125 px-2 lg:px-0 `}
+          className={`brightness80 lg:transform ease-linear duration-300 hover:scale-125 px-2 lg:px-0  `}
         >
           <img src={pic[props]} alt="internet" />
         </div>
