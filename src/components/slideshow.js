@@ -76,7 +76,7 @@ const Slideshow = () => {
     <div id="slideshow" className=" w-full relative">
       <button
         onClick={() => gotoPrev()}
-        className={` left-20 bottom-24 ${btnStyle} `}
+        className={`left-20 bottom-24 ${btnStyle} `}
       >
       <div className="ralative">
         <div className={arrowStyle}>
@@ -116,7 +116,7 @@ const Slideshow = () => {
       </button>
       <button
         onClick={() => gotoNext()}
-        className={` right-20 bottom-24 ${btnStyle}  `}
+        className={`  right-20 bottom-24 ${btnStyle}  `}
       >
       <div className="relative">
         <div className={arrowStyle}>
@@ -154,7 +154,7 @@ const Slideshow = () => {
         </div>
       </div>
       </button>
-      <Slider {...settings} ref={customeSlider} className="/m-20">
+      <Slider {...settings} ref={customeSlider} className="">
         {data.allWordpressWpSlideshow.edges.reverse().map(i => {
           return (
             <div className="relative">
@@ -180,7 +180,7 @@ const Slideshow = () => {
                     className="w-full"
                   ></img>
                 </div>
-                <h1 className="text-white h1 max-w-1240 px-4 mx-auto mb-4 lg:mb-8">
+                <h1 className="text-white h1 max-w-5xl 2xl:max-w-1240 px-4 mx-auto mb-4 lg:mb-8">
                   {" "}
                   {
                     data.allWordpressAcfSlideshow.edges.filter(
