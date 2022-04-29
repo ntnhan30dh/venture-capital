@@ -122,6 +122,10 @@ module.exports = {
        rotate: {
         '90': '90deg',
         '180': '180deg',
+      },
+      transitionDelay: {
+        '20': '20ms',
+        '2000': '2000ms',
       }
     },
     borderWidth: {

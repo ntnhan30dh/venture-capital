@@ -6,24 +6,25 @@ import Scrollspy from "react-scrollspy"
 
 const Header = props => {
   const [scroll, setScroll] = useState(false)
-  // const [position, setPosition] = useState(window.pageYOffset)
-  // const [visible, setVisible] = useState(true)
+  const [position, setPosition] = useState(0)
+  const [visible, setVisible] = useState(true)
 
   useEffect(() => {
-   // const handleScroll = () => {
-    //   let moving = window.pageYOffset
-    //   setVisible(position > moving)
-    //   setPosition(moving)
-       
-    //   console.log(visible)
-    // }
-    window.addEventListener("scroll", ()=>{setScroll(window.scrollY > 50)} )
+   const handleScroll = () => {
+     setPosition(window.pageYOffset)
+      let moving = window.pageYOffset
+      setVisible(position > moving)
+      setPosition(moving)
+      setScroll(window.scrollY > 50)
+    //  console.log(visible)
+    }
+    window.addEventListener("scroll", handleScroll )
     // return () => {
     //   window.removeEventListener("scroll", ()=>{})
     // }
-  }, [])
+  }, [ position])
   let header_position = scroll ? "sticky top-0" : "absolute"
-  //const cls = visible ? "visible" : "transform lg:-translate-y-20"
+  const cls = visible ? "visible" : "transform lg:-translate-y-20"
   let menuActive = props.menuState ? "is-inactive" : ""
   let change = props.menuState ? "change" : ""
   const link = "pb-6 lg:pb-0 lg:h-full lg:flex lg:items-center"
@@ -35,7 +36,7 @@ const Header = props => {
 
   return (
     <header
-      className={`headerWrapper ease-linear duration-300  ${
+      className={`headerWrapper ease-linear duration-75 delay-20	 ${cls}  ${
         props.menuState ? "" : "px-4"
       } lg:px-4  ${header_position} z-50 w-full  ${
         scroll ? " bg-white" : "bg-transparent"
