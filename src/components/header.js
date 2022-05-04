@@ -6,15 +6,15 @@ import Scrollspy from "react-scrollspy"
 
 const Header = props => {
   const [scroll, setScroll] = useState(false)
-  const [position, setPosition] = useState(0)
-  const [visible, setVisible] = useState(true)
+  // const [position, setPosition] = useState(0)
+  // const [visible, setVisible] = useState(true)
 
   useEffect(() => {
    const handleScroll = () => {
-     setPosition(window.pageYOffset)
-      let moving = window.pageYOffset
-      setVisible(position > moving)
-      setPosition(moving)
+    //  setPosition(window.pageYOffset)
+    //   let moving = window.pageYOffset
+    //   setVisible(position > moving)
+    //   setPosition(moving)
       setScroll(window.scrollY > 50)
     //  console.log(visible)
     }
@@ -22,9 +22,9 @@ const Header = props => {
     // return () => {
     //   window.removeEventListener("scroll", ()=>{})
     // }
-  }, [ position])
+  }, [ ])
   let header_position = scroll ? "sticky top-0" : "absolute"
-  const cls = visible ? "visible" : "transform lg:-translate-y-20"
+  //const cls = visible ? "visible" : "transform lg:-translate-y-20"
   let menuActive = props.menuState ? "is-inactive" : ""
   let change = props.menuState ? "change" : ""
   const link = "pb-6 lg:pb-0 lg:h-full lg:flex lg:items-center"
@@ -36,7 +36,7 @@ const Header = props => {
 
   return (
     <header
-      className={`headerWrapper ease-linear duration-75 delay-20	 ${cls}  ${
+      className={`headerWrapper ease-linear duration-75 delay-20	  ${
         props.menuState ? "" : "px-4"
       } lg:px-4  ${header_position} z-50 w-full  ${
         scroll ? " bg-white" : "bg-transparent"
@@ -51,7 +51,7 @@ const Header = props => {
           to="/"
           className={`w-44 lg:w-72 my-4 lg:my-5 ${
             props.menuState ? " absolute lg:static" : ""
-          } left-4 lg:left-0 top-4`}
+          } left-4 lg:left-0 /top-4`}
         >
           <img
             src={scroll ? logoState : logo_green}
@@ -68,7 +68,7 @@ const Header = props => {
           to="/"
           className={`burgerMenu ${
             props.menuState ? "absolute" : ""
-          }  h-4 my-auto right-4 top-8  ${change}`}
+          }  h-4 my-auto right-4 top-6  ${change}`}
           onClick={props.toggleMenu}
           onKeyDown={props.toggleMenu}
           role="button"

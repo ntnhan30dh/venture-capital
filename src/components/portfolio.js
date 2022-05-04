@@ -229,6 +229,11 @@ const Portfolio = () => {
               </Modal>
             )
           })}
+          <div className="w-32 lg:w-60 h-1"></div>
+          <div className="w-32 lg:w-60 h-1"></div>
+          <div className="w-32 lg:w-60 h-1"></div>
+          <div className="w-32 lg:w-60 h-1"></div>
+          <div className="w-32 lg:w-60 h-1"></div>
       </div>
      {!show&& 
      <div className="  mx-4 xsm:mx-auto max-w-sm  bg-blue py-4 rounded-48px text-center md:hidden my-8">

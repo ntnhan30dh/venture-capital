@@ -140,9 +140,9 @@ const Team = props => {
               <p className="body1_team my-6"  dangerouslySetInnerHTML={{
                           __html:i.node.acf.academic_background,
                         }}></p>
-                        <h3 className="h3_team">
+                       {i.node.acf.companies&&<h3 className="h3_team">
               Companies:
-              </h3>
+              </h3>}
               <p className="body1_team my-6"  dangerouslySetInnerHTML={{
                           __html:i.node.acf.companies,
                         }}></p>
