@@ -487,7 +487,24 @@ svg:not(:root) {
 
 .ui.modal{
   border-radius: 0 !important;
+  &>.close{
+    @media only screen and (min-width: $md) {
+      top: 0.5rem !important;
+      right: 0.25rem !important;
+      color: #000000 !important;
+  }
+  }
 }
+
+i.icon.close:before {
+  //content: " " !important;
+ // background-image: url(../images/favicon.png) !important;
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-size: cover;
+}
+
 
 //hover
 .brightness80:hover{

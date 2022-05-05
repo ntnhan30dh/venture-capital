@@ -76,7 +76,7 @@ const Layout = ({ children }) => {
             <Link to="/privacy">Terms</Link>
           </div>
           <p className="body3 text-white text-center mt-6 md:mt-0">
-          DH Ventures GmbH I © Copyright 2022
+          DX Ventures GmbH I © Copyright 2022
           </p>
         
         </div>

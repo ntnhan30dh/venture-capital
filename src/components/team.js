@@ -70,7 +70,7 @@ const Team = props => {
             fluid
             closeIcon
           >
-          <article className="p-4 lg:p-8 pt-14 lg:flex">
+          <article className="p-4 pt-14 lg:p-8 lg:pt-16 lg:flex">
             <div className="top flex lg:flex-col lg:mr-10">
               <div className="w-40 lg:w-72 relative mr-4 mb-10">
                 <img
@@ -133,17 +133,17 @@ const Team = props => {
               <h3 className="h3_team">
               Professional background:
               </h3>
-              <p className="body1_team my-6 /lg:w-96">{i.node.acf.biography}</p>
+              <p className="body1_team mb-6 mt-1 ">{i.node.acf.biography}</p>
               <h3 className="h3_team">
               Academic background:
               </h3>
-              <p className="body1_team my-6"  dangerouslySetInnerHTML={{
+              <p className="body1_team mb-6 mt-1"  dangerouslySetInnerHTML={{
                           __html:i.node.acf.academic_background,
                         }}></p>
                        {i.node.acf.companies&&<h3 className="h3_team">
               Companies:
               </h3>}
-              <p className="body1_team my-6"  dangerouslySetInnerHTML={{
+              <p className="body1_team mb-6 mt-1"  dangerouslySetInnerHTML={{
                           __html:i.node.acf.companies,
                         }}></p>
             </div>

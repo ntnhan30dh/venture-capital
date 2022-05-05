@@ -96,9 +96,9 @@ const NewsPage = () => {
 
   return (
     <Layout>
-      <div className="news py-10 md:py-20">
-        <div className="top">
-          <h1>Recent articles</h1>
+      <div className="news py-10 md:pb-20">
+        <div className="top lg:flex justify-between">
+          <h2 className="h2">Recent articles</h2>
           {/* <h2>{numnerOfAllPosts}</h2> */}
           <div className="searchBox">
             <input
@@ -143,9 +143,11 @@ const NewsPage = () => {
             })}
         </div>
         {(numnerOfAllPosts>state.numberOfPosts)&&!hasSearchResults && (
-          <button className="showMore" onClick={increaseNumberOfPosts}>
-            Show more <br /> &#xfe40;
-          </button>
+          <div className="w-full sm:w-44 lg:w-64 mx-auto bg-blue hover:bg-darkBlue py-4 rounded-48px text-center mt-20">
+        <button className=" label1 text-white hover:text-white" onClick={increaseNumberOfPosts}> 
+        +View more articles
+        </button>
+      </div>
         )}
       </div>
     </Layout>

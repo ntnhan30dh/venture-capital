@@ -173,6 +173,14 @@
         background: url(../images/search_icon.png) no-repeat right;
         background-size: contain;
         border: none;
+        border-radius: 40px;
+        background-origin: content-box;
+        padding: 7px;
+        &:focus-visible{
+          outline: none !important;
+          border:2px solid #006EFF
+          ;
+        }
       }
     }
   }

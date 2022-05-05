@@ -3,28 +3,25 @@ import logo_blue from "../images/logo_blue.png"
 import logo_green from "../images/logo_green.png"
 import { Link } from "gatsby"
 import Scrollspy from "react-scrollspy"
+import { useLocation } from "@reach/router"
 
 const Header = props => {
   const [scroll, setScroll] = useState(false)
-  // const [position, setPosition] = useState(0)
-  // const [visible, setVisible] = useState(true)
+  const location = useLocation();
 
   useEffect(() => {
+    if(location.pathname.includes("news")){
+      setScroll(true)
+    }
    const handleScroll = () => {
-    //  setPosition(window.pageYOffset)
-    //   let moving = window.pageYOffset
-    //   setVisible(position > moving)
-    //   setPosition(moving)
-      setScroll(window.scrollY > 50)
-    //  console.log(visible)
+     if(!location.pathname.includes("news")){
+       setScroll(window.scrollY > 50)
+     }
     }
     window.addEventListener("scroll", handleScroll )
-    // return () => {
-    //   window.removeEventListener("scroll", ()=>{})
-    // }
+
   }, [ ])
   let header_position = scroll ? "sticky top-0" : "absolute"
-  //const cls = visible ? "visible" : "transform lg:-translate-y-20"
   let menuActive = props.menuState ? "is-inactive" : ""
   let change = props.menuState ? "change" : ""
   const link = "pb-6 lg:pb-0 lg:h-full lg:flex lg:items-center"
@@ -47,6 +44,7 @@ const Header = props => {
           props.menuState ? "bg-space lg:bg-transparent" : ""
         } bg-transparent 	`}
       >
+  
         <Link
           to="/"
           className={`w-44 lg:w-72 my-4 lg:my-5 ${
