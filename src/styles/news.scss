@@ -6,10 +6,7 @@
     left: 0;
     right: 0;
     margin: auto;
-  //  margin-top: 80px;
     width: 100%;
-   // max-width: 100%;
-  // padding: 0 10%;
     @media screen and (max-width: $tablet) {
       flex-direction: column;
       }
@@ -153,8 +150,8 @@
 }
 
 .news {
-  margin-top: 8%;
-  padding: 0 10%;
+ // margin-top: 8%;
+ // padding: 0 10%;
   min-height: 100vh;
   .top {
     h1 {
@@ -189,17 +186,17 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
+   // justify-content: space-between;
     &::after {
-      content: "";
-      width: 30%;
+     // content: "";
+     // width: 30%;
     }
 
     .news-card {
-      width: 30%;
-      margin-top: 3%;
+     // width: 30%;
+     // margin-top: 3%;
       @media screen and (max-width: $tablet) {
-        width: 45%;
+      //  width: 45%;
         }
         @media screen and (max-width: $mobile) {
           width: 100%;

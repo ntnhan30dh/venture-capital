@@ -96,8 +96,8 @@ const NewsPage = () => {
 
   return (
     <Layout>
-      <div className="news py-10 md:pb-20">
-        <div className="top lg:flex justify-between">
+      <div className="news mt-10 md:mt-20 pb-10 md:pb-20 max-w-1240 xl:mx-auto">
+        <div className="top lg:flex justify-between px-4">
           <h2 className="h2">Recent articles</h2>
           {/* <h2>{numnerOfAllPosts}</h2> */}
           <div className="searchBox">
@@ -110,7 +110,7 @@ const NewsPage = () => {
             />
           </div>
         </div>
-        <div class="new-cards">
+        <div class="new-cards lg:flex  justify-center">
           {posts
             .sort((a, b) =>
               a.node.date < b.node.date
@@ -120,7 +120,7 @@ const NewsPage = () => {
             .map(i => {
               {/* const date = new Date(i.node.date) */}
               return (
-                <a class="news-card" href={`/post/${i.node.slug}`}>
+                <a class="news-card w-full bg-white my-4 sm:p-4 pb-4 lg:w-1/3 max-w-sm lg:max-w-none" href={`/post/${i.node.slug}`}>
                   <div class="news-picture">
                     <img
                       src={
