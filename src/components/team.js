@@ -42,7 +42,7 @@ const Team = props => {
 
   return (
     <section class="team bg-gray sm:w-4/5 mx-auto lg:w-full " id="team">
-      {console.log(teamArr)}
+      {/* {console.log(teamArr)} */}
       <h2 className="h2 text-center mt-14 lg:mt-20  mb-8 lg:mb-10">Our Team</h2>
       <div class="cards flex flex-wrap justify-center max-w-1240 mx-auto">
         {teamArr.map(i => (

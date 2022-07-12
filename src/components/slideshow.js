@@ -19,7 +19,7 @@ const Slideshow = () => {
 
   const settings = {
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 7000,
     infinite: true,
     fade: true,
     slidesToShow: 1,
