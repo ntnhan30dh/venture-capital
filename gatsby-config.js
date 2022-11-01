@@ -164,6 +164,12 @@ module.exports = {
     },
     
     'gatsby-plugin-postcss',
-  
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "G-4MR98MPJRZ",
+        includeInDevelopment: false,
+      },
+    },
   ],
 }
