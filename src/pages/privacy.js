@@ -9,7 +9,7 @@ const Privacy = () => {
     <Layout>
       <div className="disclaimer">
         <h2>
-          <strong> Privacy Notice</strong>
+          <strong> Privacy Notice.</strong>
         </h2>
         <p>
           {" "}
