@@ -88,6 +88,7 @@ const Portfolio = () => {
     )[0].node.acf.industry:[""]
    }})
   )
+  .sort((a, b) => a.node.title.localeCompare(b.node.title))
 
   const filteredPortfolios = portfolios
   .filter(p=> region === "ALL"?p: p.afc.region.includes(region))
