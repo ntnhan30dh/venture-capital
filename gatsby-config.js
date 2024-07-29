@@ -42,7 +42,7 @@ module.exports = {
          * Example : 'demo.wp-api.org' or 'www.example-site.com'
          */
        // baseUrl: "http://dxventures.local",
-        baseUrl: "https://dxventures.wpengine.com/",
+        baseUrl: "https://dhventures-admin.deliveryhero.net/",
         // The protocol. This can be http or https.
         protocol: "https",
         // The rest api route prefix that your WordPress site is using.
